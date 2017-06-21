@@ -1,7 +1,7 @@
 class RatingsController < ApplicationController
 
   def index
-    @rating = Rating.all
+    @ratings = Rating.all
   end
 
   def new
