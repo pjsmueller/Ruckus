@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id.integer: MyString
+  rateable_type.string: MyString
+  rateable_id.integer: MyString
+  score.integer: MyString
+
+two:
+  user_id.integer: MyString
+  rateable_type.string: MyString
+  rateable_id.integer: MyString
+  score.integer: MyString
