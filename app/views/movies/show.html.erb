@@ -1,1 +1,27 @@
-<h1>Movie Show</h1>
+<div class="movie">
+  <div class="movie-title"><%= @movie.title %></div>
+  <div class="movie-container">
+    <div class="movie-container" %>
+      <div class="movie-poster-container">
+        <img class="movie-details-poster" src="https://image.tmdb.org/t/p/w300_and_h450_bestv2/<%= @movie.poster_path %>" />
+      </div>
+      <div class="movie-details-container">
+        
+        <div class="movie-starring-label">Starring:<div class="rating-container"></div>
+        <div class="movie-starring">
+          <ul class="movie-starring-list">
+            <% i = 0 %>
+            <% while i < 5 %>
+            <li class="starring-list-item"><%= @movie.cast[i].name %> as <%= @movie.cast[i].character %></li>
+            <% i += 1 %>
+            <% end %>
+          </ul>
+        </div>
+        <div class="movie-overview-label">Overview:</div>
+        <div class="movie-overview">
+          <%= @movie.overview %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
