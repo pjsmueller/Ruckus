@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 #users
   resources :users do
     resources :reviews #?? Necessary?
-    end
+  end
 
 #comments
   resources :comments, except: [:show]
@@ -17,5 +17,5 @@ Rails.application.routes.draw do
   get 'login', to: 'sessions#new'
   get 'logout', to: "sessions#destroy"
 
-root "movies#index"
+# root "movies#index"
 end
