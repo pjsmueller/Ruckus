@@ -1,1 +1,11 @@
-<h1>All movies homepage</h1>
+<div class="movies-container">
+  <ul class="movies-list">
+    <% @movies.each do |movie| %>
+      <li class="movies-list-item">
+        <a href="/movies/<%= movie.id %>" title="<%= movie.title %>">
+          <img class="movie-poster" src="https://image.tmdb.org/t/p/w300_and_h450_bestv2/<%= movie.poster_path %>" />
+        </a>
+      </li>
+    <% end %>
+  </ul>
+</div>
