@@ -9,12 +9,9 @@
   </head>
 
   <body>
-    <nav class="top-nav">
-
-    </nav>
-    <%= yield %>
-    <nav class="bottom-nav">
-
-    </nav>
+    <%= render template: "layouts/_header" %>
+    <div class="container">
+      <%= yield %>
+    </div>
   </body>
 </html>

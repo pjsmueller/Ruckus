@@ -1,24 +1,5 @@
-# README
+RUCKUS MOVIE database
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Dominique
+- Created an Adapter class to make call to The Movie Database api
+- Created Movie model and integrate API into the model
