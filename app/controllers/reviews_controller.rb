@@ -5,6 +5,7 @@ def index
 end
 
 def new
+  @movie = Movie.find(1)
   @review = Review.new
 end
 
