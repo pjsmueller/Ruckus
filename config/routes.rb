@@ -1,9 +1,7 @@
 Rails.application.routes.draw do
 
 #users
-  resources :users do
-    resources :reviews #?? Necessary?
-    end
+  resources :users
 
 #comments
   resources :comments, except: [:show]
