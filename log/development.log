@@ -1628,3 +1628,104 @@ Processing by UsersController#new as HTML
 Completed 200 OK in 8ms (Views: 6.4ms | ActiveRecord: 0.0ms)
 
 
+Started POST "/users" for 127.0.0.1 at 2017-06-22 12:11:31 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DGjK2t9MxZot+azpQeatEgK0w/419nR2osrdSOT1DjuHiqpj972/Wuu3ACe137GPBmG+g3bLOrd1HrN/7/Yj/w==", "user"=>{"username"=>"Jun_Ota", "f_name"=>"Jun", "l_name"=>"Ota", "password_hash"=>"[FILTERED]"}, "commit"=>"Create User"}
+Unpermitted parameters: :f_name, :l_name, :password_hash
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["username", "Jun_Ota"], ["created_at", "2017-06-22 19:11:31.767650"], ["updated_at", "2017-06-22 19:11:31.767650"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/users/10
+Completed 302 Found in 7ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/users/10" for 127.0.0.1 at 2017-06-22 12:11:31 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 12ms (Views: 4.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/10" for 127.0.0.1 at 2017-06-22 12:14:15 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 7ms (Views: 4.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/10" for 127.0.0.1 at 2017-06-22 12:15:10 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 8ms (Views: 5.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-06-22 12:15:26 -0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 11ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-06-22 12:15:34 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5e7DWuajijg6j4OFc9QQKHSdIpW9IWR60TlzfEbNNSduDKPjzlLw+PzBL0uH7Qy1cEhf6P4cKrsG7R1LTc4Y4w==", "user"=>{"username"=>"kevin", "f_name"=>"fdasdf", "l_name"=>"fdafwad", "password_hash"=>"[FILTERED]"}, "commit"=>"Create User"}
+Unpermitted parameters: :f_name, :l_name, :password_hash
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["username", "kevin"], ["created_at", "2017-06-22 19:15:34.567759"], ["updated_at", "2017-06-22 19:15:34.567759"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/users/11
+Completed 302 Found in 4ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/users/11" for 127.0.0.1 at 2017-06-22 12:15:34 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 7ms (Views: 4.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/11" for 127.0.0.1 at 2017-06-22 12:16:00 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 7ms (Views: 4.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-06-22 12:19:37 -0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 26ms (Views: 6.9ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-06-22 12:19:47 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8eTrUziU09ScULDYC8KOkaXMpe8S95vev9lme37ZnDZ6BovqEGWpFFoeHBb/+5IMoRnYklHK1R9oDQhMddqx8g==", "user"=>{"username"=>"peter", "f_name"=>"perete", "l_name"=>"feasfq", "password_hash"=>"[FILTERED]"}, "commit"=>"Create User"}
+Unpermitted parameter: :password_hash
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "f_name", "l_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["username", "peter"], ["f_name", "perete"], ["l_name", "feasfq"], ["created_at", "2017-06-22 19:19:47.010853"], ["updated_at", "2017-06-22 19:19:47.010853"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/users/12
+Completed 302 Found in 5ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/users/12" for 127.0.0.1 at 2017-06-22 12:19:47 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 9ms (Views: 5.2ms | ActiveRecord: 0.2ms)
+
+
