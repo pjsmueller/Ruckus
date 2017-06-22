@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
 #users
+
   resources :users
 
 #comments
@@ -16,5 +17,5 @@ Rails.application.routes.draw do
   get 'logout', to: "sessions#destroy"
   post 'login',   to: 'sessions#create'
 
-root "movies#index"
+# root "movies#index"
 end
