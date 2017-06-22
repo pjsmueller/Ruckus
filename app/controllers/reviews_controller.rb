@@ -5,6 +5,7 @@ def index
 end
 
 def new
+  @movie = Movie.find(params[:api_id])
   @review = Review.new
 end
 
