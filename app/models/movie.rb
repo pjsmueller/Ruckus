@@ -21,7 +21,7 @@ class Movie < ApplicationRecord
   end
 
 private
-  def :get_movie_details
+  def get_movie_details
     movie_details = TMDBAdapter.get_movie_details(self.api_id)
     if !movie_details
       self.destroy

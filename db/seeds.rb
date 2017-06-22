@@ -1,6 +1,6 @@
 require 'faker'
 3.times do
-  User.create(username: Faker::Internet.user_name, f_name: Faker::Name.first_name, l_name: Faker::Name.last_name, password_hash: "test")
+  User.create(username: Faker::Internet.user_name, f_name: Faker::Name.first_name, l_name: Faker::Name.last_name, password: "test")
 end
 count = 1
 10.times do

@@ -17,15 +17,6 @@ def create
   end
 end
 
-
-user = User.new(user_params)
-if user.save
-  session[:user_id] = user.id
-  redirect_to '/', notice: 'Account created successfully'
-else
-  redirect_to '/signup'
-end
-
 def show
   @user = User.find(params[:id])
 end
