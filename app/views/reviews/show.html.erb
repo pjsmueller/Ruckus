@@ -1,12 +1,12 @@
 <h1>The <%= @review.title %> Review.</h1>
 <h2> <%= @movie.title %> </h2><%= link_to "edit", "/movies/#{@movie.id}/reviews/#{@review.id}/edit" %>
 <%= link_to "delete", "/movies/#{@movie.id}/reviews/#{@review.id}", method: :delete %>
-<h3>Movie rating Avg: <%= avrage_ratings(Movie.find_by(api_id: @movie.id).ratings) %> </h3>
+<h3>Movie rating Avg: <%= average_ratings(Movie.find_by(api_id: @movie.id).ratings) %> </h3>
 <h3>Reviewer Name: <%= @review.user.f_name %> </h3>
 <h3>synopsis</h3>
 <p> <%= @review.body %> </p>
 
-<h3>Review rating Avg: <%= avrage_ratings(@review.ratings) %> </h3>
+<h3>Review rating Avg: <%= average_ratings(@review.ratings) %> </h3>
 <h3>Comments</h3>
 <ul>
   <% @review.comments.each do |comment| %>
