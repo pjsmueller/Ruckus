@@ -21,20 +21,21 @@
 .movies-list{
   display:flex;
   flex-wrap:wrap;
-  justify-content: space-around;
+  justify-content: flex-start;
   list-style-type: none;
   margin: 0px;
   padding: 0px
 }
 .movies-list li{
   display:inline-block;
+  margin: 0px 2px;
 }
 .movie-details-poster{
   height:350px;
 }
 .movie-overview{
-  font-size:14px;
-  max-height: 70px;
+  font-size: 140px;
+  max-height: 140px;
   overflow: auto;
 }
 .movie-overview-label{
