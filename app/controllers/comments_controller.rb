@@ -10,8 +10,9 @@ class CommentsController < ApplicationController
 
   def create
     @comment = Comment.new(comment_params)
+    @review = Review.find_by(params[:id])
     if @comment.save
-      redirect_to @comment
+      redirect_to @review
     else
       render 'new'
     end

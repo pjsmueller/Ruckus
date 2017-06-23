@@ -3,6 +3,9 @@ Rails.application.routes.draw do
 #users
   resources :users
 
+#genres
+  resources :genres, only: [:index, :show]
+
 #comments
   resources :comments, except: [:show]
 

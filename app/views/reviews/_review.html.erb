@@ -1,0 +1,47 @@
+<div class="review-container">
+  <div class="review-header">
+    <div class="review-title">Test Title</div>
+  </div>
+  <div class="review-body">Test Body</div>
+  <div class="review-footer">
+      <div class="review-footer-left">
+        <% rateable = { id: 'test', type: 'test' } %>
+        <%= render template:"ratings/_rating_stars", locals: { rateable:  { id: 1, type: 'Rating' } } %>
+      </div>
+      <div class="review-footer-right">
+        Test Name - 2017-06-23
+      </div>
+  </div>
+</div>
+<div class="review-container">
+  <div class="review-header">
+    <div class="review-title">Test Title</div>
+  </div>
+  <div class="review-body">Test Body</div>
+  <div class="review-footer">
+      <div class="review-footer-left">
+        <% rateable = { id: 'test', type: 'test' } %>
+        <%= render template:"ratings/_rating_stars", locals: { rateable:  { id: 1, type: 'Rating' } } %>
+      </div>
+      <div class="review-footer-right">
+        Test Name - 2017-06-23
+      </div>
+  </div>
+</div>
+
+<div class="review-container">
+  <div class="review-header">
+    <div class="review-title">Test Title</div>
+  </div>
+  <div class="review-body">Test Body</div>
+  <div class="review-footer">
+      <div class="review-footer-left">
+        <% rateable = { id: 'test', type: 'test' } %>
+        <%= render template:"ratings/_rating_stars", locals: { rateable:  { id: 1, type: 'Rating' } } %>
+        <span> Average Rating: <%= 5 %></span>
+      </div>
+      <div class="review-footer-right">
+        Test Name - 2017-06-23
+      </div>
+  </div>
+</div>
