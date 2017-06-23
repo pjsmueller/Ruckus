@@ -29,13 +29,14 @@
 .actors-list{
   display:flex;
   flex-wrap:wrap;
-  justify-content: space-around;
+  justify-content: flex-start;
   list-style-type: none;
   margin: 0px;
   padding: 0px
 }
 .actors-list li{
   display:inline-block;
+  margin: 0px 2px;
 }
 
 .actor-name{
