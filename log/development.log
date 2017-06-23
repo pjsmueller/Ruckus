@@ -2292,3 +2292,2359 @@ puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
 puma (3.9.1) lib/puma/server.rb:435:in `process_client'
 puma (3.9.1) lib/puma/server.rb:299:in `block in run'
 puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-06-22 16:45:55 -0700
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (1.3ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 1157ms (Views: 769.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/297762" for 127.0.0.1 at 2017-06-22 16:46:29 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"297762"}
+Completed 500 Internal Server Error in 152ms (ActiveRecord: 0.0ms)
+
+
+  
+Tmdb::Error (Invalid API key: You must be granted a valid key.):
+  
+app/models/movie.rb:24:in `find_by_id'
+app/controllers/movies_controller.rb:8:in `show'
+Started GET "/" for 127.0.0.1 at 2017-06-22 16:46:38 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (0.7ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 195ms (Views: 28.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/register" for 127.0.0.1 at 2017-06-22 16:50:05 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/register"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-06-22 16:50:16 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (0.7ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 568ms (Views: 30.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2017-06-22 16:50:32 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/home"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-06-22 16:50:43 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (0.9ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 207ms (Views: 27.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/genres" for 127.0.0.1 at 2017-06-22 16:50:47 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/genres"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-06-22 16:50:49 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (0.6ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 788ms (Views: 31.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2017-06-22 16:50:51 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (0.6ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 217ms (Views: 34.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/166426" for 127.0.0.1 at 2017-06-22 16:51:06 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"166426"}
+Completed 500 Internal Server Error in 157ms (ActiveRecord: 0.0ms)
+
+
+  
+Tmdb::Error (Invalid API key: You must be granted a valid key.):
+  
+app/models/movie.rb:24:in `find_by_id'
+app/controllers/movies_controller.rb:8:in `show'
+Started GET "/movies" for 127.0.0.1 at 2017-06-22 16:51:12 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (0.9ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 198ms (Views: 29.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/297762" for 127.0.0.1 at 2017-06-22 16:59:15 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"297762"}
+Completed 500 Internal Server Error in 335ms (ActiveRecord: 0.0ms)
+
+
+  
+Tmdb::Error (Invalid API key: You must be granted a valid key.):
+  
+app/models/movie.rb:24:in `find_by_id'
+app/controllers/movies_controller.rb:8:in `show'
+Started GET "/movies" for 127.0.0.1 at 2017-06-22 16:59:22 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (0.7ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 223ms (Views: 38.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2017-06-22 16:59:23 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (0.7ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 215ms (Views: 34.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/297762" for 127.0.0.1 at 2017-06-22 16:59:26 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"297762"}
+Completed 500 Internal Server Error in 146ms (ActiveRecord: 0.0ms)
+
+
+  
+Tmdb::Error (Invalid API key: You must be granted a valid key.):
+  
+app/models/movie.rb:24:in `find_by_id'
+app/controllers/movies_controller.rb:8:in `show'
+Started GET "/movies" for 127.0.0.1 at 2017-06-22 17:05:39 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (1.1ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 243ms (Views: 60.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/166426" for 127.0.0.1 at 2017-06-22 17:05:42 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"166426"}
+Completed 500 Internal Server Error in 173ms (ActiveRecord: 0.0ms)
+
+
+  
+Tmdb::Error (Invalid API key: You must be granted a valid key.):
+  
+app/models/movie.rb:24:in `find_by_id'
+app/controllers/movies_controller.rb:8:in `show'
+Started GET "/movies" for 127.0.0.1 at 2017-06-22 17:05:46 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (0.7ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 197ms (Views: 31.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/335988" for 127.0.0.1 at 2017-06-22 17:06:14 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"335988"}
+Completed 500 Internal Server Error in 530ms (ActiveRecord: 0.0ms)
+
+
+  
+Tmdb::Error (Invalid API key: You must be granted a valid key.):
+  
+app/models/movie.rb:24:in `find_by_id'
+app/controllers/movies_controller.rb:8:in `show'
+Started GET "/" for 127.0.0.1 at 2017-06-22 17:09:55 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (0.8ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 584ms (Views: 34.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/297762" for 127.0.0.1 at 2017-06-22 17:09:58 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"297762"}
+Completed 500 Internal Server Error in 150ms (ActiveRecord: 0.0ms)
+
+
+  
+Tmdb::Error (Invalid API key: You must be granted a valid key.):
+  
+app/models/movie.rb:24:in `find_by_id'
+app/controllers/movies_controller.rb:8:in `show'
+Started GET "/movies/297762" for 127.0.0.1 at 2017-06-22 17:15:18 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"297762"}
+Completed 500 Internal Server Error in 518ms (ActiveRecord: 0.0ms)
+
+
+  
+Tmdb::Error (Invalid API key: You must be granted a valid key.):
+  
+app/models/movie.rb:24:in `find_by_id'
+app/controllers/movies_controller.rb:8:in `show'
+Started GET "/" for 127.0.0.1 at 2017-06-22 17:15:23 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (1.0ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 237ms (Views: 49.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/166426" for 127.0.0.1 at 2017-06-22 17:15:27 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"166426"}
+Completed 500 Internal Server Error in 153ms (ActiveRecord: 0.0ms)
+
+
+  
+Tmdb::Error (Invalid API key: You must be granted a valid key.):
+  
+app/models/movie.rb:24:in `find_by_id'
+app/controllers/movies_controller.rb:8:in `show'
+Started GET "/" for 127.0.0.1 at 2017-06-22 17:21:11 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (0.8ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 296ms (Views: 46.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/297762" for 127.0.0.1 at 2017-06-22 17:21:35 -0700
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"297762"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendered movies/show.html.erb within layouts/application (1.8ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 1241ms (Views: 337.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2017-06-22 17:21:59 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (0.7ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 201ms (Views: 32.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/genres" for 127.0.0.1 at 2017-06-22 17:22:00 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/genres"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/movies" for 127.0.0.1 at 2017-06-22 17:22:04 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (0.6ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 207ms (Views: 28.8ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (4.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20170621223748)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "f_name" varchar, "l_name" varchar, "password" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170621223748"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateComments (20170621225502)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "body" text, "user_id" integer, "review_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170621225502"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateReviews (20170621225639)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "reviews" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "body" text, "user_id" integer, "movie_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170621225639"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateRatings (20170621230200)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "ratings" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "rateable_type" varchar, "rateable_id" integer, "score" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170621230200"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateMovies (20170621232335)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "movies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "api_id" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170621232335"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-06-23 00:24:24.157087"], ["updated_at", "2017-06-23 00:24:24.157087"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20170621223748)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "f_name" varchar, "l_name" varchar, "password_digest" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170621223748"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateComments (20170621225502)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "body" text, "user_id" integer, "review_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170621225502"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateReviews (20170621225639)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "reviews" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "body" text, "user_id" integer, "movie_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170621225639"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateRatings (20170621230200)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "ratings" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "rateable_type" varchar, "rateable_id" integer, "score" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170621230200"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateMovies (20170621232335)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "movies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "api_id" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170621232335"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-06-23 00:27:28.610898"], ["updated_at", "2017-06-23 00:27:28.610898"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "f_name", "l_name", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["username", "delphia"], ["f_name", "Laron"], ["l_name", "Kohler"], ["password_digest", "$2a$10$eDJwA8qHhetguEyO0m3LEOParCdN/W4p8g42vFmA5eypIs8pvoWki"], ["created_at", "2017-06-23 00:27:35.865259"], ["updated_at", "2017-06-23 00:27:35.865259"]]
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "f_name", "l_name", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["username", "thea"], ["f_name", "Rickey"], ["l_name", "Beatty"], ["password_digest", "$2a$10$7YR3oOsfr6rLdJ7PYcH3MONbOqx3U5CFjJSZiTu8KTDYc9ITbekFK"], ["created_at", "2017-06-23 00:27:35.965270"], ["updated_at", "2017-06-23 00:27:35.965270"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "f_name", "l_name", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["username", "arely"], ["f_name", "Christiana"], ["l_name", "Bednar"], ["password_digest", "$2a$10$RTIPHKABNYYlJrGbV8mcQ..rwrqTsCrQKOoJqaxdjyghDyKshVTjK"], ["created_at", "2017-06-23 00:27:36.052483"], ["updated_at", "2017-06-23 00:27:36.052483"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/movies" for 127.0.0.1 at 2017-06-22 17:37:49 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (1.2ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 469ms (Views: 267.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/166426" for 127.0.0.1 at 2017-06-22 17:37:51 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"166426"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendered movies/show.html.erb within layouts/application (0.6ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 530ms (Views: 30.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2017-06-22 17:38:04 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (0.7ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 615ms (Views: 34.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/166426" for 127.0.0.1 at 2017-06-22 17:38:05 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"166426"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendered movies/show.html.erb within layouts/application (0.7ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 606ms (Views: 38.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/166426" for 127.0.0.1 at 2017-06-22 17:40:57 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"166426"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (569.5ms) [cache miss]
+  Rendered movies/show.html.erb within layouts/application (572.0ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 1479ms (Views: 601.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/166426" for 127.0.0.1 at 2017-06-22 17:41:49 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"166426"}
+Completed 500 Internal Server Error in 2091ms
+
+
+  
+NameError (undefined local variable or method `movie' for #<MoviesController:0x007ffde3e98fc0>
+Did you mean?  @movie):
+  
+app/controllers/movies_controller.rb:9:in `show'
+Started GET "/movies/166426" for 127.0.0.1 at 2017-06-22 17:42:09 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"166426"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (2.7ms) [cache miss]
+  Rendered movies/show.html.erb within layouts/application (5.3ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 574ms (Views: 50.8ms)
+
+
+Started GET "/movies/166426" for 127.0.0.1 at 2017-06-22 17:43:12 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"166426"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (1.8ms) [cache miss]
+  Rendered movies/show.html.erb within layouts/application (3.7ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 964ms (Views: 34.6ms)
+
+
+Started GET "/movies/166426" for 127.0.0.1 at 2017-06-22 17:44:18 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"166426"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (2.8ms) [cache miss]
+  Rendered movies/show.html.erb within layouts/application (5.6ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 1002ms (Views: 44.7ms)
+
+
+Started POST "/movies/166426" for 127.0.0.1 at 2017-06-22 17:44:29 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/movies/166426"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/register" for 127.0.0.1 at 2017-06-22 17:48:30 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/register"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/movies/166426" for 127.0.0.1 at 2017-06-22 17:48:35 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"166426"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (1.3ms) [cache miss]
+  Rendered movies/show.html.erb within layouts/application (3.5ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 938ms (Views: 33.0ms)
+
+
+Started GET "/movies/166426/reviews/new" for 127.0.0.1 at 2017-06-22 18:17:07 -0700
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"166426"}
+  [1m[36mMovie Load (0.5ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 166426], ["LIMIT", 1]]
+Completed 404 Not Found in 16ms (ActiveRecord: 1.4ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Movie with 'id'=166426):
+  
+app/controllers/reviews_controller.rb:8:in `new'
+Started GET "/movies/166426/reviews/new" for 127.0.0.1 at 2017-06-22 18:18:48 -0700
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"166426"}
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (2.1ms) [cache miss]
+  Rendered reviews/new.html.erb within layouts/application (4.2ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 1729ms (Views: 43.0ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/movies/166426/reviews/new" for 127.0.0.1 at 2017-06-22 18:19:02 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/movies/166426/reviews/new"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/movies/166426/reviews/new" for 127.0.0.1 at 2017-06-22 18:29:12 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/movies/166426/reviews/new"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/movies/166426/reviews/new" for 127.0.0.1 at 2017-06-22 18:31:37 -0700
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"166426"}
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (1.2ms) [cache miss]
+  Rendered reviews/new.html.erb within layouts/application (2.8ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 584ms (Views: 36.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movies//reviews" for 127.0.0.1 at 2017-06-22 18:31:48 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/movies/reviews"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/movies/166426/reviews/new" for 127.0.0.1 at 2017-06-22 18:33:07 -0700
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"166426"}
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (2.7ms) [cache miss]
+  Rendered reviews/new.html.erb within layouts/application (4.5ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 917ms (Views: 36.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/166426/reviews/new" for 127.0.0.1 at 2017-06-22 18:33:39 -0700
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"166426"}
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (1.2ms) [cache miss]
+  Rendered reviews/new.html.erb within layouts/application (2.9ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 960ms (Views: 31.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/166426/reviews/new" for 127.0.0.1 at 2017-06-22 18:33:53 -0700
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"166426"}
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (1.3ms) [cache miss]
+  Rendered reviews/new.html.erb within layouts/application (3.5ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 536ms (Views: 28.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/166426/reviews/new" for 127.0.0.1 at 2017-06-22 18:34:26 -0700
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"166426"}
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (1.2ms) [cache miss]
+  Rendered reviews/new.html.erb within layouts/application (2.8ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 500ms (Views: 29.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movies/166426/reviews" for 127.0.0.1 at 2017-06-22 18:34:33 -0700
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5hUmyI7/xJZeb76uEx/w7KwoLv6CZsYcgld7yqgqmmuW7RTXHlrnZndQqJMTtviD1qJPCd3Ym/bRk89/efSLqA==", "review"=>{"user_id"=>"1", "movie_id"=>"166426", "title"=>"test", "body"=>"fsdlakfjsdl f"}, "commit"=>"Save Review", "movie_id"=>"166426"}
+Completed 500 Internal Server Error in 138ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `review_params' for #<ReviewsController:0x007ffddc4b7cb0>
+Did you mean?  reviews_params):
+  
+app/controllers/reviews_controller.rb:13:in `create'
+Started POST "/movies/166426/reviews" for 127.0.0.1 at 2017-06-22 18:35:27 -0700
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5hUmyI7/xJZeb76uEx/w7KwoLv6CZsYcgld7yqgqmmuW7RTXHlrnZndQqJMTtviD1qJPCd3Ym/bRk89/efSLqA==", "review"=>{"user_id"=>"1", "movie_id"=>"166426", "title"=>"test", "body"=>"fsdlakfjsdl f"}, "commit"=>"Save Review", "movie_id"=>"166426"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 166426], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (4.1ms)
+  Rendered reviews/new.html.erb within layouts/application (6.2ms)
+Completed 500 Internal Server Error in 78ms (ActiveRecord: 2.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    1: <%= form_for :review, url: "/movies/#{@movie.id}/reviews" do |f| %>
+    2:   <%= f.hidden_field :user_id, value: 1 %>
+    3:   <%= f.hidden_field :movie_id, value: @movie.id %>
+    4:   Title : <%= f.text_field :title %><br />
+  
+app/views/reviews/_new_review.html.erb:1:in `_app_views_reviews__new_review_html_erb___708820311083746387_70364211073140'
+app/views/reviews/new.html.erb:2:in `_app_views_reviews_new_html_erb__4272718486474177067_70364211009440'
+app/controllers/reviews_controller.rb:17:in `create'
+Started GET "/movies/166426/reviews/new" for 127.0.0.1 at 2017-06-22 18:35:35 -0700
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"166426"}
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (1.3ms) [cache miss]
+  Rendered reviews/new.html.erb within layouts/application (3.9ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 1041ms (Views: 30.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movies/166426/reviews" for 127.0.0.1 at 2017-06-22 18:35:43 -0700
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Itqdorlx3uDaAZGskOYoHIdmikywAUYr53F9pmqW4xRSIq+9KdT9EPM+h5GQTyBz/ezru++/G8G0tckTu0jy1w==", "review"=>{"user_id"=>"1", "movie_id"=>"166426", "title"=>"test", "body"=>"adfsdafasd"}, "commit"=>"Save Review", "movie_id"=>"166426"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 166426], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (3.1ms)
+  Rendered reviews/new.html.erb within layouts/application (5.6ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    1: <%= form_for :review, url: "/movies/#{@movie.id}/reviews" do |f| %>
+    2:   <%= f.hidden_field :user_id, value: 1 %>
+    3:   <%= f.hidden_field :movie_id, value: @movie.id %>
+    4:   Title : <%= f.text_field :title %><br />
+  
+app/views/reviews/_new_review.html.erb:1:in `_app_views_reviews__new_review_html_erb___708820311083746387_70364212705660'
+app/views/reviews/new.html.erb:2:in `_app_views_reviews_new_html_erb__4272718486474177067_70364208641140'
+app/controllers/reviews_controller.rb:17:in `create'
+Started GET "/movies/166426/reviews/new" for 127.0.0.1 at 2017-06-22 18:37:28 -0700
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"166426"}
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (1.2ms) [cache miss]
+  Rendered reviews/new.html.erb within layouts/application (2.8ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 557ms (Views: 32.3ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/movies/166426/reviews" for 127.0.0.1 at 2017-06-22 18:37:36 -0700
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RsHL1JnKdIh/tdrgeLtJhKiDn7wV5aISo0hHjApPvso2OfnLCW9XeFaKzN14EkHr0gn+S0pb//jwjPM525GvCQ==", "review"=>{"user_id"=>"1", "movie_id"=>"166426", "title"=>"test", "body"=>"NKflskdflksdf a"}, "commit"=>"Save Review", "movie_id"=>"166426"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 166426], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (1.3ms) [cache miss]
+  Rendered reviews/new.html.erb within layouts/application (2.9ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 545ms (Views: 31.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/movies/166426/reviews" for 127.0.0.1 at 2017-06-22 18:38:52 -0700
+Processing by ReviewsController#index as HTML
+  Parameters: {"movie_id"=>"166426"}
+Completed 406 Not Acceptable in 65ms
+
+
+  
+ActionController::UnknownFormat (ReviewsController#index is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.1.1) lib/action_controller/metal/implicit_render.rb:53:in `default_render'
+actionpack (5.1.1) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.1.1) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.1.1) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.1) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.1) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.1) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.1) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.1) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.1) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.1) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.1) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.1) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.1) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.1) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.1) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.1) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.1) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.1) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+actionpack (5.1.1) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.1) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.1) lib/action_dispatch/routing/route_set.rb:832:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.1) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.1) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/movies/166426" for 127.0.0.1 at 2017-06-22 18:39:06 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"166426"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (1.5ms) [cache miss]
+  Rendered movies/show.html.erb within layouts/application (5.2ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 918ms (Views: 37.6ms)
+
+
+Started POST "/movies/166426/reviews" for 127.0.0.1 at 2017-06-22 18:39:16 -0700
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RsHL1JnKdIh/tdrgeLtJhKiDn7wV5aISo0hHjApPvso2OfnLCW9XeFaKzN14EkHr0gn+S0pb//jwjPM525GvCQ==", "review"=>{"user_id"=>"1", "movie_id"=>"166426", "title"=>"test", "body"=>"NKflskdflksdf a"}, "commit"=>"Save Review", "movie_id"=>"166426"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 166426], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (2.5ms) [cache miss]
+  Rendered reviews/new.html.erb within layouts/application (4.4ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 531ms (Views: 34.0ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/movies/166426/reviews" for 127.0.0.1 at 2017-06-22 18:39:21 -0700
+Processing by ReviewsController#index as HTML
+  Parameters: {"movie_id"=>"166426"}
+Completed 406 Not Acceptable in 64ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UnknownFormat (ReviewsController#index is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.1.1) lib/action_controller/metal/implicit_render.rb:53:in `default_render'
+actionpack (5.1.1) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.1.1) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.1.1) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.1) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.1) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.1) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.1) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.1) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.1) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.1) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.1) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.1) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.1) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.1) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.1) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.1) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.1) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.1) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+actionpack (5.1.1) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.1) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.1) lib/action_dispatch/routing/route_set.rb:832:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.1) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.1) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/movies/166426/reviews" for 127.0.0.1 at 2017-06-22 18:39:25 -0700
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RsHL1JnKdIh/tdrgeLtJhKiDn7wV5aISo0hHjApPvso2OfnLCW9XeFaKzN14EkHr0gn+S0pb//jwjPM525GvCQ==", "review"=>{"user_id"=>"1", "movie_id"=>"166426", "title"=>"test", "body"=>"NKflskdflksdf a"}, "commit"=>"Save Review", "movie_id"=>"166426"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 166426], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (1.3ms) [cache miss]
+  Rendered reviews/new.html.erb within layouts/application (3.1ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 534ms (Views: 31.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/movies/166426/reviews/new" for 127.0.0.1 at 2017-06-22 18:40:18 -0700
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"166426"}
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (1.5ms) [cache miss]
+  Rendered reviews/new.html.erb within layouts/application (3.6ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 938ms (Views: 32.9ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/movies/166426/reviews" for 127.0.0.1 at 2017-06-22 18:40:25 -0700
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nVKRo55ZDRgJpsRDMCaSmKVkVh1qlfj2nffZeiK4eybtqqO8Dvwu6CCZ0n4wj5r33+436jUrpRzOM23P82Zq5Q==", "review"=>{"user_id"=>"1", "movie_id"=>"166426", "title"=>"cxvzvczx", "body"=>"czxvc"}, "commit"=>"Save Review", "movie_id"=>"166426"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 166426], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (1.7ms) [cache miss]
+  Rendered reviews/new.html.erb within layouts/application (3.9ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 556ms (Views: 37.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/movies/166426/reviews/new" for 127.0.0.1 at 2017-06-22 18:40:51 -0700
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"166426"}
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (1.2ms) [cache miss]
+  Rendered reviews/new.html.erb within layouts/application (2.9ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 532ms (Views: 30.8ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/movies/166426/reviews" for 127.0.0.1 at 2017-06-22 18:40:56 -0700
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aQsqdocH1yXVD2owZux3ZS6+huZfwTpBmS9nTv9AnQEZ8xhpF6L01fwwfA1mRX8KVDTnEQB/Z6vK69P7Lp6Mwg==", "review"=>{"user_id"=>"1", "movie_id"=>"166426", "title"=>"vbcxbcv", "body"=>"vcbxvcb"}, "commit"=>"Save Review", "movie_id"=>"166426"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 166426], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (1.2ms) [cache miss]
+  Rendered reviews/new.html.erb within layouts/application (2.9ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 574ms (Views: 35.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/movies/166426/reviews" for 127.0.0.1 at 2017-06-22 18:46:17 -0700
+Processing by ReviewsController#index as HTML
+  Parameters: {"movie_id"=>"166426"}
+Completed 406 Not Acceptable in 59ms
+
+
+  
+ActionController::UnknownFormat (ReviewsController#index is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.1.1) lib/action_controller/metal/implicit_render.rb:53:in `default_render'
+actionpack (5.1.1) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.1.1) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.1.1) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.1) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.1) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.1) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.1) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.1) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.1) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.1) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.1) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.1) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.1) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.1) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.1) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.1) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.1) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.1) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+actionpack (5.1.1) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.1) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.1) lib/action_dispatch/routing/route_set.rb:832:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.1) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.1) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/movies/166426/reviews/new" for 127.0.0.1 at 2017-06-22 18:46:21 -0700
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"166426"}
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (1.3ms) [cache miss]
+  Rendered reviews/new.html.erb within layouts/application (2.8ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 927ms (Views: 30.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/movies/166426/reviews" for 127.0.0.1 at 2017-06-22 18:46:27 -0700
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"a/eh6Qkefa2vrBerg9amIBwgoPEl85MyTmQ4wenxmEUbD5P2mbteXYaTAZaDf65PZqrBBnpNztgdoIx0OC+Jhg==", "review"=>{"user_id"=>"1", "movie_id"=>"166426", "title"=>"cxvzcxzv", "body"=>"czxvzcx"}, "commit"=>"Save Review", "movie_id"=>"166426"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 166426], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (1.4ms) [cache miss]
+  Rendered reviews/new.html.erb within layouts/application (3.2ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 574ms (Views: 39.5ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/movies/166426/reviews" for 127.0.0.1 at 2017-06-22 18:46:30 -0700
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ERJP++Dy3DFh0YrdMS8YD2rcLwgo4740SFtRQZWnd8lh6n3kcFf/wUjunOAxhhBgEFZO/3dd494bn+X0RHlmCg==", "review"=>{"user_id"=>"1", "movie_id"=>"166426", "title"=>"cxvzcxzv", "body"=>"czxvzcx"}, "commit"=>"Save Review", "movie_id"=>"166426"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 166426], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (1.4ms) [cache miss]
+  Rendered reviews/new.html.erb within layouts/application (3.5ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 536ms (Views: 38.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/movies/166426/reviews" for 127.0.0.1 at 2017-06-22 18:47:04 -0700
+Processing by ReviewsController#index as HTML
+  Parameters: {"movie_id"=>"166426"}
+Completed 406 Not Acceptable in 67ms
+
+
+  
+ActionController::UnknownFormat (ReviewsController#index is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.1.1) lib/action_controller/metal/implicit_render.rb:53:in `default_render'
+actionpack (5.1.1) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.1.1) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.1.1) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.1) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.1) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.1) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.1) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.1) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.1) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.1) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.1) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.1) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.1) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.1) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.1) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.1) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.1) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.1) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+actionpack (5.1.1) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.1) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.1) lib/action_dispatch/routing/route_set.rb:832:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.1) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.1) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/movies/166426/reviews/new" for 127.0.0.1 at 2017-06-22 18:47:11 -0700
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"166426"}
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (1.9ms) [cache miss]
+  Rendered reviews/new.html.erb within layouts/application (3.8ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 951ms (Views: 30.0ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/movies/166426/reviews" for 127.0.0.1 at 2017-06-22 18:47:19 -0700
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AkZxcExjalpnkj/ojgfNbNAfHeMGjyGQ0szuGedi8CJyvkNv3MZJqk6tKdWOrsUDqpV8FFkxfHqBCFqsNrzh4Q==", "review"=>{"user_id"=>"1", "movie_id"=>"166426", "title"=>"adfdas", "body"=>"dasfadf"}, "commit"=>"Save Review", "movie_id"=>"166426"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 166426], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (1.6ms) [cache miss]
+  Rendered reviews/new.html.erb within layouts/application (4.0ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 549ms (Views: 34.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/movies/166426/reviews/new" for 127.0.0.1 at 2017-06-22 18:49:31 -0700
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"166426"}
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (1.6ms) [cache miss]
+  Rendered reviews/new.html.erb within layouts/application (4.1ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 934ms (Views: 34.7ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/movies/166426/reviews" for 127.0.0.1 at 2017-06-22 18:49:36 -0700
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NtNwz7zjXjQm20MrKs9WmZNs1j3P1Kwh9uSZc62pFEpGK0LQLEZ9xA/kVRYqZl726ea3ypBq8culIC3GfHcFiQ==", "review"=>{"user_id"=>"1", "movie_id"=>"166426", "title"=>"dsafds", "body"=>"dasfdsa"}, "commit"=>"Save Review", "movie_id"=>"166426"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 166426], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (1.2ms) [cache miss]
+  Rendered reviews/new.html.erb within layouts/application (2.9ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 553ms (Views: 29.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/movies/166426/reviews/new" for 127.0.0.1 at 2017-06-22 18:54:59 -0700
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"166426"}
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (1.8ms) [cache miss]
+  Rendered reviews/new.html.erb within layouts/application (3.9ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 941ms (Views: 35.0ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/movies/166426/reviews" for 127.0.0.1 at 2017-06-22 18:55:03 -0700
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tfHZq5IY8plEDSdEXEWQ8zEkNtVakrX+s5oLx2cyOSDFCeu0Ar3RaW0yMXlc7JicS65XIgUs6BTgXr9ytuwo4w==", "review"=>{"user_id"=>"1", "movie_id"=>"166426", "title"=>"czxv", "body"=>"zcxv"}, "commit"=>"Save Review", "movie_id"=>"166426"}
+Completed 500 Internal Server Error in 497ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `full_messags' for #<ActiveModel::Errors:0x007ffde1c02970>
+Did you mean?  full_messages
+               full_message):
+  
+app/controllers/reviews_controller.rb:15:in `create'
+Started GET "/movies/166426/reviews/new" for 127.0.0.1 at 2017-06-22 18:55:23 -0700
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"166426"}
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (1.8ms) [cache miss]
+  Rendered reviews/new.html.erb within layouts/application (3.5ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 533ms (Views: 31.1ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/movies/166426/reviews" for 127.0.0.1 at 2017-06-22 18:55:27 -0700
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kcfhWoTq8dHDOxdb5NHAYRSR91dIXvy7+k/V4X8O85HhP9NFFE/SIeoEAWbkeMgObhuWoBfgoVGpi2FUrtDiUg==", "review"=>{"user_id"=>"1", "movie_id"=>"166426", "title"=>"dsf", "body"=>"dsffa"}, "commit"=>"Save Review", "movie_id"=>"166426"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 166426], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (1.3ms) [cache miss]
+  Rendered reviews/new.html.erb within layouts/application (3.3ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 551ms (Views: 33.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/movies/166426/reviews/new" for 127.0.0.1 at 2017-06-22 18:56:04 -0700
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"166426"}
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (1.4ms) [cache miss]
+  Rendered reviews/new.html.erb within layouts/application (3.1ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 606ms (Views: 33.0ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/movies/166426/reviews" for 127.0.0.1 at 2017-06-22 18:56:09 -0700
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vALkioPs4A3Uy3bmdQKpAKWgOBCL9B9k/hBTuFCXNIvM+taVE0nD/f30YNt1q6Fv3ypZ59RKQo6t1OcNgUklSA==", "review"=>{"user_id"=>"1", "movie_id"=>"166426", "title"=>"dssda", "body"=>"dasfa"}, "commit"=>"Save Review", "movie_id"=>"166426"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 166426], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (1.2ms) [cache miss]
+  Rendered reviews/new.html.erb within layouts/application (2.9ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 574ms (Views: 30.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/movies/166426/reviews/new" for 127.0.0.1 at 2017-06-22 18:56:36 -0700
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"166426"}
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (1.5ms) [cache miss]
+  Rendered reviews/new.html.erb within layouts/application (3.6ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 917ms (Views: 35.1ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/movies/166426/reviews" for 127.0.0.1 at 2017-06-22 18:56:42 -0700
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aj85JRy7M7EvKW9Y/0t9E33w2IouiNQsWOmzaRhCoZIaxws6jB4QQQYWeWX/4nV8B3q5fXE2icYLLQfcyZywUQ==", "review"=>{"user_id"=>"1", "movie_id"=>"166426", "title"=>"adsfad", "body"=>"adsfsadf"}, "commit"=>"Save Review", "movie_id"=>"166426"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 166426], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (1.4ms) [cache miss]
+  Rendered reviews/new.html.erb within layouts/application (3.1ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 547ms (Views: 42.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/movies/166426/reviews/new" for 127.0.0.1 at 2017-06-22 18:56:58 -0700
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"166426"}
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (1.8ms) [cache miss]
+  Rendered reviews/new.html.erb within layouts/application (3.7ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 537ms (Views: 48.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movies/166426/reviews" for 127.0.0.1 at 2017-06-22 18:57:03 -0700
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+mwADE8bn8k0PRDcNJFt5efpI8zaM73EVt8oVobfv+eKlDIT3768OR0CBuE0OGWKnWNCO4WN4C4FG5zjVwGuJA==", "review"=>{"user_id"=>"1", "movie_id"=>"166426", "title"=>"asdfa", "body"=>"adsfafd"}, "commit"=>"Save Review", "movie_id"=>"166426"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 166426], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (3.0ms) [cache miss]
+  Rendered reviews/new.html.erb within layouts/application (6.7ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 541ms (Views: 42.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies/166426/reviews/new" for 127.0.0.1 at 2017-06-22 18:58:28 -0700
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"166426"}
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (2.6ms) [cache miss]
+  Rendered reviews/new.html.erb within layouts/application (4.7ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 1007ms (Views: 53.0ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/movies/166426/reviews" for 127.0.0.1 at 2017-06-22 18:58:33 -0700
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yMo13g1mMcUXnlPvkfWDmaE0gpXLHRuGPK93v0Ycks+4MgfBncMSNT6hRdKRXIv2277jYpSjRmxva8MKl8KDDA==", "review"=>{"user_id"=>"1", "movie_id"=>"166426", "title"=>"zxczcz", "body"=>"zxczxcz"}, "commit"=>"Save Review", "movie_id"=>"166426"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 166426], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (1.5ms) [cache miss]
+  Rendered reviews/new.html.erb within layouts/application (3.9ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 556ms (Views: 35.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/movies/166426/reviews" for 127.0.0.1 at 2017-06-22 19:01:08 -0700
+Processing by ReviewsController#index as HTML
+  Parameters: {"movie_id"=>"166426"}
+  Rendering reviews/index.html.erb within layouts/application
+  [1m[36mReview Load (1.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  Rendered reviews/index.html.erb within layouts/application (2.5ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 33ms (Views: 28.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/movies/166426/reviews" for 127.0.0.1 at 2017-06-22 19:01:59 -0700
+Processing by ReviewsController#index as HTML
+  Parameters: {"movie_id"=>"166426"}
+  Rendering reviews/index.html.erb within layouts/application
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  Rendered reviews/index.html.erb within layouts/application (2.5ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 937ms (Views: 33.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/movies/166426/reviews/new" for 127.0.0.1 at 2017-06-22 19:04:51 -0700
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"166426"}
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (1.4ms) [cache miss]
+  Rendered reviews/new.html.erb within layouts/application (3.4ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 892ms (Views: 35.0ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/movies/166426/reviews" for 127.0.0.1 at 2017-06-22 19:04:58 -0700
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lA15aKLoT5b6fk2Bm+6j0TIlQKa5SESvp+DULCLJRvXk9Ut3Mk1sZtNBW7ybR6u+SK8hUeb2GUX0JGCZ8xdXNg==", "review"=>{"user_id"=>"1", "movie_id"=>"166426", "title"=>"adfad", "body"=>"adfsadsf"}, "commit"=>"Save Review", "movie_id"=>"166426"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 166426], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (1.5ms) [cache miss]
+  Rendered reviews/new.html.erb within layouts/application (3.6ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 539ms (Views: 36.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/movies/166426/reviews/new" for 127.0.0.1 at 2017-06-22 19:11:13 -0700
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"166426"}
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (1.4ms) [cache miss]
+  Rendered reviews/new.html.erb within layouts/application (3.1ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 625ms (Views: 33.8ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/movies/166426/reviews" for 127.0.0.1 at 2017-06-22 19:11:19 -0700
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eG9t5FKMSSIvlp24rS5s6+m6BlBprtdLwAXEN9vn4aQIl1/7wilq0gapi4Wth2SEkzBnpzYQiqGTwXCCCjnwZw==", "review"=>{"user_id"=>"1", "movie_id"=>"166426", "title"=>"sdfsd", "body"=>"dasfdfa"}, "commit"=>"Save Review", "movie_id"=>"166426"}
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."api_id" = ? LIMIT ?[0m  [["api_id", "166426"], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.4ms)
+
+
+  
+NoMethodError (undefined method `api_id' for #<Movie not initialized>):
+  
+app/models/movie.rb:11:in `initialize'
+app/controllers/reviews_controller.rb:16:in `create'
+Started GET "/movies/166426/reviews/new" for 127.0.0.1 at 2017-06-22 19:13:45 -0700
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"166426"}
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (1.7ms) [cache miss]
+  Rendered reviews/new.html.erb within layouts/application (4.4ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 956ms (Views: 34.8ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/movies/166426/reviews" for 127.0.0.1 at 2017-06-22 19:13:49 -0700
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RQW44gn3RffE7oRvbpZdaurJFHV34+PPa5LOb4qUHlo1/Yr9mVJmB+3RklJuP1UFkEN1gihdviU4VnraW0oPmQ==", "review"=>{"user_id"=>"1", "movie_id"=>"166426", "title"=>"sad", "body"=>"asda"}, "commit"=>"Save Review", "movie_id"=>"166426"}
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."api_id" = ? LIMIT ?[0m  [["api_id", "166426"], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.5ms)
+
+
+  
+NoMethodError (undefined method `api_id' for #<Movie not initialized>):
+  
+app/models/movie.rb:11:in `initialize'
+app/controllers/reviews_controller.rb:19:in `create'
+Started GET "/movies/166426/reviews/new" for 127.0.0.1 at 2017-06-22 19:15:17 -0700
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"166426"}
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (2.2ms) [cache miss]
+  Rendered reviews/new.html.erb within layouts/application (4.6ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 951ms (Views: 36.5ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/movies/166426/reviews" for 127.0.0.1 at 2017-06-22 19:15:22 -0700
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"y9HqSMXOYkuuP1664elMWmLLpjBE22o/RtYMqJm/lfC7KdhXVWtBu4cASIfhQEQ1GEHHxxtlN9UVErgdSGGEMw==", "review"=>{"user_id"=>"1", "movie_id"=>"166426", "title"=>"czxvzvc", "body"=>"czvzxv"}, "commit"=>"Save Review", "movie_id"=>"166426"}
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."api_id" = ? LIMIT ?[0m  [["api_id", "166426"], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.4ms)
+
+
+  
+NoMethodError (undefined method `api_id' for #<Movie not initialized>):
+  
+app/models/movie.rb:11:in `initialize'
+app/controllers/reviews_controller.rb:18:in `create'
+Started GET "/movies/166426/reviews/new" for 127.0.0.1 at 2017-06-22 19:17:09 -0700
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"166426"}
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (1.2ms) [cache miss]
+  Rendered reviews/new.html.erb within layouts/application (2.8ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 966ms (Views: 29.5ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/movies/166426/reviews" for 127.0.0.1 at 2017-06-22 19:17:29 -0700
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T1trWlzknuSNM89nUuJ9wyb7x9R7lCoERHqdeQtPS14/o1lFzEG9FKQM2VpSS3WsXHGmIyQqd+4XvinM2pFanQ==", "review"=>{"user_id"=>"1", "movie_id"=>"166426", "title"=>"dasfasd", "body"=>"adf"}, "commit"=>"Save Review", "movie_id"=>"166426"}
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."api_id" = ? LIMIT ?[0m  [["api_id", "166426"], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.9ms)
+
+
+  
+NoMethodError (undefined method `api_id' for #<Movie not initialized>):
+  
+app/models/movie.rb:11:in `initialize'
+app/controllers/reviews_controller.rb:19:in `create'
+Started GET "/movies/166426/reviews/new" for 127.0.0.1 at 2017-06-22 19:18:30 -0700
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"166426"}
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (1.5ms) [cache miss]
+  Rendered reviews/new.html.erb within layouts/application (4.4ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 953ms (Views: 35.6ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/movies/166426/reviews" for 127.0.0.1 at 2017-06-22 19:18:35 -0700
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pn8dv0YyDVaA7pLdB7DsB6y0aO/TqJHWMrBUvRrFQWnWhy+g1pcupqnRhOAHGeRo1j4JGIwWzDxhdOAIyxtQqg==", "review"=>{"user_id"=>"1", "movie_id"=>"166426", "title"=>"asdfsaf", "body"=>"adsfasf"}, "commit"=>"Save Review", "movie_id"=>"166426"}
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."api_id" = ? LIMIT ?[0m  [["api_id", "166426"], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.6ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/reviews_controller.rb:19:in `create'
+Started GET "/movies/166426/reviews/new" for 127.0.0.1 at 2017-06-22 19:19:21 -0700
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"166426"}
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (2.0ms) [cache miss]
+  Rendered reviews/new.html.erb within layouts/application (4.0ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 934ms (Views: 34.2ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/movies/166426/reviews" for 127.0.0.1 at 2017-06-22 19:19:25 -0700
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yF7J6b1QoJlqu1K3ZkVK2GUvXrVT0FAJvGGQrQtPegC4pvv2LfWDaUOERIpm7EK3H6U/QgxuDePvpSQY2pFrww==", "review"=>{"user_id"=>"1", "movie_id"=>"166426", "title"=>"XCZzc", "body"=>"xZCZX"}, "commit"=>"Save Review", "movie_id"=>"166426"}
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."api_id" = ? LIMIT ?[0m  [["api_id", "166426"], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 1.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/reviews_controller.rb:19:in `create'
+Started GET "/movies/166426/reviews/new" for 127.0.0.1 at 2017-06-22 19:28:05 -0700
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"166426"}
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (1.6ms) [cache miss]
+  Rendered reviews/new.html.erb within layouts/application (4.2ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 560ms (Views: 48.6ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/movies/166426/reviews" for 127.0.0.1 at 2017-06-22 19:28:10 -0700
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"64suolAqj2IKjL3993IcM89k6wlSRP5xdFqNrCvK5Oybcxy9wI+skiOzq8D32xRcte6K/g36o5snnjkZ+hT1Lw==", "review"=>{"user_id"=>"1", "movie_id"=>"166426", "title"=>"zxczx", "body"=>"XZCXZ"}, "commit"=>"Save Review", "movie_id"=>"166426"}
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."api_id" = ? LIMIT ?[0m  [["api_id", "166426"], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.8ms)
+
+
+  
+ArgumentError (When assigning attributes, you must pass a hash as an argument.):
+  
+app/models/movie.rb:11:in `initialize'
+app/controllers/reviews_controller.rb:18:in `create'
+Started GET "/movies/166426/reviews/new" for 127.0.0.1 at 2017-06-22 19:28:44 -0700
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"166426"}
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (1.3ms) [cache miss]
+  Rendered reviews/new.html.erb within layouts/application (3.0ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 988ms (Views: 38.2ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/movies/166426/reviews" for 127.0.0.1 at 2017-06-22 19:28:48 -0700
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YbIzVFtxBIm8gvDfqKjsB2YZ/T6nnGn338AEaqLB+ZERSgFLy9QneZW95uKoAeRoHJOcyfgiNB2MBLDfcx/oUg==", "review"=>{"user_id"=>"1", "movie_id"=>"166426", "title"=>"dfasfaf", "body"=>"adsfad"}, "commit"=>"Save Review", "movie_id"=>"166426"}
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."api_id" = ? LIMIT ?[0m  [["api_id", "166426"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "movies" ("api_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["api_id", "166426"], ["created_at", "2017-06-23 02:28:48.718163"], ["updated_at", "2017-06-23 02:28:48.718163"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 166426], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (1.3ms) [cache miss]
+  Rendered reviews/new.html.erb within layouts/application (3.1ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 76ms (Views: 34.9ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/movies/166426/reviews/new" for 127.0.0.1 at 2017-06-22 19:31:42 -0700
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"166426"}
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (1.4ms) [cache miss]
+  Rendered reviews/new.html.erb within layouts/application (3.2ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 934ms (Views: 33.0ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/movies/166426/reviews" for 127.0.0.1 at 2017-06-22 19:31:46 -0700
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TYn+uH5PrQxDRFhn3S6UBIWlgaWWJXQ+x23gDjT3ZQE9ccyn7uqO/Gp7Tlrdh5xr/y/gUsmbKdSUqVS75Sl0wg==", "review"=>{"user_id"=>"1", "movie_id"=>"166426", "title"=>"dafad", "body"=>"asdfd"}, "commit"=>"Save Review", "movie_id"=>"166426"}
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."api_id" = ? LIMIT ?[0m  [["api_id", "166426"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 166426], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (1.4ms) [cache miss]
+  Rendered reviews/new.html.erb within layouts/application (3.5ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 71ms (Views: 32.7ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/movies/166426/reviews" for 127.0.0.1 at 2017-06-22 19:31:52 -0700
+Processing by ReviewsController#index as HTML
+  Parameters: {"movie_id"=>"166426"}
+  Rendering reviews/index.html.erb within layouts/application
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  Rendered reviews/index.html.erb within layouts/application (1.6ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 513ms (Views: 32.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies/166426/reviews/new" for 127.0.0.1 at 2017-06-22 19:34:54 -0700
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"166426"}
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (1.2ms) [cache miss]
+  Rendered reviews/new.html.erb within layouts/application (2.9ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 937ms (Views: 33.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movies/166426/reviews" for 127.0.0.1 at 2017-06-22 19:34:58 -0700
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YBnkMZA4M7nhSSJAB6yO/aKzSKjwGvYLKDMGCz7xE08Q4dYuAJ0QSch2NH0HBYaS2DkpX6+kq+F797K+7y8CjA==", "review"=>{"movie_id"=>"166426", "title"=>"dsafds", "body"=>"adsfasdf"}, "commit"=>"Save Review", "movie_id"=>"166426"}
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."api_id" = ? LIMIT ?[0m  [["api_id", "166426"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 166426], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (1.4ms) [cache miss]
+  Rendered reviews/new.html.erb within layouts/application (3.4ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 62ms (Views: 54.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/movies/166426/reviews/new" for 127.0.0.1 at 2017-06-22 19:36:43 -0700
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"166426"}
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (1.4ms) [cache miss]
+  Rendered reviews/new.html.erb within layouts/application (3.2ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 951ms (Views: 31.8ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/movies/166426/reviews" for 127.0.0.1 at 2017-06-22 19:36:45 -0700
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wQg3Fg4G+an34dk6z+xy3UpUEM+rWvqLcMkr9+1BHWSx8AUJnqPaWd7ezwfPRXqyMN5xOPTkp2EjDZ9CPJ8Mpw==", "review"=>{"movie_id"=>"166426", "title"=>"", "body"=>""}, "commit"=>"Save Review", "movie_id"=>"166426"}
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."api_id" = ? LIMIT ?[0m  [["api_id", "166426"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 166426], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (2.1ms) [cache miss]
+  Rendered reviews/new.html.erb within layouts/application (4.3ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 61ms (Views: 36.3ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/movies/166426/reviews" for 127.0.0.1 at 2017-06-22 19:36:54 -0700
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wQg3Fg4G+an34dk6z+xy3UpUEM+rWvqLcMkr9+1BHWSx8AUJnqPaWd7ezwfPRXqyMN5xOPTkp2EjDZ9CPJ8Mpw==", "review"=>{"movie_id"=>"166426", "title"=>"adsfadf", "body"=>"adsf"}, "commit"=>"Save Review", "movie_id"=>"166426"}
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."api_id" = ? LIMIT ?[0m  [["api_id", "166426"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 166426], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (1.4ms) [cache miss]
+  Rendered reviews/new.html.erb within layouts/application (3.6ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 42ms (Views: 37.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/movies/166426/reviews/new" for 127.0.0.1 at 2017-06-22 19:38:05 -0700
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"166426"}
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (1.2ms) [cache miss]
+  Rendered reviews/new.html.erb within layouts/application (2.9ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 880ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movies//reviews" for 127.0.0.1 at 2017-06-22 19:38:11 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/movies/reviews"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/movies/166426/reviews/new" for 127.0.0.1 at 2017-06-22 19:39:55 -0700
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"166426"}
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (2.0ms) [cache miss]
+  Rendered reviews/new.html.erb within layouts/application (4.0ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 566ms (Views: 51.7ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/movies//reviews" for 127.0.0.1 at 2017-06-22 19:39:59 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/movies/reviews"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/movies/166426/reviews/new" for 127.0.0.1 at 2017-06-22 19:44:10 -0700
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"166426"}
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."api_id" = ? LIMIT ?[0m  [["api_id", "166426"], ["LIMIT", 1]]
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (1.2ms) [cache miss]
+  Rendered reviews/new.html.erb within layouts/application (2.9ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 59ms (Views: 29.7ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/movies/1/reviews" for 127.0.0.1 at 2017-06-22 19:44:16 -0700
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"B0N4kIOocSLtc+4nUE7N4exDQs4+F2ZKKdCX7o1XEMV3u0qPEw1S0sRM+BpQ58WOlskjOWGpO6B6FCNbXIkBBg==", "review"=>{"movie_id"=>"1", "title"=>"dasfasf", "body"=>"dasfasf"}, "commit"=>"Save Review", "movie_id"=>"1"}
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."api_id" = ? LIMIT ?[0m  [["api_id", "1"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (3.3ms)
+  Rendered reviews/new.html.erb within layouts/application (5.4ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    1: <%= form_for :review, url: "/movies/#{@movie.id}/reviews" do |f| %>
+    2: 
+    3:   <%= f.hidden_field :movie_id, value: @movie.id %>
+    4:   Title : <%= f.text_field :title %><br />
+  
+app/views/reviews/_new_review.html.erb:1:in `_app_views_reviews__new_review_html_erb___708820311083746387_70364235886720'
+app/views/reviews/new.html.erb:2:in `_app_views_reviews_new_html_erb__4272718486474177067_70364235965640'
+app/controllers/reviews_controller.rb:25:in `create'
+Started POST "/movies/1/reviews" for 127.0.0.1 at 2017-06-22 19:46:38 -0700
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"B0N4kIOocSLtc+4nUE7N4exDQs4+F2ZKKdCX7o1XEMV3u0qPEw1S0sRM+BpQ58WOlskjOWGpO6B6FCNbXIkBBg==", "review"=>{"movie_id"=>"1", "title"=>"dasfasfdsafa", "body"=>"dasfasf"}, "commit"=>"Save Review", "movie_id"=>"1"}
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."api_id" = ? LIMIT ?[0m  [["api_id", "1"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (2.8ms)
+  Rendered reviews/new.html.erb within layouts/application (4.8ms)
+Completed 500 Internal Server Error in 68ms (ActiveRecord: 2.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    1: <%= form_for :review, url: "/movies/#{@movie.id}/reviews" do |f| %>
+    2: 
+    3:   <%= f.hidden_field :movie_id, value: @movie.id %>
+    4:   Title : <%= f.text_field :title %><br />
+  
+app/views/reviews/_new_review.html.erb:1:in `_app_views_reviews__new_review_html_erb___708820311083746387_70364196125360'
+app/views/reviews/new.html.erb:2:in `_app_views_reviews_new_html_erb__4272718486474177067_70364213434140'
+app/controllers/reviews_controller.rb:26:in `create'
+Started GET "/movies/166426/reviews/new" for 127.0.0.1 at 2017-06-22 19:47:35 -0700
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"166426"}
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."api_id" = ? LIMIT ?[0m  [["api_id", "166426"], ["LIMIT", 1]]
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (1.3ms) [cache miss]
+  Rendered reviews/new.html.erb within layouts/application (2.9ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 64ms (Views: 35.7ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/movies/1/reviews" for 127.0.0.1 at 2017-06-22 19:47:40 -0700
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ML4rtn+dyoFkQLrPJysDI4cXh1UZuXg1nW3swnh9a0RARhmp7zjpcU1/rPInggtM/Z3mokYHJd/OqVh3qaN6hw==", "review"=>{"movie_id"=>"1", "title"=>"adsfadf", "body"=>"dasf"}, "commit"=>"Save Review", "movie_id"=>"1"}
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."api_id" = ? LIMIT ?[0m  [["api_id", "1"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (3.3ms)
+  Rendered reviews/new.html.erb within layouts/application (5.6ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    1: <%= form_for :review, url: "/movies/#{@movie.id}/reviews" do |f| %>
+    2: 
+    3:   <%= f.hidden_field :movie_id, value: @movie.id %>
+    4:   Title : <%= f.text_field :title %><br />
+  
+app/views/reviews/_new_review.html.erb:1:in `_app_views_reviews__new_review_html_erb___708820311083746387_70364210616320'
+app/views/reviews/new.html.erb:2:in `_app_views_reviews_new_html_erb__4272718486474177067_70364210693980'
+app/controllers/reviews_controller.rb:27:in `create'
+Started GET "/movies/166426/reviews/new" for 127.0.0.1 at 2017-06-22 19:48:15 -0700
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"166426"}
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."api_id" = ? LIMIT ?[0m  [["api_id", "166426"], ["LIMIT", 1]]
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (1.4ms) [cache miss]
+  Rendered reviews/new.html.erb within layouts/application (3.2ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 73ms (Views: 42.5ms | ActiveRecord: 1.9ms)
+
+
+Started POST "/movies/1/reviews" for 127.0.0.1 at 2017-06-22 19:48:19 -0700
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"duDEV9eDqEpQRShE+b/Wfx16s3ArFFBLhkUnK+5Hum4GGPZIRyaLunl6Pnn5Ft4QZ/DSh3SqDaHVgZOeP5mrrQ==", "review"=>{"movie_id"=>"1", "title"=>"dafsaf", "body"=>"adfa"}, "commit"=>"Save Review", "movie_id"=>"1"}
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."api_id" = ? LIMIT ?[0m  [["api_id", "1"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (5.4ms)
+  Rendered reviews/new.html.erb within layouts/application (7.9ms)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    1: <%= form_for :review, url: "/movies/#{@movie.id}/reviews" do |f| %>
+    2: 
+    3:   <%= f.hidden_field :movie_id, value: @movie.id %>
+    4:   Title : <%= f.text_field :title %><br />
+  
+app/views/reviews/_new_review.html.erb:1:in `_app_views_reviews__new_review_html_erb___708820311083746387_70364150408640'
+app/views/reviews/new.html.erb:2:in `_app_views_reviews_new_html_erb__4272718486474177067_70364150345580'
+app/controllers/reviews_controller.rb:28:in `create'
+Started GET "/movies/166426/reviews/new" for 127.0.0.1 at 2017-06-22 19:49:38 -0700
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"166426"}
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."api_id" = ? LIMIT ?[0m  [["api_id", "166426"], ["LIMIT", 1]]
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (2.2ms) [cache miss]
+  Rendered reviews/new.html.erb within layouts/application (4.4ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 69ms (Views: 35.4ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/movies/1/reviews" for 127.0.0.1 at 2017-06-22 19:49:42 -0700
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WmR/v2VDysEt9EqNEa8WlWijFESax7w1oTOSmLQ4FXMqnE2g9ebpMQTLXLARBh76Eil1s8V54d/y9yYtZeYEsA==", "review"=>{"movie_id"=>"1", "title"=>"dsafadf", "body"=>"adsfadf"}, "commit"=>"Save Review", "movie_id"=>"1"}
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."api_id" = ? LIMIT ?[0m  [["api_id", "1"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (4.6ms)
+  Rendered reviews/new.html.erb within layouts/application (7.0ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    1: <%= form_for :review, url: "/movies/#{@movie.id}/reviews" do |f| %>
+    2: 
+    3:   <%= f.hidden_field :movie_id, value: @movie.id %>
+    4:   Title : <%= f.text_field :title %><br />
+  
+app/views/reviews/_new_review.html.erb:1:in `_app_views_reviews__new_review_html_erb___708820311083746387_70364208823880'
+app/views/reviews/new.html.erb:2:in `_app_views_reviews_new_html_erb__4272718486474177067_70364222940820'
+app/controllers/reviews_controller.rb:28:in `create'
+Started GET "/movies/166426/reviews/new" for 127.0.0.1 at 2017-06-22 19:51:15 -0700
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"166426"}
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."api_id" = ? LIMIT ?[0m  [["api_id", "166426"], ["LIMIT", 1]]
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (1.4ms) [cache miss]
+  Rendered reviews/new.html.erb within layouts/application (3.1ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 70ms (Views: 37.5ms | ActiveRecord: 2.1ms)
+
+
+Started POST "/movies/1/reviews" for 127.0.0.1 at 2017-06-22 19:51:19 -0700
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dnlWm8bRoQXf6eY/2iyHHXpVSqfursh7DGijMkvAzX8GgWSEVnSC9fbW8ALahY9yAN8rULEQlZFfrBeHmh7cvA==", "review"=>{"movie_id"=>"1", "title"=>"asdfdsfa", "body"=>"adsfadf"}, "commit"=>"Save Review", "movie_id"=>"1"}
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."api_id" = ? LIMIT ?[0m  [["api_id", "1"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (3.1ms)
+  Rendered reviews/new.html.erb within layouts/application (5.2ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    1: <%= form_for :review, url: "/movies/#{@movie.id}/reviews" do |f| %>
+    2: 
+    3:   <%= f.hidden_field :movie_id, value: @movie.id %>
+    4:   Title : <%= f.text_field :title %><br />
+  
+app/views/reviews/_new_review.html.erb:1:in `_app_views_reviews__new_review_html_erb___708820311083746387_70364144305720'
+app/views/reviews/new.html.erb:2:in `_app_views_reviews_new_html_erb__4272718486474177067_70364144457660'
+app/controllers/reviews_controller.rb:29:in `create'
+Started GET "/movies/166426/reviews/new" for 127.0.0.1 at 2017-06-22 19:52:11 -0700
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"166426"}
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."api_id" = ? LIMIT ?[0m  [["api_id", "166426"], ["LIMIT", 1]]
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (1.4ms) [cache miss]
+  Rendered reviews/new.html.erb within layouts/application (4.0ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 64ms (Views: 35.5ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/movies/1/reviews" for 127.0.0.1 at 2017-06-22 19:52:14 -0700
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LbgzmEe9ACRjrXRb5fLeRoITy0eQpwnjGsfPlcMHsSNdQAGH1xgj1EqSYmblW9Yp+JmqsM8ZVAlJA3sgEtmg4A==", "review"=>{"movie_id"=>"1", "title"=>"dasfadsf", "body"=>"adsfadf"}, "commit"=>"Save Review", "movie_id"=>"1"}
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (1.7ms) [cache miss]
+  Rendered reviews/new.html.erb within layouts/application (4.2ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 50ms (Views: 33.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/movies/166426/reviews/new" for 127.0.0.1 at 2017-06-22 19:53:24 -0700
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"166426"}
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."api_id" = ? LIMIT ?[0m  [["api_id", "166426"], ["LIMIT", 1]]
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (1.2ms) [cache miss]
+  Rendered reviews/new.html.erb within layouts/application (3.0ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 58ms (Views: 31.4ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/movies/1/reviews" for 127.0.0.1 at 2017-06-22 19:53:28 -0700
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4NbMPC9kC3yLUAYbS/Uy5tGurCk0nx4qfTURqK+TJjWQLv4jv8EojKJvECZLXDqJqyTN3mshQ8Au8aUdfk039g==", "review"=>{"movie_id"=>"1", "title"=>"dasfa", "body"=>"adfsadf"}, "commit"=>"Save Review", "movie_id"=>"1"}
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (1.2ms) [cache miss]
+  Rendered reviews/new.html.erb within layouts/application (3.0ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 63ms (Views: 31.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/movies/166426/reviews/new" for 127.0.0.1 at 2017-06-22 19:55:06 -0700
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"166426"}
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."api_id" = ? LIMIT ?[0m  [["api_id", "166426"], ["LIMIT", 1]]
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (1.2ms) [cache miss]
+  Rendered reviews/new.html.erb within layouts/application (3.1ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 36ms (Views: 33.4ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/movies/166426/reviews" for 127.0.0.1 at 2017-06-22 19:55:19 -0700
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"g2HogyRR5a3U5pZuFCMOwX+kfE3voRjjVlUMlx0zvEbzmdqctPTGXf3ZgFMUigauBS4durAfRQkFkbgizO2thQ==", "review"=>{"movie_id"=>"1", "title"=>"adsfad", "body"=>"adsfdsaf"}, "commit"=>"Save Review", "movie_id"=>"166426"}
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 166426], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Movie with 'id'=166426):
+  
+app/controllers/reviews_controller.rb:20:in `create'
+Started GET "/movies/1/reviews" for 127.0.0.1 at 2017-06-22 19:56:51 -0700
+Processing by ReviewsController#index as HTML
+  Parameters: {"movie_id"=>"1"}
+Completed 500 Internal Server Error in 550ms (ActiveRecord: 0.0ms)
+
+
+  
+Tmdb::Error (The resource you requested could not be found.):
+  
+app/models/movie.rb:25:in `get_by_id'
+app/controllers/reviews_controller.rb:4:in `index'
+Started GET "/movies/1/reviews" for 127.0.0.1 at 2017-06-22 19:57:57 -0700
+Processing by ReviewsController#index as HTML
+  Parameters: {"movie_id"=>"1"}
+Completed 500 Internal Server Error in 587ms (ActiveRecord: 0.0ms)
+
+
+  
+Tmdb::Error (The resource you requested could not be found.):
+  
+app/models/movie.rb:25:in `get_by_id'
+app/controllers/reviews_controller.rb:4:in `index'
+Started GET "/movies/166426/reviews/new" for 127.0.0.1 at 2017-06-22 19:58:04 -0700
+Processing by ReviewsController#new as HTML
+  Parameters: {"movie_id"=>"166426"}
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."api_id" = ? LIMIT ?[0m  [["api_id", "166426"], ["LIMIT", 1]]
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (1.2ms) [cache miss]
+  Rendered reviews/new.html.erb within layouts/application (3.0ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 34ms (Views: 31.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/movies/1/reviews" for 127.0.0.1 at 2017-06-22 19:58:10 -0700
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PxTQPHBkHo/jNUEbj3PDR21j+vnsAT/NVJzr9yEv6RVP7OIj4ME9f8oKVyaP2ssoF+mbDrO/YicHWF9C8PH41g==", "review"=>{"movie_id"=>"1", "title"=>"xzC", "body"=>"XZC"}, "commit"=>"Save Review", "movie_id"=>"1"}
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (1.4ms) [cache miss]
+  Rendered reviews/new.html.erb within layouts/application (3.5ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 57ms (Views: 31.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/movies/1/reviews" for 127.0.0.1 at 2017-06-22 19:58:18 -0700
+Processing by ReviewsController#index as HTML
+  Parameters: {"movie_id"=>"1"}
+Completed 500 Internal Server Error in 574ms (ActiveRecord: 0.0ms)
+
+
+  
+Tmdb::Error (The resource you requested could not be found.):
+  
+app/models/movie.rb:25:in `get_by_id'
+app/controllers/reviews_controller.rb:4:in `index'
+Started POST "/movies/1/reviews" for 127.0.0.1 at 2017-06-22 19:59:10 -0700
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PxTQPHBkHo/jNUEbj3PDR21j+vnsAT/NVJzr9yEv6RVP7OIj4ME9f8oKVyaP2ssoF+mbDrO/YicHWF9C8PH41g==", "review"=>{"movie_id"=>"1", "title"=>"xzCfsadf", "body"=>"XZC"}, "commit"=>"Save Review", "movie_id"=>"1"}
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_new_review.html.erb (1.4ms) [cache miss]
+  Rendered reviews/new.html.erb within layouts/application (3.5ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 74ms (Views: 30.6ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/movies/1/reviews" for 127.0.0.1 at 2017-06-22 19:59:14 -0700
+Processing by ReviewsController#index as HTML
+  Parameters: {"movie_id"=>"1"}
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE (1) LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering reviews/index.html.erb within layouts/application
+  Rendered reviews/index.html.erb within layouts/application (0.4ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 32ms (Views: 28.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies/1/reviews" for 127.0.0.1 at 2017-06-22 19:59:28 -0700
+Processing by ReviewsController#index as HTML
+  Parameters: {"movie_id"=>"1"}
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE (1) LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering reviews/index.html.erb within layouts/application
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  Rendered reviews/index.html.erb within layouts/application (1.2ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 30ms (Views: 27.4ms | ActiveRecord: 0.3ms)
+
+

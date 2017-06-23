@@ -1,21 +1,34 @@
 class ReviewsController < ApplicationController
 
 def index
+  @movie = Movie.find_by(params[:movie_id])
   @reviews = Review.all
 end
 
 def new
-  @movie = Movie.find(params[:api_id])
+  # @movie = Movie.get_by_id(params[:movie_id])
+  @movie = Movie.find_by(api_id: params[:movie_id])
+  if !@movie
+   @movie = Movie.create({api_id: params[:movie_id]})
+  end
+  p @movie
+  p "@" * 20
   @review = Review.new
 end
 
 def create
-  @review = Review.new(review_params)
+  @movie = Movie.find(params[:movie_id])
+  @review = Review.new(reviews_params)
+  p params
+  p "@" * 20
+  p @review
   if @review.save
-    redirect_to @review
+    p "@review" * 20
+    redirect_to "movies/#{@movie.id}/reviews/#{@review.id}"
   else
     render 'new'
   end
+
 end
 
 def show
@@ -29,7 +42,7 @@ end
 def update
   @review = Review.find(params[:id])
 
-  if @review.update(user_params)
+  if @review.update(reviews_params)
     redirect_to @review
   else
     render 'edit'
