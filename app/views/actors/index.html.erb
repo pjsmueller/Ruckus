@@ -1,3 +1,7 @@
+<%= form_tag(actors_path, :method => "get", id: "search-form") do %>
+    <%= text_field_tag :search, params[:search], placeholder: "Search Actors" %>
+    <%= submit_tag "Search", :name => nil %>
+<% end %>
 <div class="actors-container">
   <ul class="actors-list">
     <% p @actors %>

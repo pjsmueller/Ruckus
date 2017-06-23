@@ -2,6 +2,11 @@ class ActorsController < ApplicationController
 
   def index
     @actors = Actor.most_popular
+    if params[:search]
+      @actors = Actor.search(params[:search])
+    else
+      @actors = Actor.most_popular
+    end
   end
 
   def show

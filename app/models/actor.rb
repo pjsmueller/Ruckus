@@ -10,6 +10,10 @@ class Actor < ApplicationRecord
     @api_id ||= actor_id
   end
 
+  def self.search(search_string)
+    Tmdb::Search.person(search_string).results
+  end
+
   def self.get_by_id(actor_id)
       actor_details = Tmdb::Person.detail(actor_id)
       actor_details["movies"] = Tmdb::Person.movie_credits(actor_id).cast
