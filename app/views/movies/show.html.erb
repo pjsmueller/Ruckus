@@ -7,6 +7,7 @@
       </div>
       <div class="movie-details-container">
       <h4>Movie rating Avg: <%= avrage_ratings(Movie.find_by(api_id: @movie.id).ratings) %> </h4>
+      ratings_views
         <div class="movie-starring-label">Starring:<div class="rating-container"></div>
         <div class="movie-starring">
           <ul class="movie-starring-list">
