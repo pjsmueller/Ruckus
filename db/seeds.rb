@@ -19,10 +19,10 @@ types = ["Review", "Comment", "Movie"]
 ids = [Review.all.sample.id, Movie.all.sample.id, Comment.all.sample.id]
   picked_type = types.sample
   if picked_type == "Review"
-    Rating.create(user_id: User.all.sample.id, rateable_type: picked_type, rateable_id: ids[0], score: rand(1..10))
+    Rating.create(user_id: User.all.sample.id, rateable_type: picked_type, rateable_id: ids[0], score: rand(1..5))
   elsif picked_type == "Comment"
-    Rating.create(user_id: User.all.sample.id, rateable_type: picked_type, rateable_id: ids[1], score: rand(1..10))
+    Rating.create(user_id: User.all.sample.id, rateable_type: picked_type, rateable_id: ids[1], score: rand(1..5))
   elsif picked_type == "Movie"
-    Rating.create(user_id: User.all.sample.id, rateable_type: picked_type, rateable_id: ids[2], score: rand(1..10))
+    Rating.create(user_id: User.all.sample.id, rateable_type: picked_type, rateable_id: ids[2], score: rand(1..5))
   end
 end
