@@ -2292,3 +2292,2443 @@ puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
 puma (3.9.1) lib/puma/server.rb:435:in `process_client'
 puma (3.9.1) lib/puma/server.rb:299:in `block in run'
 puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/movies/166426" for 127.0.0.1 at 2017-06-22 16:46:34 -0700
+  [1m[35m (9.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"166426"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendered movies/show.html.erb within layouts/application (6.8ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (3.8ms)
+Completed 200 OK in 2867ms (Views: 2069.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/166426" for 127.0.0.1 at 2017-06-22 16:48:02 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"166426"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendered movies/show.html.erb within layouts/application (1.5ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 1172ms (Views: 85.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/166426" for 127.0.0.1 at 2017-06-22 16:48:24 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"166426"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendered movies/show.html.erb within layouts/application (1.5ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 632ms (Views: 77.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/166426" for 127.0.0.1 at 2017-06-22 16:49:08 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"166426"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendered movies/show.html.erb within layouts/application (1.7ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 1028ms (Views: 76.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/166426" for 127.0.0.1 at 2017-06-22 16:49:11 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"166426"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendered movies/show.html.erb within layouts/application (1.8ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (4.0ms)
+Completed 200 OK in 601ms (Views: 91.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/166426" for 127.0.0.1 at 2017-06-22 16:49:21 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"166426"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendered movies/show.html.erb within layouts/application (2.8ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (2.7ms)
+Completed 200 OK in 631ms (Views: 99.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/166426" for 127.0.0.1 at 2017-06-22 16:49:45 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"166426"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendered movies/show.html.erb within layouts/application (2.3ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 1156ms (Views: 133.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/166426" for 127.0.0.1 at 2017-06-22 16:50:18 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"166426"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendered movies/show.html.erb within layouts/application (2.3ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 584ms (Views: 74.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/166426" for 127.0.0.1 at 2017-06-22 16:51:19 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"166426"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendered movies/show.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 882ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/dominiquecrowther/Desktop/devbootcamp/onsite/week7/client-project/Ruckus/app/views/movies/show.html.erb:36: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  
+app/views/movies/show.html.erb:36: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/movies/166426" for 127.0.0.1 at 2017-06-22 16:51:30 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"166426"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendered movies/show.html.erb within layouts/application (1.5ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 587ms (Views: 68.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/166426" for 127.0.0.1 at 2017-06-22 16:51:51 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"166426"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendered movies/show.html.erb within layouts/application (1.2ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 987ms (Views: 73.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/166426" for 127.0.0.1 at 2017-06-22 16:52:25 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"166426"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendered movies/show.html.erb within layouts/application (1.2ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 642ms (Views: 75.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/166426" for 127.0.0.1 at 2017-06-22 16:52:46 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"166426"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendered movies/show.html.erb within layouts/application (1.3ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 1975ms (Views: 87.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/166426" for 127.0.0.1 at 2017-06-22 16:53:11 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"166426"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendered movies/show.html.erb within layouts/application (1.1ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 833ms (Views: 335.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/166426" for 127.0.0.1 at 2017-06-22 16:53:41 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"166426"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendered movies/show.html.erb within layouts/application (2.0ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 1144ms (Views: 197.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/166426" for 127.0.0.1 at 2017-06-22 16:53:55 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"166426"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendered movies/show.html.erb within layouts/application (7.8ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 908ms (Views: 370.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/166426" for 127.0.0.1 at 2017-06-22 16:54:33 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"166426"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendered movies/show.html.erb within layouts/application (1.5ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 1174ms (Views: 303.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/166426" for 127.0.0.1 at 2017-06-22 16:55:15 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"166426"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendered movies/show.html.erb within layouts/application (1.2ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 623ms (Views: 107.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/166426" for 127.0.0.1 at 2017-06-22 16:55:35 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"166426"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendered movies/show.html.erb within layouts/application (1.0ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 998ms (Views: 71.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/166426" for 127.0.0.1 at 2017-06-22 16:57:04 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"166426"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendered movies/show.html.erb within layouts/application (1.0ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 960ms (Views: 68.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/166426" for 127.0.0.1 at 2017-06-22 16:57:18 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"166426"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendered movies/show.html.erb within layouts/application (1.5ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 1236ms (Views: 153.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/166426" for 127.0.0.1 at 2017-06-22 16:59:26 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"166426"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendered movies/show.html.erb within layouts/application (1.1ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 980ms (Views: 86.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/166426" for 127.0.0.1 at 2017-06-22 16:59:48 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"166426"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendered movies/show.html.erb within layouts/application (1.1ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 637ms (Views: 135.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/166426" for 127.0.0.1 at 2017-06-22 17:00:01 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"166426"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendered movies/show.html.erb within layouts/application (1.6ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (2.1ms)
+Completed 200 OK in 747ms (Views: 210.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/166426" for 127.0.0.1 at 2017-06-22 17:00:27 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"166426"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendered movies/show.html.erb within layouts/application (2.2ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 1033ms (Views: 109.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/166426" for 127.0.0.1 at 2017-06-22 17:04:03 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"166426"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendered movies/show.html.erb within layouts/application (1.2ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 1158ms (Views: 228.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2017-06-22 17:04:19 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (1.3ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 760ms (Views: 61.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/402529" for 127.0.0.1 at 2017-06-22 17:04:21 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"402529"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendered movies/show.html.erb within layouts/application (3.2ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 756ms (Views: 79.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/402529" for 127.0.0.1 at 2017-06-22 17:08:22 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"402529"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendered movies/show.html.erb within layouts/application (1.5ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 948ms (Views: 59.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/297762" for 127.0.0.1 at 2017-06-22 17:08:35 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"297762"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendered movies/show.html.erb within layouts/application (1.5ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 604ms (Views: 80.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/282035" for 127.0.0.1 at 2017-06-22 17:08:40 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"282035"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendered movies/show.html.erb within layouts/application (1.2ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 561ms (Views: 65.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/335988" for 127.0.0.1 at 2017-06-22 17:08:46 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"335988"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendered movies/show.html.erb within layouts/application (1.2ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 629ms (Views: 67.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2017-06-22 17:09:04 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (1.1ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 250ms (Views: 61.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/genres" for 127.0.0.1 at 2017-06-22 17:09:06 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/genres"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/movies/297762" for 127.0.0.1 at 2017-06-22 17:10:58 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"297762"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendered movies/show.html.erb within layouts/application (1.1ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 982ms (Views: 56.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/297762" for 127.0.0.1 at 2017-06-22 17:16:48 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"297762"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendered movies/show.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 560ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/dominiquecrowther/Desktop/devbootcamp/onsite/week7/client-project/Ruckus/app/views/movies/show.html.erb:8: syntax error, unexpected '<', expecting ')'
+      </div>
+       ^
+/Users/dominiquecrowther/Desktop/devbootcamp/onsite/week7/client-project/Ruckus/app/views/movies/show.html.erb:10: unknown regexp options - dv
+/Users/dominiquecrowther/Desktop/devbootcamp/onsite/week7/client-project/Ruckus/app/views/movies/show.html.erb:11: syntax error, unexpected '<'
+        <div class="movie-director">
+         ^
+/Users/dominiquecrowther/Desktop/devbootcamp/onsite/week7/client-project/Ruckus/app/views/movies/show.html.erb:12: syntax error, unexpected '<'
+          <ul class="movie-starring-list">
+           ^
+/Users/dominiquecrowther/Desktop/devbootcamp/onsite/week7/client-project/Ruckus/app/views/movies/show.html.erb:13: syntax error, unexpected '<'
+              <li class="starring-list-item"...
+               ^
+/Users/dominiquecrowther/Desktop/devbootcamp/onsite/week7/client-project/Ruckus/app/views/movies/show.html.erb:13: syntax error, unexpected '<'
+...li class="starring-list-item"><%= @movie.directors[0].name )...
+...                               ^
+/Users/dominiquecrowther/Desktop/devbootcamp/onsite/week7/client-project/Ruckus/app/views/movies/show.html.erb:38: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/dominiquecrowther/Desktop/devbootcamp/onsite/week7/client-project/Ruckus/app/views/movies/show.html.erb:40: syntax error, unexpected keyword_end, expecting ')'):
+  
+app/views/movies/show.html.erb:8: syntax error, unexpected '<', expecting ')'
+app/views/movies/show.html.erb:10: unknown regexp options - dv
+app/views/movies/show.html.erb:11: syntax error, unexpected '<'
+app/views/movies/show.html.erb:12: syntax error, unexpected '<'
+app/views/movies/show.html.erb:13: syntax error, unexpected '<'
+app/views/movies/show.html.erb:13: syntax error, unexpected '<'
+app/views/movies/show.html.erb:38: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/movies/show.html.erb:40: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/movies/297762" for 127.0.0.1 at 2017-06-22 17:17:07 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"297762"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendering ratings/_rating_stars.html.erb
+  Rendered ratings/_rating_stars.html.erb (0.6ms)
+  Rendered movies/show.html.erb within layouts/application (8.7ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (3.0ms)
+Completed 200 OK in 878ms (Views: 338.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/297762" for 127.0.0.1 at 2017-06-22 17:20:28 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"297762"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendering ratings/_rating_stars.html.erb
+  Rendered ratings/_rating_stars.html.erb (0.4ms)
+  Rendered movies/show.html.erb within layouts/application (5.3ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 933ms (Views: 153.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/297762" for 127.0.0.1 at 2017-06-22 17:21:46 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"297762"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendering ratings/_rating_stars.html.erb
+  Rendered ratings/_rating_stars.html.erb (0.5ms)
+  Rendered movies/show.html.erb within layouts/application (21.3ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 1446ms (Views: 281.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/297762" for 127.0.0.1 at 2017-06-22 17:22:33 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"297762"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendering ratings/_rating_stars.html.erb
+  Rendered ratings/_rating_stars.html.erb (0.7ms)
+  Rendered movies/show.html.erb within layouts/application (6.7ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 674ms (Views: 143.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/297762" for 127.0.0.1 at 2017-06-22 17:22:58 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"297762"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendering ratings/_rating_stars.html.erb
+  Rendered ratings/_rating_stars.html.erb (0.5ms)
+  Rendered movies/show.html.erb within layouts/application (5.3ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 1121ms (Views: 219.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/297762" for 127.0.0.1 at 2017-06-22 17:23:43 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"297762"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendering ratings/_rating_stars.html.erb
+  Rendered ratings/_rating_stars.html.erb (0.6ms)
+  Rendered movies/show.html.erb within layouts/application (5.3ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 1123ms (Views: 118.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/297762" for 127.0.0.1 at 2017-06-22 17:24:05 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"297762"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendering ratings/_rating_stars.html.erb
+  Rendered ratings/_rating_stars.html.erb (0.7ms)
+  Rendered movies/show.html.erb within layouts/application (5.8ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 640ms (Views: 116.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/297762" for 127.0.0.1 at 2017-06-22 17:24:12 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"297762"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendering ratings/_rating_stars.html.erb
+  Rendered ratings/_rating_stars.html.erb (0.6ms)
+  Rendered movies/show.html.erb within layouts/application (8.0ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 662ms (Views: 142.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/297762" for 127.0.0.1 at 2017-06-22 17:24:35 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"297762"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendering ratings/_rating_stars.html.erb
+  Rendered ratings/_rating_stars.html.erb (0.7ms)
+  Rendered movies/show.html.erb within layouts/application (5.8ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 1046ms (Views: 180.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/297762" for 127.0.0.1 at 2017-06-22 17:25:00 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"297762"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendering ratings/_rating_stars.html.erb
+  Rendered ratings/_rating_stars.html.erb (0.5ms)
+  Rendered movies/show.html.erb within layouts/application (6.0ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 666ms (Views: 149.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/297762" for 127.0.0.1 at 2017-06-22 17:27:23 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"297762"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendering ratings/_rating_stars.html.erb
+  Rendered ratings/_rating_stars.html.erb (0.6ms)
+  Rendered movies/show.html.erb within layouts/application (5.4ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 995ms (Views: 66.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/297762" for 127.0.0.1 at 2017-06-22 17:27:38 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"297762"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendering ratings/_rating_stars.html.erb
+  Rendered ratings/_rating_stars.html.erb (0.5ms)
+  Rendered movies/show.html.erb within layouts/application (5.7ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 607ms (Views: 73.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/297762" for 127.0.0.1 at 2017-06-22 17:27:56 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"297762"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendering ratings/_rating_stars.html.erb
+  Rendered ratings/_rating_stars.html.erb (0.8ms)
+  Rendered movies/show.html.erb within layouts/application (5.9ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 602ms (Views: 67.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/297762" for 127.0.0.1 at 2017-06-22 17:28:26 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"297762"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendering ratings/_rating_stars.html.erb
+  Rendered ratings/_rating_stars.html.erb (0.4ms)
+  Rendered movies/show.html.erb within layouts/application (5.0ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 1056ms (Views: 52.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/297762" for 127.0.0.1 at 2017-06-22 17:29:11 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"297762"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendering ratings/_rating_stars.html.erb
+  Rendered ratings/_rating_stars.html.erb (0.6ms)
+  Rendered movies/show.html.erb within layouts/application (6.2ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 1309ms (Views: 326.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/297762" for 127.0.0.1 at 2017-06-22 17:29:35 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"297762"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendering ratings/_rating_stars.html.erb
+  Rendered ratings/_rating_stars.html.erb (0.6ms)
+  Rendered movies/show.html.erb within layouts/application (6.3ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 644ms (Views: 121.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/297762" for 127.0.0.1 at 2017-06-22 17:31:53 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"297762"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendering ratings/_rating_stars.html.erb
+  Rendered ratings/_rating_stars.html.erb (0.6ms)
+  Rendered movies/show.html.erb within layouts/application (17.0ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 1157ms (Views: 223.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/297762" for 127.0.0.1 at 2017-06-22 17:32:38 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"297762"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendering ratings/_rating_stars.html.erb
+  Rendered ratings/_rating_stars.html.erb (0.5ms)
+  Rendered movies/show.html.erb within layouts/application (19.8ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 780ms (Views: 238.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/297762" for 127.0.0.1 at 2017-06-22 17:33:18 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"297762"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendering ratings/_rating_stars.html.erb
+  Rendered ratings/_rating_stars.html.erb (0.7ms)
+  Rendered movies/show.html.erb within layouts/application (5.9ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 1096ms (Views: 71.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2017-06-22 17:33:31 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (1.1ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 306ms (Views: 112.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/419430" for 127.0.0.1 at 2017-06-22 17:33:36 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"419430"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendering ratings/_rating_stars.html.erb
+  Rendered ratings/_rating_stars.html.erb (0.7ms)
+  Rendered movies/show.html.erb within layouts/application (17.0ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (5.3ms)
+Completed 200 OK in 725ms (Views: 90.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/419430" for 127.0.0.1 at 2017-06-22 17:33:49 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"419430"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendering ratings/_rating_stars.html.erb
+  Rendered ratings/_rating_stars.html.erb (0.5ms)
+  Rendered movies/show.html.erb within layouts/application (5.9ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 972ms (Views: 72.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/419430" for 127.0.0.1 at 2017-06-22 17:34:57 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"419430"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendering ratings/_rating_stars.html.erb
+  Rendered ratings/_rating_stars.html.erb (0.7ms)
+  Rendered movies/show.html.erb within layouts/application (1041.7ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 2504ms (Views: 1371.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/419430" for 127.0.0.1 at 2017-06-22 17:36:06 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"419430"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendering ratings/_rating_stars.html.erb
+  Rendered ratings/_rating_stars.html.erb (0.8ms)
+  Rendered movies/show.html.erb within layouts/application (24.3ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 1312ms (Views: 337.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2017-06-22 17:36:44 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (1.2ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 279ms (Views: 69.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/166426" for 127.0.0.1 at 2017-06-22 17:36:46 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"166426"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendering ratings/_rating_stars.html.erb
+  Rendered ratings/_rating_stars.html.erb (0.5ms)
+  Rendered movies/show.html.erb within layouts/application (6.8ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 614ms (Views: 68.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2017-06-22 17:39:27 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (1.1ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 643ms (Views: 57.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/297762" for 127.0.0.1 at 2017-06-22 17:39:31 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"297762"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendering ratings/_rating_stars.html.erb
+  Rendered ratings/_rating_stars.html.erb (1.4ms)
+  Rendered movies/show.html.erb within layouts/application (7.4ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 605ms (Views: 75.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/297762" for 127.0.0.1 at 2017-06-22 17:39:56 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"297762"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendering ratings/_rating_stars.html.erb
+  Rendered ratings/_rating_stars.html.erb (0.6ms)
+  Rendered movies/show.html.erb within layouts/application (8.7ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 690ms (Views: 135.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/297762" for 127.0.0.1 at 2017-06-22 17:40:49 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"297762"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendering ratings/_rating_stars.html.erb
+  Rendered ratings/_rating_stars.html.erb (0.4ms)
+  Rendered movies/show.html.erb within layouts/application (6.2ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 1080ms (Views: 200.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/297762" for 127.0.0.1 at 2017-06-22 17:41:09 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"297762"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendering ratings/_rating_stars.html.erb
+  Rendered ratings/_rating_stars.html.erb (0.7ms)
+  Rendered movies/show.html.erb within layouts/application (8.3ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (7.1ms)
+Completed 200 OK in 601ms (Views: 91.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/297762" for 127.0.0.1 at 2017-06-22 17:41:44 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"297762"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendering ratings/_rating_stars.html.erb
+  Rendered ratings/_rating_stars.html.erb (0.6ms)
+  Rendered movies/show.html.erb within layouts/application (7.1ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 796ms (Views: 250.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/297762" for 127.0.0.1 at 2017-06-22 17:42:04 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"297762"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendering ratings/_rating_stars.html.erb
+  Rendered ratings/_rating_stars.html.erb (0.5ms)
+  Rendered movies/show.html.erb within layouts/application (6.6ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 1056ms (Views: 133.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/297762" for 127.0.0.1 at 2017-06-22 17:42:19 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"297762"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendering ratings/_rating_stars.html.erb
+  Rendered ratings/_rating_stars.html.erb (0.7ms)
+  Rendered movies/show.html.erb within layouts/application (7.4ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 692ms (Views: 168.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/297762" for 127.0.0.1 at 2017-06-22 17:44:35 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"297762"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendering ratings/_rating_stars.html.erb
+  Rendered ratings/_rating_stars.html.erb (0.7ms)
+  Rendered movies/show.html.erb within layouts/application (7.3ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (1.8ms)
+Completed 200 OK in 1207ms (Views: 150.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/297762" for 127.0.0.1 at 2017-06-22 17:45:08 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"297762"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendering ratings/_rating_stars.html.erb
+  Rendered ratings/_rating_stars.html.erb (1.1ms)
+  Rendered movies/show.html.erb within layouts/application (8.2ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 925ms (Views: 164.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/297762" for 127.0.0.1 at 2017-06-22 17:46:15 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"297762"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendering ratings/_rating_stars.html.erb
+  Rendered ratings/_rating_stars.html.erb (0.7ms)
+  Rendered movies/show.html.erb within layouts/application (7.4ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 972ms (Views: 71.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/297762" for 127.0.0.1 at 2017-06-22 18:43:04 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"297762"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendering ratings/_rating_stars.html.erb
+  Rendered ratings/_rating_stars.html.erb (0.7ms)
+  Rendered movies/show.html.erb within layouts/application (7.4ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 936ms (Views: 240.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/297762" for 127.0.0.1 at 2017-06-22 18:46:30 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"297762"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendering ratings/_rating_stars.html.erb
+  Rendered ratings/_rating_stars.html.erb (0.6ms)
+  Rendered movies/show.html.erb within layouts/application (6.7ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 987ms (Views: 64.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/297762" for 127.0.0.1 at 2017-06-22 18:47:22 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"297762"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendering ratings/_rating_stars.html.erb
+  Rendered ratings/_rating_stars.html.erb (0.7ms)
+  Rendered movies/show.html.erb within layouts/application (6.6ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (4.6ms)
+Completed 200 OK in 1139ms (Views: 226.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2017-06-22 18:47:25 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (1.3ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 248ms (Views: 60.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/324852" for 127.0.0.1 at 2017-06-22 18:47:29 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"324852"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendering ratings/_rating_stars.html.erb
+  Rendered ratings/_rating_stars.html.erb (0.8ms)
+  Rendered movies/show.html.erb within layouts/application (8.0ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (7.6ms)
+Completed 200 OK in 609ms (Views: 108.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2017-06-22 18:47:41 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (1.3ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 312ms (Views: 129.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/335988" for 127.0.0.1 at 2017-06-22 18:47:43 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"335988"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendering ratings/_rating_stars.html.erb
+  Rendered ratings/_rating_stars.html.erb (1.0ms)
+  Rendered movies/show.html.erb within layouts/application (7.8ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 601ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2017-06-22 18:47:57 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (1.4ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 707ms (Views: 70.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/260514" for 127.0.0.1 at 2017-06-22 18:48:01 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"260514"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendering ratings/_rating_stars.html.erb
+  Rendered ratings/_rating_stars.html.erb (0.9ms)
+  Rendered movies/show.html.erb within layouts/application (7.7ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 621ms (Views: 100.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/260514" for 127.0.0.1 at 2017-06-22 18:48:28 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"260514"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendering ratings/_rating_stars.html.erb
+  Rendered ratings/_rating_stars.html.erb (1.3ms)
+  Rendered movies/show.html.erb within layouts/application (9.9ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 988ms (Views: 481.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/260514" for 127.0.0.1 at 2017-06-22 18:48:37 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"260514"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendering ratings/_rating_stars.html.erb
+  Rendered ratings/_rating_stars.html.erb (1.6ms)
+  Rendered movies/show.html.erb within layouts/application (8.4ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 676ms (Views: 164.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/260514" for 127.0.0.1 at 2017-06-22 18:48:51 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"260514"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendering ratings/_rating_stars.html.erb
+  Rendered ratings/_rating_stars.html.erb (0.6ms)
+  Rendered movies/show.html.erb within layouts/application (15.6ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (7.5ms)
+Completed 200 OK in 834ms (Views: 324.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2017-06-22 18:49:41 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (1.3ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (3.0ms)
+Completed 200 OK in 675ms (Views: 67.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/genres" for 127.0.0.1 at 2017-06-22 18:49:43 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/genres"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/genres" for 127.0.0.1 at 2017-06-22 18:53:09 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/genres"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/movies/297762" for 127.0.0.1 at 2017-06-23 06:00:48 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"297762"}
+  [1m[36mMovie Load (10.8ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 297762], ["LIMIT", 1]]
+  Rendering movies/show.html.erb within layouts/application
+  Rendered movies/show.html.erb within layouts/application (10.5ms)
+Completed 500 Internal Server Error in 346ms (ActiveRecord: 12.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+    1: <div class="movie">
+    2:   <div class="movie-title"><%= @movie.title %></div>
+    3:   <div class="movie-container">
+    4:       <div class="movie-poster-container">
+    5:         <img class="movie-details-poster" src="https://image.tmdb.org/t/p/w300_and_h450_bestv2/<%= @movie.poster_path %>" />
+  
+app/views/movies/show.html.erb:2:in `_app_views_movies_show_html_erb__2993613821930738940_70124127548100'
+Started GET "/movies" for 127.0.0.1 at 2017-06-23 06:00:56 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (1.3ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 1323ms (Views: 63.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2017-06-23 06:01:34 -0700
+  [1m[35m (8.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MoviesController#index as HTML
+Started GET "/movies/297762" for 127.0.0.1 at 2017-06-23 06:01:35 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"297762"}
+  [1m[36mMovie Load (12.1ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 297762], ["LIMIT", 1]]
+  Rendering movies/show.html.erb within layouts/application
+  Rendered movies/show.html.erb within layouts/application (22.1ms)
+Completed 500 Internal Server Error in 110ms (ActiveRecord: 13.5ms)
+
+
+  
+  Rendering movies/index.html.erb within layouts/application
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+  Rendered movies/index.html.erb within layouts/application (1.1ms)
+    1: <div class="movie">
+    2:   <div class="movie-title"><%= @movie.title %></div>
+    3:   <div class="movie-container">
+    4:       <div class="movie-poster-container">
+    5:         <img class="movie-details-poster" src="https://image.tmdb.org/t/p/w300_and_h450_bestv2/<%= @movie.poster_path %>" />
+  
+app/views/movies/show.html.erb:2:in `_app_views_movies_show_html_erb___1780811032698607242_70154975126220'
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 3449ms (Views: 3023.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/282035" for 127.0.0.1 at 2017-06-23 06:01:40 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"282035"}
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 282035], ["LIMIT", 1]]
+  Rendering movies/show.html.erb within layouts/application
+  Rendered movies/show.html.erb within layouts/application (12.5ms)
+Completed 500 Internal Server Error in 55ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+    1: <div class="movie">
+    2:   <div class="movie-title"><%= @movie.title %></div>
+    3:   <div class="movie-container">
+    4:       <div class="movie-poster-container">
+    5:         <img class="movie-details-poster" src="https://image.tmdb.org/t/p/w300_and_h450_bestv2/<%= @movie.poster_path %>" />
+  
+app/views/movies/show.html.erb:2:in `_app_views_movies_show_html_erb___1780811032698607242_70154947657180'
+Started GET "/movies/282035" for 127.0.0.1 at 2017-06-23 06:02:28 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"282035"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendering ratings/_rating_stars.html.erb
+  Rendered ratings/_rating_stars.html.erb (1.1ms)
+  Rendered movies/show.html.erb within layouts/application (1329.2ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 2953ms (Views: 1827.3ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2017-06-23 06:02:50 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (1.1ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (10.9ms)
+Completed 200 OK in 465ms (Views: 245.5ms)
+
+
+Started GET "/movies/297762" for 127.0.0.1 at 2017-06-23 06:03:03 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"297762"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendering ratings/_rating_stars.html.erb
+  Rendered ratings/_rating_stars.html.erb (0.9ms)
+  Rendered movies/show.html.erb within layouts/application (20.4ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (3.0ms)
+Completed 200 OK in 828ms (Views: 114.0ms)
+
+
+Started GET "/movies/297762" for 127.0.0.1 at 2017-06-23 06:03:06 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"297762"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendering ratings/_rating_stars.html.erb
+  Rendered ratings/_rating_stars.html.erb (0.9ms)
+  Rendered movies/show.html.erb within layouts/application (8.0ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 693ms (Views: 66.2ms)
+
+
+Started GET "/movies/292" for 127.0.0.1 at 2017-06-23 06:03:10 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"292"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendering ratings/_rating_stars.html.erb
+  Rendered ratings/_rating_stars.html.erb (1.2ms)
+  Rendered movies/show.html.erb within layouts/application (7.3ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 1176ms (Views: 80.8ms)
+
+
+Started GET "/movies/30000" for 127.0.0.1 at 2017-06-23 06:03:18 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"30000"}
+Completed 500 Internal Server Error in 277ms
+
+
+  
+Tmdb::Error (The resource you requested could not be found.):
+  
+app/models/movie.rb:24:in `get_by_id'
+app/controllers/movies_controller.rb:8:in `show'
+Started GET "/movies/23000" for 127.0.0.1 at 2017-06-23 06:04:09 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"23000"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendering ratings/_rating_stars.html.erb
+  Rendered ratings/_rating_stars.html.erb (0.6ms)
+  Rendered movies/show.html.erb within layouts/application (6.1ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 1174ms (Views: 91.0ms)
+
+
+Started GET "/genres" for 127.0.0.1 at 2017-06-23 06:10:22 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/genres"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/movies/292" for 127.0.0.1 at 2017-06-23 06:10:25 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"292"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendering ratings/_rating_stars.html.erb
+  Rendered ratings/_rating_stars.html.erb (1.2ms)
+  Rendered movies/show.html.erb within layouts/application (26.3ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 1031ms (Views: 295.9ms)
+
+
+Started GET "/movies/290" for 127.0.0.1 at 2017-06-23 08:25:23 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"290"}
+Completed 500 Internal Server Error in 450ms
+
+
+  
+NoMethodError (undefined method `response' for #<SocketError:0x007f9c790a8968>
+Did you mean?  respond_to?):
+  
+app/models/movie.rb:24:in `get_by_id'
+app/controllers/movies_controller.rb:8:in `show'
+Started GET "/movies/290" for 127.0.0.1 at 2017-06-23 08:25:49 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"290"}
+Completed 500 Internal Server Error in 15ms
+
+
+  
+NoMethodError (undefined method `response' for #<SocketError:0x007f9c737e2f68>
+Did you mean?  respond_to?):
+  
+app/models/movie.rb:24:in `get_by_id'
+app/controllers/movies_controller.rb:8:in `show'
+Started GET "/movies/292" for 127.0.0.1 at 2017-06-23 08:25:57 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"292"}
+Completed 500 Internal Server Error in 8ms
+
+
+  
+NoMethodError (undefined method `response' for #<SocketError:0x007f9c776a4c88>
+Did you mean?  respond_to?):
+  
+app/models/movie.rb:24:in `get_by_id'
+app/controllers/movies_controller.rb:8:in `show'
+Started GET "/movies/292" for 127.0.0.1 at 2017-06-23 08:26:15 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"292"}
+Completed 500 Internal Server Error in 425ms
+
+
+  
+NoMethodError (undefined method `response' for #<SocketError:0x007f9c7a9754f0>
+Did you mean?  respond_to?):
+  
+app/models/movie.rb:24:in `get_by_id'
+app/controllers/movies_controller.rb:8:in `show'
+Started GET "/movies/292" for 127.0.0.1 at 2017-06-23 08:26:18 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"292"}
+Completed 500 Internal Server Error in 5ms
+
+
+  
+NoMethodError (undefined method `response' for #<SocketError:0x007f9c7a7c3aa8>
+Did you mean?  respond_to?):
+  
+app/models/movie.rb:24:in `get_by_id'
+app/controllers/movies_controller.rb:8:in `show'
+Started GET "/movies/292" for 127.0.0.1 at 2017-06-23 08:26:37 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"292"}
+Completed 500 Internal Server Error in 12ms
+
+
+  
+NoMethodError (undefined method `response' for #<SocketError:0x007f9c7a1deed0>
+Did you mean?  respond_to?):
+  
+app/models/movie.rb:24:in `get_by_id'
+app/controllers/movies_controller.rb:8:in `show'
+Started GET "/movies/292" for 127.0.0.1 at 2017-06-23 08:27:38 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"292"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendering ratings/_rating_stars.html.erb
+  Rendered ratings/_rating_stars.html.erb (0.8ms)
+  Rendered movies/show.html.erb within layouts/application (7.0ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 754ms (Views: 67.2ms)
+
+
+Started GET "/movies/290" for 127.0.0.1 at 2017-06-23 08:27:42 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"290"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendering ratings/_rating_stars.html.erb
+  Rendered ratings/_rating_stars.html.erb (0.7ms)
+  Rendered movies/show.html.erb within layouts/application (7.2ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 589ms (Views: 61.0ms)
+
+
+Started GET "/movies/1" for 127.0.0.1 at 2017-06-23 08:27:47 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 181ms
+
+
+  
+Tmdb::Error (The resource you requested could not be found.):
+  
+app/models/movie.rb:24:in `get_by_id'
+app/controllers/movies_controller.rb:8:in `show'
+Started GET "/movies/1" for 127.0.0.1 at 2017-06-23 08:28:49 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendered movies/show.html.erb within layouts/application (10.4ms)
+Completed 500 Internal Server Error in 607ms
+
+
+  
+ActionView::Template::Error (undefined method `title' for "error":String
+Did you mean?  titleize):
+    1: <div class="movie">
+    2:   <div class="movie-title"><%= @movie.title %></div>
+    3:   <div class="movie-container">
+    4:       <div class="movie-poster-container">
+    5:         <img class="movie-details-poster" src="https://image.tmdb.org/t/p/w300_and_h450_bestv2/<%= @movie.poster_path %>" />
+  
+app/views/movies/show.html.erb:2:in `_app_views_movies_show_html_erb___1780811032698607242_70154975369500'
+Started GET "/movies/1" for 127.0.0.1 at 2017-06-23 08:29:30 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 613ms
+
+
+  
+NoMethodError (undefined method `status' for Movie (call 'Movie.connection' to establish a connection):Class):
+  
+app/models/movie.rb:30:in `rescue in get_by_id'
+app/models/movie.rb:24:in `get_by_id'
+app/controllers/movies_controller.rb:8:in `show'
+Started GET "/movies/1" for 127.0.0.1 at 2017-06-23 08:30:27 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 601ms
+
+
+  
+NoMethodError (undefined method `render' for Movie (call 'Movie.connection' to establish a connection):Class
+Did you mean?  render_bind):
+  
+app/models/movie.rb:30:in `rescue in get_by_id'
+app/models/movie.rb:24:in `get_by_id'
+app/controllers/movies_controller.rb:8:in `show'
+Started GET "/movies/1" for 127.0.0.1 at 2017-06-23 08:30:30 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 188ms
+
+
+  
+NoMethodError (undefined method `render' for Movie (call 'Movie.connection' to establish a connection):Class
+Did you mean?  render_bind):
+  
+app/models/movie.rb:30:in `rescue in get_by_id'
+app/models/movie.rb:24:in `get_by_id'
+app/controllers/movies_controller.rb:8:in `show'
+Started GET "/movies/1" for 127.0.0.1 at 2017-06-23 08:32:52 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendered movies/show.html.erb within layouts/application (6.7ms)
+Completed 500 Internal Server Error in 616ms
+
+
+  
+ActionView::Template::Error (undefined method `title' for false:FalseClass):
+    1: <div class="movie">
+    2:   <div class="movie-title"><%= @movie.title %></div>
+    3:   <div class="movie-container">
+    4:       <div class="movie-poster-container">
+    5:         <img class="movie-details-poster" src="https://image.tmdb.org/t/p/w300_and_h450_bestv2/<%= @movie.poster_path %>" />
+  
+app/views/movies/show.html.erb:2:in `_app_views_movies_show_html_erb___1780811032698607242_70154989302640'
+app/controllers/movies_controller.rb:11:in `show'
+Started GET "/movies/1" for 127.0.0.1 at 2017-06-23 08:33:59 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendered movies/show.html.erb within layouts/application (7.1ms)
+Completed 500 Internal Server Error in 629ms
+
+
+  
+ActionView::Template::Error (undefined method `title' for false:FalseClass):
+    1: <div class="movie">
+    2:   <div class="movie-title"><%= @movie.title %></div>
+    3:   <div class="movie-container">
+    4:       <div class="movie-poster-container">
+    5:         <img class="movie-details-poster" src="https://image.tmdb.org/t/p/w300_and_h450_bestv2/<%= @movie.poster_path %>" />
+  
+app/views/movies/show.html.erb:2:in `_app_views_movies_show_html_erb___1780811032698607242_70154975268980'
+app/controllers/movies_controller.rb:11:in `show'
+Started GET "/movies/1" for 127.0.0.1 at 2017-06-23 08:34:03 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendered movies/show.html.erb within layouts/application (6.1ms)
+Completed 500 Internal Server Error in 215ms
+
+
+  
+ActionView::Template::Error (undefined method `title' for false:FalseClass):
+    1: <div class="movie">
+    2:   <div class="movie-title"><%= @movie.title %></div>
+    3:   <div class="movie-container">
+    4:       <div class="movie-poster-container">
+    5:         <img class="movie-details-poster" src="https://image.tmdb.org/t/p/w300_and_h450_bestv2/<%= @movie.poster_path %>" />
+  
+app/views/movies/show.html.erb:2:in `_app_views_movies_show_html_erb___1780811032698607242_70154989513340'
+app/controllers/movies_controller.rb:11:in `show'
+Started GET "/movies/1" for 127.0.0.1 at 2017-06-23 08:35:15 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendered movies/show.html.erb within layouts/application (6.6ms)
+Completed 500 Internal Server Error in 786ms
+
+
+  
+ActionView::Template::Error (undefined method `title' for false:FalseClass):
+    1: <div class="movie">
+    2:   <div class="movie-title"><%= @movie.title %></div>
+    3:   <div class="movie-container">
+    4:       <div class="movie-poster-container">
+    5:         <img class="movie-details-poster" src="https://image.tmdb.org/t/p/w300_and_h450_bestv2/<%= @movie.poster_path %>" />
+  
+app/views/movies/show.html.erb:2:in `_app_views_movies_show_html_erb___1780811032698607242_70155027056340'
+app/controllers/movies_controller.rb:11:in `show'
+Started GET "/movies/1" for 127.0.0.1 at 2017-06-23 08:35:38 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendered movies/show.html.erb within layouts/application (7.4ms)
+Completed 500 Internal Server Error in 199ms
+
+
+  
+ActionView::Template::Error (undefined method `title' for false:FalseClass):
+    1: <div class="movie">
+    2:   <div class="movie-title"><%= @movie.title %></div>
+    3:   <div class="movie-container">
+    4:       <div class="movie-poster-container">
+    5:         <img class="movie-details-poster" src="https://image.tmdb.org/t/p/w300_and_h450_bestv2/<%= @movie.poster_path %>" />
+  
+app/views/movies/show.html.erb:2:in `_app_views_movies_show_html_erb___1780811032698607242_70154989120380'
+app/controllers/movies_controller.rb:12:in `show'
+Started GET "/movies/1" for 127.0.0.1 at 2017-06-23 08:36:29 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendered movies/show.html.erb within layouts/application (8.1ms)
+Completed 500 Internal Server Error in 601ms
+
+
+  
+ActionView::Template::Error (undefined method `title' for false:FalseClass):
+    1: <div class="movie">
+    2:   <div class="movie-title"><%= @movie.title %></div>
+    3:   <div class="movie-container">
+    4:       <div class="movie-poster-container">
+    5:         <img class="movie-details-poster" src="https://image.tmdb.org/t/p/w300_and_h450_bestv2/<%= @movie.poster_path %>" />
+  
+app/views/movies/show.html.erb:2:in `_app_views_movies_show_html_erb___1780811032698607242_70154975068100'
+app/controllers/movies_controller.rb:12:in `show'
+Started GET "/movies/1" for 127.0.0.1 at 2017-06-23 08:36:56 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendered movies/show.html.erb within layouts/application (6.8ms)
+Completed 500 Internal Server Error in 791ms
+
+
+  
+ActionView::Template::Error (undefined method `title' for false:FalseClass):
+    1: <div class="movie">
+    2:   <div class="movie-title"><%= @movie.title %></div>
+    3:   <div class="movie-container">
+    4:       <div class="movie-poster-container">
+    5:         <img class="movie-details-poster" src="https://image.tmdb.org/t/p/w300_and_h450_bestv2/<%= @movie.poster_path %>" />
+  
+app/views/movies/show.html.erb:2:in `_app_views_movies_show_html_erb___1780811032698607242_70154996721600'
+app/controllers/movies_controller.rb:12:in `show'
+Started GET "/movies/1" for 127.0.0.1 at 2017-06-23 08:37:21 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendered movies/show.html.erb within layouts/application (9.4ms)
+Completed 500 Internal Server Error in 194ms
+
+
+  
+ActionView::Template::Error (undefined method `title' for false:FalseClass):
+    1: <div class="movie">
+    2:   <div class="movie-title"><%= @movie.title %></div>
+    3:   <div class="movie-container">
+    4:       <div class="movie-poster-container">
+    5:         <img class="movie-details-poster" src="https://image.tmdb.org/t/p/w300_and_h450_bestv2/<%= @movie.poster_path %>" />
+  
+app/views/movies/show.html.erb:2:in `_app_views_movies_show_html_erb___1780811032698607242_70155007029200'
+app/controllers/movies_controller.rb:12:in `show'
+Started GET "/movies/1" for 127.0.0.1 at 2017-06-23 08:38:35 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 576ms
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-23 08:38:36 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (1.2ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 262ms (Views: 52.9ms)
+
+
+Started GET "/test" for 127.0.0.1 at 2017-06-23 08:38:42 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/test"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/movies" for 127.0.0.1 at 2017-06-23 08:38:47 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (1.1ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 236ms (Views: 53.8ms)
+
+
+Started GET "/movies/297762" for 127.0.0.1 at 2017-06-23 08:38:48 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"297762"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendering ratings/_rating_stars.html.erb
+  Rendered ratings/_rating_stars.html.erb (0.9ms)
+  Rendered movies/show.html.erb within layouts/application (8.8ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 589ms (Views: 67.8ms)
+
+
+Started GET "/movies/297760" for 127.0.0.1 at 2017-06-23 08:38:53 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"297760"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendering ratings/_rating_stars.html.erb
+  Rendered ratings/_rating_stars.html.erb (0.7ms)
+  Rendered movies/show.html.erb within layouts/application (11.6ms)
+Completed 500 Internal Server Error in 505ms
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+     8:       </div>
+     9:       <div class="movie-details-container">
+    10: 
+    11:         <div class='movie-director'>Director: <%= @movie.directors[0].name %></div>
+    12:         <div class="movie-starring-label">Starring:</div>
+    13:         <div class="movie-starring">
+    14:           <ul class="movie-starring-list">
+  
+app/views/movies/show.html.erb:11:in `_app_views_movies_show_html_erb___1780811032698607242_70154996563720'
+Started GET "/movies/297762" for 127.0.0.1 at 2017-06-23 08:38:59 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"297762"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendering ratings/_rating_stars.html.erb
+  Rendered ratings/_rating_stars.html.erb (0.8ms)
+  Rendered movies/show.html.erb within layouts/application (6.9ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 604ms (Views: 81.5ms)
+
+
+Started GET "/movies/297763" for 127.0.0.1 at 2017-06-23 08:39:02 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"297763"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendering ratings/_rating_stars.html.erb
+  Rendered ratings/_rating_stars.html.erb (1.0ms)
+  Rendered movies/show.html.erb within layouts/application (7.5ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (1.9ms)
+Completed 200 OK in 569ms (Views: 67.1ms)
+
+
+Started GET "/movies/297760" for 127.0.0.1 at 2017-06-23 08:39:06 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"297760"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendering ratings/_rating_stars.html.erb
+  Rendered ratings/_rating_stars.html.erb (0.7ms)
+  Rendered movies/show.html.erb within layouts/application (11.8ms)
+Completed 500 Internal Server Error in 491ms
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+     8:       </div>
+     9:       <div class="movie-details-container">
+    10: 
+    11:         <div class='movie-director'>Director: <%= @movie.directors[0].name %></div>
+    12:         <div class="movie-starring-label">Starring:</div>
+    13:         <div class="movie-starring">
+    14:           <ul class="movie-starring-list">
+  
+app/views/movies/show.html.erb:11:in `_app_views_movies_show_html_erb___1780811032698607242_70155023990200'
+Started GET "/movies/297760" for 127.0.0.1 at 2017-06-23 08:40:14 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"297760"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendering ratings/_rating_stars.html.erb
+  Rendered ratings/_rating_stars.html.erb (0.8ms)
+  Rendered movies/show.html.erb within layouts/application (10.9ms)
+Completed 500 Internal Server Error in 1215ms
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+     8:       </div>
+     9:       <div class="movie-details-container">
+    10: 
+    11:         <div class='movie-director'>Director: <%= @movie.directors[0].name %></div>
+    12:         <div class="movie-starring-label">Starring:</div>
+    13:         <div class="movie-starring">
+    14:           <ul class="movie-starring-list">
+  
+app/views/movies/show.html.erb:11:in `_app_views_movies_show_html_erb___1780811032698607242_70155012282320'
+Started GET "/movies/297760" for 127.0.0.1 at 2017-06-23 08:42:24 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"297760"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendering ratings/_rating_stars.html.erb
+  Rendered ratings/_rating_stars.html.erb (0.6ms)
+  Rendered movies/show.html.erb within layouts/application (10.4ms)
+Completed 500 Internal Server Error in 920ms
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    14:           <ul class="movie-starring-list">
+    15:             <% i = 0 %>
+    16:             <% while i < 5 %>
+    17:             <li class="starring-list-item"><%= @movie.cast[i].name %> as <%= @movie.cast[i].character %></li>
+    18:             <% i += 1 %>
+    19:             <% end %>
+    20:           </ul>
+  
+app/views/movies/show.html.erb:17:in `_app_views_movies_show_html_erb___1780811032698607242_70154949323580'
+Started GET "/movies/297760" for 127.0.0.1 at 2017-06-23 08:43:33 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"297760"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendering ratings/_rating_stars.html.erb
+  Rendered ratings/_rating_stars.html.erb (0.7ms)
+  Rendered movies/show.html.erb within layouts/application (11.1ms)
+Completed 500 Internal Server Error in 921ms
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    15:             <% if @movie.cast %>
+    16:               <% i = 0 %>
+    17:               <% while i < 5 %>
+    18:               <li class="starring-list-item"><%= @movie.cast[i].name %> as <%= @movie.cast[i].character %></li>
+    19:               <% i += 1 %>
+    20:               <% end %>
+    21:             <% else %>
+  
+app/views/movies/show.html.erb:18:in `_app_views_movies_show_html_erb___1780811032698607242_70155036089520'
+Started GET "/movies/297760" for 127.0.0.1 at 2017-06-23 08:43:44 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"297760"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendering ratings/_rating_stars.html.erb
+  Rendered ratings/_rating_stars.html.erb (1.0ms)
+  Rendered movies/show.html.erb within layouts/application (14.0ms)
+Completed 500 Internal Server Error in 509ms
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    15:             <% if @movie.cast %>
+    16:               <% i = 0 %>
+    17:               <% while i < 5 %>
+    18:               <li class="starring-list-item"><%= @movie.cast[i].name %> as <%= @movie.cast[i].character %></li>
+    19:               <% i += 1 %>
+    20:               <% end %>
+    21:             <% else %>
+  
+app/views/movies/show.html.erb:18:in `_app_views_movies_show_html_erb___1780811032698607242_70155036918280'
+Started GET "/movies/297760" for 127.0.0.1 at 2017-06-23 08:44:08 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"297760"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendering ratings/_rating_stars.html.erb
+  Rendered ratings/_rating_stars.html.erb (0.8ms)
+  Rendered movies/show.html.erb within layouts/application (6.6ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 973ms (Views: 66.7ms)
+
+
+Started GET "/movies/2972" for 127.0.0.1 at 2017-06-23 08:44:18 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"2972"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendering ratings/_rating_stars.html.erb
+  Rendered ratings/_rating_stars.html.erb (0.8ms)
+  Rendered movies/show.html.erb within layouts/application (6.9ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 571ms (Views: 69.2ms)
+
+
+Started GET "/movies/450" for 127.0.0.1 at 2017-06-23 08:44:24 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"450"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 184ms
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-23 08:44:24 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (1.2ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 236ms (Views: 56.8ms)
+
+
+Started GET "/movies/297762" for 127.0.0.1 at 2017-06-23 08:44:27 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"297762"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendering ratings/_rating_stars.html.erb
+  Rendered ratings/_rating_stars.html.erb (1.2ms)
+  Rendered movies/show.html.erb within layouts/application (12.4ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 618ms (Views: 109.7ms)
+
+
+Started GET "/genres" for 127.0.0.1 at 2017-06-23 08:51:13 -0700
+  
+SyntaxError (/Users/dominiquecrowther/Desktop/devbootcamp/onsite/week7/client-project/Ruckus/config/routes.rb:11: syntax error, unexpected ':', expecting keyword_end
+  resource: :genres, only [:index, :show]
+           ^):
+  
+config/routes.rb:11: syntax error, unexpected ':', expecting keyword_end
+Started GET "/genres" for 127.0.0.1 at 2017-06-23 08:51:27 -0700
+  
+SyntaxError (/Users/dominiquecrowther/Desktop/devbootcamp/onsite/week7/client-project/Ruckus/config/routes.rb:11: syntax error, unexpected [, expecting keyword_do or '{' or '('
+  resources :genres, only [:index, :show]
+                           ^):
+  
+config/routes.rb:11: syntax error, unexpected [, expecting keyword_do or '{' or '('
+Started GET "/genres" for 127.0.0.1 at 2017-06-23 08:51:36 -0700
+Processing by GenresController#index as HTML
+Completed 500 Internal Server Error in 643ms
+
+
+  
+NoMethodError (undefined method `genres' for #<Array:0x007f9c7a27cdb0>
+Did you mean?  entries):
+  
+app/models/movie.rb:16:in `genres'
+app/controllers/genres_controller.rb:3:in `index'
+Started GET "/genres" for 127.0.0.1 at 2017-06-23 08:52:13 -0700
+Processing by GenresController#index as HTML
+Completed 500 Internal Server Error in 163ms
+
+
+  
+TypeError (no implicit conversion of String into Integer):
+  
+app/models/movie.rb:16:in `[]'
+app/models/movie.rb:16:in `genres'
+app/controllers/genres_controller.rb:3:in `index'
+Started GET "/genres" for 127.0.0.1 at 2017-06-23 08:52:41 -0700
+Processing by GenresController#index as HTML
+  Rendering genres/index.html.erb within layouts/application
+  Rendered genres/index.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 759ms
+
+
+  
+SyntaxError (/Users/dominiquecrowther/Desktop/devbootcamp/onsite/week7/client-project/Ruckus/app/views/genres/index.html.erb:6: syntax error, unexpected '<', expecting ')'
+    <% end );@output_buffer.safe_append='
+     ^
+/Users/dominiquecrowther/Desktop/devbootcamp/onsite/week7/client-project/Ruckus/app/views/genres/index.html.erb:10: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/dominiquecrowther/Desktop/devbootcamp/onsite/week7/client-project/Ruckus/app/views/genres/index.html.erb:12: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/views/genres/index.html.erb:6: syntax error, unexpected '<', expecting ')'
+app/views/genres/index.html.erb:10: syntax error, unexpected keyword_ensure, expecting keyword_end
+app/views/genres/index.html.erb:12: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/genres" for 127.0.0.1 at 2017-06-23 08:53:03 -0700
+Processing by GenresController#index as HTML
+  Rendering genres/index.html.erb within layouts/application
+  Rendered genres/index.html.erb within layouts/application (1.1ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 239ms (Views: 57.7ms)
+
+
+Started GET "/genres" for 127.0.0.1 at 2017-06-23 08:54:31 -0700
+Processing by GenresController#index as HTML
+  Rendering genres/index.html.erb within layouts/application
+  Rendered genres/index.html.erb within layouts/application (1.5ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 891ms (Views: 258.7ms)
+
+
+Started GET "/genres" for 127.0.0.1 at 2017-06-23 08:54:34 -0700
+Processing by GenresController#index as HTML
+  Rendering genres/index.html.erb within layouts/application
+  Rendered genres/index.html.erb within layouts/application (0.9ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 229ms (Views: 63.0ms)
+
+
+Started GET "/genres" for 127.0.0.1 at 2017-06-23 08:54:47 -0700
+Processing by GenresController#index as HTML
+  Rendering genres/index.html.erb within layouts/application
+  Rendered genres/index.html.erb within layouts/application (1.0ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 228ms (Views: 55.7ms)
+
+
+Started GET "/genres" for 127.0.0.1 at 2017-06-23 08:54:49 -0700
+Processing by GenresController#index as HTML
+  Rendering genres/index.html.erb within layouts/application
+  Rendered genres/index.html.erb within layouts/application (0.9ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 227ms (Views: 68.2ms)
+
+
+Started GET "/genres" for 127.0.0.1 at 2017-06-23 09:02:07 -0700
+Processing by GenresController#index as HTML
+  Rendering genres/index.html.erb within layouts/application
+  Rendered genres/index.html.erb within layouts/application (1.2ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (43.0ms)
+Completed 200 OK in 777ms (Views: 452.3ms)
+
+
+Started GET "/genres" for 127.0.0.1 at 2017-06-23 09:02:35 -0700
+Processing by GenresController#index as HTML
+  Rendering genres/index.html.erb within layouts/application
+  Rendered genres/index.html.erb within layouts/application (1.1ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 256ms (Views: 58.4ms)
+
+
+Started GET "/genres/28" for 127.0.0.1 at 2017-06-23 09:02:36 -0700
+Processing by GenresController#show as HTML
+  Parameters: {"id"=>"28"}
+Redirected to http://localhost:3000/genres
+Completed 302 Found in 187ms
+
+
+Started GET "/genres" for 127.0.0.1 at 2017-06-23 09:02:37 -0700
+Processing by GenresController#index as HTML
+  Rendering genres/index.html.erb within layouts/application
+  Rendered genres/index.html.erb within layouts/application (1.3ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 230ms (Views: 66.6ms)
+
+
+Started GET "/genres/28" for 127.0.0.1 at 2017-06-23 09:02:39 -0700
+Processing by GenresController#show as HTML
+  Parameters: {"id"=>"28"}
+Redirected to http://localhost:3000/genres
+Completed 302 Found in 173ms
+
+
+Started GET "/genres" for 127.0.0.1 at 2017-06-23 09:02:39 -0700
+Processing by GenresController#index as HTML
+  Rendering genres/index.html.erb within layouts/application
+  Rendered genres/index.html.erb within layouts/application (1.2ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 217ms (Views: 58.8ms)
+
+
+Started GET "/genres/12" for 127.0.0.1 at 2017-06-23 09:02:46 -0700
+Processing by GenresController#show as HTML
+  Parameters: {"id"=>"12"}
+Redirected to http://localhost:3000/genres
+Completed 302 Found in 180ms
+
+
+Started GET "/genres" for 127.0.0.1 at 2017-06-23 09:02:47 -0700
+Processing by GenresController#index as HTML
+  Rendering genres/index.html.erb within layouts/application
+  Rendered genres/index.html.erb within layouts/application (1.8ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 226ms (Views: 62.6ms)
+
+
+Started GET "/genres/28" for 127.0.0.1 at 2017-06-23 09:02:50 -0700
+Processing by GenresController#show as HTML
+  Parameters: {"id"=>"28"}
+Redirected to http://localhost:3000/genres
+Completed 302 Found in 172ms
+
+
+Started GET "/genres" for 127.0.0.1 at 2017-06-23 09:02:50 -0700
+Processing by GenresController#index as HTML
+  Rendering genres/index.html.erb within layouts/application
+  Rendered genres/index.html.erb within layouts/application (1.0ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 266ms (Views: 95.2ms)
+
+
+Started GET "/genres" for 127.0.0.1 at 2017-06-23 10:35:43 -0700
+Processing by GenresController#index as HTML
+  Rendering genres/index.html.erb within layouts/application
+  Rendered genres/index.html.erb within layouts/application (1.2ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 421ms (Views: 181.0ms)
+
+
+Started GET "/genres" for 127.0.0.1 at 2017-06-23 10:36:25 -0700
+Processing by GenresController#index as HTML
+  Rendering genres/index.html.erb within layouts/application
+  Rendered genres/index.html.erb within layouts/application (1.1ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 248ms (Views: 73.3ms)
+
+
+Started GET "/genres/35" for 127.0.0.1 at 2017-06-23 10:36:27 -0700
+Processing by GenresController#show as HTML
+  Parameters: {"id"=>"35"}
+  Rendering genres/show.html.erb within layouts/application
+  Rendered genres/show.html.erb within layouts/application (1.0ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (3.0ms)
+Completed 200 OK in 282ms (Views: 65.5ms)
+
+
+Started GET "/genres/35" for 127.0.0.1 at 2017-06-23 10:42:53 -0700
+Processing by GenresController#show as HTML
+  Parameters: {"id"=>"35"}
+  Rendering genres/show.html.erb within layouts/application
+  Rendered genres/show.html.erb within layouts/application (1.0ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 891ms (Views: 225.8ms)
+
+
+Started GET "/genres/35" for 127.0.0.1 at 2017-06-23 10:43:07 -0700
+Processing by GenresController#show as HTML
+  Parameters: {"id"=>"35"}
+  Rendering genres/show.html.erb within layouts/application
+  Rendered genres/show.html.erb within layouts/application (1.0ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 266ms (Views: 93.0ms)
+
+
+Started GET "/genres/35" for 127.0.0.1 at 2017-06-23 10:43:22 -0700
+Processing by GenresController#show as HTML
+  Parameters: {"id"=>"35"}
+  Rendering genres/show.html.erb within layouts/application
+  Rendered genres/show.html.erb within layouts/application (3.7ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (1.7ms)
+Completed 200 OK in 334ms (Views: 101.7ms)
+
+
+Started GET "/genres/35" for 127.0.0.1 at 2017-06-23 10:44:03 -0700
+Processing by GenresController#show as HTML
+  Parameters: {"id"=>"35"}
+  Rendering genres/show.html.erb within layouts/application
+  Rendered genres/show.html.erb within layouts/application (1.3ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 700ms (Views: 67.0ms)
+
+
+Started GET "/genres/35" for 127.0.0.1 at 2017-06-23 11:22:08 -0700
+Processing by GenresController#show as HTML
+  Parameters: {"id"=>"35"}
+Completed 500 Internal Server Error in 24ms
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1)):
+  
+app/models/movie.rb:14:in `get_genre'
+app/controllers/genres_controller.rb:7:in `show'
+Started GET "/genres/35" for 127.0.0.1 at 2017-06-23 11:22:28 -0700
+Processing by GenresController#show as HTML
+  Parameters: {"id"=>"35"}
+  Rendering genres/show.html.erb within layouts/application
+  Rendered genres/show.html.erb within layouts/application (9.9ms)
+Completed 500 Internal Server Error in 392ms
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <div class="genre-container">
+    2:   <h1><%= @genre.name %></h1>
+    3:   <%= render template: 'movies/_movies_display', locals: { movies: @movies } %>
+    4: </div>
+  
+app/views/genres/show.html.erb:2:in `_app_views_genres_show_html_erb___2270362299822555199_70155013650340'
+Started GET "/genres/35" for 127.0.0.1 at 2017-06-23 11:23:21 -0700
+Processing by GenresController#show as HTML
+  Parameters: {"id"=>"35"}
+  Rendering genres/show.html.erb within layouts/application
+  Rendered genres/show.html.erb within layouts/application (9.3ms)
+Completed 500 Internal Server Error in 839ms
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <div class="genre-container">
+    2:   <h1><%= @genre.name %></h1>
+    3:   <%= render template: 'movies/_movies_display', locals: { movies: @movies } %>
+    4: </div>
+  
+app/views/genres/show.html.erb:2:in `_app_views_genres_show_html_erb___2270362299822555199_70155020137620'
+Started GET "/genres/35" for 127.0.0.1 at 2017-06-23 11:26:12 -0700
+Processing by GenresController#show as HTML
+  Parameters: {"id"=>"35"}
+  Rendering genres/show.html.erb within layouts/application
+  Rendered genres/show.html.erb within layouts/application (8.4ms)
+Completed 500 Internal Server Error in 895ms
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <div class="genre-container">
+    2:   <h1><%= @genre.name %></h1>
+    3:   <%= render template: 'movies/_movies_display', locals: { movies: @movies } %>
+    4: </div>
+  
+app/views/genres/show.html.erb:2:in `_app_views_genres_show_html_erb___2270362299822555199_70154945335160'
+Started GET "/genres/35" for 127.0.0.1 at 2017-06-23 11:26:15 -0700
+Processing by GenresController#show as HTML
+  Parameters: {"id"=>"35"}
+  Rendering genres/show.html.erb within layouts/application
+  Rendered genres/show.html.erb within layouts/application (6.8ms)
+Completed 500 Internal Server Error in 352ms
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <div class="genre-container">
+    2:   <h1><%= @genre.name %></h1>
+    3:   <%= render template: 'movies/_movies_display', locals: { movies: @movies } %>
+    4: </div>
+  
+app/views/genres/show.html.erb:2:in `_app_views_genres_show_html_erb___2270362299822555199_70155032387220'
+Started GET "/genres/35" for 127.0.0.1 at 2017-06-23 11:26:37 -0700
+Processing by GenresController#show as HTML
+  Parameters: {"id"=>"35"}
+  Rendering genres/show.html.erb within layouts/application
+  Rendered genres/show.html.erb within layouts/application (6.3ms)
+Completed 500 Internal Server Error in 856ms
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <div class="genre-container">
+    2:   <h1><%= @genre.name %></h1>
+    3:   <%= render template: 'movies/_movies_display', locals: { movies: @movies } %>
+    4: </div>
+  
+app/views/genres/show.html.erb:2:in `_app_views_genres_show_html_erb___2270362299822555199_70155025937260'
+Started GET "/genres/35" for 127.0.0.1 at 2017-06-23 11:27:12 -0700
+Processing by GenresController#show as HTML
+  Parameters: {"id"=>"35"}
+  Rendering genres/show.html.erb within layouts/application
+  Rendered genres/show.html.erb within layouts/application (6.5ms)
+Completed 500 Internal Server Error in 930ms
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <div class="genre-container">
+    2:   <h1><%= @genre.name %></h1>
+    3:   <%= render template: 'movies/_movies_display', locals: { movies: @movies } %>
+    4: </div>
+  
+app/views/genres/show.html.erb:2:in `_app_views_genres_show_html_erb___2270362299822555199_70154962766780'
+Started GET "/genres/35" for 127.0.0.1 at 2017-06-23 11:27:46 -0700
+Processing by GenresController#show as HTML
+  Parameters: {"id"=>"35"}
+  Rendering genres/show.html.erb within layouts/application
+  Rendered genres/show.html.erb within layouts/application (6.0ms)
+Completed 500 Internal Server Error in 945ms
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <div class="genre-container">
+    2:   <h1><%= @genre.name %></h1>
+    3:   <%= render template: 'movies/_movies_display', locals: { movies: @movies } %>
+    4: </div>
+  
+app/views/genres/show.html.erb:2:in `_app_views_genres_show_html_erb___2270362299822555199_70155011987640'
+Started GET "/genres/35" for 127.0.0.1 at 2017-06-23 11:28:23 -0700
+Processing by GenresController#show as HTML
+  Parameters: {"id"=>"35"}
+  Rendering genres/show.html.erb within layouts/application
+  Rendered genres/show.html.erb within layouts/application (17.5ms)
+Completed 500 Internal Server Error in 519ms
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <div class="genre-container">
+    2:   <h1><%= @genre.name %></h1>
+    3:   <%= render template: 'movies/_movies_display', locals: { movies: @movies } %>
+    4: </div>
+  
+app/views/genres/show.html.erb:2:in `_app_views_genres_show_html_erb___2270362299822555199_70155013732640'
+Started GET "/genres/35" for 127.0.0.1 at 2017-06-23 11:28:26 -0700
+Processing by GenresController#show as HTML
+  Parameters: {"id"=>"35"}
+  Rendering genres/show.html.erb within layouts/application
+  Rendered genres/show.html.erb within layouts/application (6.4ms)
+Completed 500 Internal Server Error in 514ms
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <div class="genre-container">
+    2:   <h1><%= @genre.name %></h1>
+    3:   <%= render template: 'movies/_movies_display', locals: { movies: @movies } %>
+    4: </div>
+  
+app/views/genres/show.html.erb:2:in `_app_views_genres_show_html_erb___2270362299822555199_70154946300860'
+Started GET "/genres/35" for 127.0.0.1 at 2017-06-23 11:28:48 -0700
+Processing by GenresController#show as HTML
+  Parameters: {"id"=>"35"}
+  Rendering genres/show.html.erb within layouts/application
+  Rendered genres/show.html.erb within layouts/application (6.9ms)
+Completed 500 Internal Server Error in 776ms
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <div class="genre-container">
+    2:   <h1><%= @genre.name %></h1>
+    3:   <%= render template: 'movies/_movies_display', locals: { movies: @movies } %>
+    4: </div>
+  
+app/views/genres/show.html.erb:2:in `_app_views_genres_show_html_erb___2270362299822555199_70155010742220'
+Started GET "/genres/35" for 127.0.0.1 at 2017-06-23 11:29:19 -0700
+Processing by GenresController#show as HTML
+  Parameters: {"id"=>"35"}
+  Rendering genres/show.html.erb within layouts/application
+  Rendering movies/_movies_display.html.erb
+  Rendered movies/_movies_display.html.erb (1.4ms)
+  Rendered genres/show.html.erb within layouts/application (19.7ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 1019ms (Views: 276.5ms)
+
+
+Started GET "/genres" for 127.0.0.1 at 2017-06-23 11:29:26 -0700
+Processing by GenresController#index as HTML
+  Rendering genres/index.html.erb within layouts/application
+  Rendered genres/index.html.erb within layouts/application (1.7ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 249ms (Views: 78.0ms)
+
+
+Started GET "/genres/80" for 127.0.0.1 at 2017-06-23 11:29:28 -0700
+Processing by GenresController#show as HTML
+  Parameters: {"id"=>"80"}
+  Rendering genres/show.html.erb within layouts/application
+  Rendering movies/_movies_display.html.erb
+  Rendered movies/_movies_display.html.erb (2.5ms)
+  Rendered genres/show.html.erb within layouts/application (8.3ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (3.5ms)
+Completed 200 OK in 458ms (Views: 119.7ms)
+
+
+Started GET "/genres" for 127.0.0.1 at 2017-06-23 11:29:35 -0700
+Processing by GenresController#index as HTML
+  Rendering genres/index.html.erb within layouts/application
+  Rendered genres/index.html.erb within layouts/application (1.1ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (77.6ms)
+Completed 200 OK in 318ms (Views: 145.9ms)
+
+
+Started GET "/genres/10751" for 127.0.0.1 at 2017-06-23 11:29:36 -0700
+Processing by GenresController#show as HTML
+  Parameters: {"id"=>"10751"}
+  Rendering genres/show.html.erb within layouts/application
+  Rendering movies/_movies_display.html.erb
+  Rendered movies/_movies_display.html.erb (1.6ms)
+  Rendered genres/show.html.erb within layouts/application (6.6ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 818ms (Views: 66.6ms)
+
+
+Started GET "/genres" for 127.0.0.1 at 2017-06-23 11:29:42 -0700
+Processing by GenresController#index as HTML
+  Rendering genres/index.html.erb within layouts/application
+  Rendered genres/index.html.erb within layouts/application (1.2ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 232ms (Views: 60.2ms)
+
+
+Started GET "/genres/16" for 127.0.0.1 at 2017-06-23 11:29:43 -0700
+Processing by GenresController#show as HTML
+  Parameters: {"id"=>"16"}
+  Rendering genres/show.html.erb within layouts/application
+  Rendering movies/_movies_display.html.erb
+  Rendered movies/_movies_display.html.erb (2.0ms)
+  Rendered genres/show.html.erb within layouts/application (7.3ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 404ms (Views: 70.2ms)
+
+
+Started GET "/genres" for 127.0.0.1 at 2017-06-23 11:29:52 -0700
+Processing by GenresController#index as HTML
+  Rendering genres/index.html.erb within layouts/application
+  Rendered genres/index.html.erb within layouts/application (1.2ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 215ms (Views: 55.0ms)
+
+
+Started GET "/genres/99" for 127.0.0.1 at 2017-06-23 11:29:54 -0700
+Processing by GenresController#show as HTML
+  Parameters: {"id"=>"99"}
+  Rendering genres/show.html.erb within layouts/application
+  Rendering movies/_movies_display.html.erb
+  Rendered movies/_movies_display.html.erb (1.2ms)
+  Rendered genres/show.html.erb within layouts/application (6.0ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 400ms (Views: 60.8ms)
+
+
+Started GET "/genres" for 127.0.0.1 at 2017-06-23 11:30:04 -0700
+Processing by GenresController#index as HTML
+  Rendering genres/index.html.erb within layouts/application
+  Rendered genres/index.html.erb within layouts/application (1.7ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 249ms (Views: 59.0ms)
+
+
+Started GET "/genres/37" for 127.0.0.1 at 2017-06-23 11:30:06 -0700
+Processing by GenresController#show as HTML
+  Parameters: {"id"=>"37"}
+  Rendering genres/show.html.erb within layouts/application
+  Rendering movies/_movies_display.html.erb
+  Rendered movies/_movies_display.html.erb (1.5ms)
+  Rendered genres/show.html.erb within layouts/application (7.1ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (2.6ms)
+Completed 200 OK in 400ms (Views: 73.3ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2017-06-23 11:30:17 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendering movies/_movies_display.html.erb
+  Rendered movies/_movies_display.html.erb (1.9ms)
+  Rendered movies/index.html.erb within layouts/application (6.6ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 662ms (Views: 66.2ms)
+
+
+Started GET "/movies/297762" for 127.0.0.1 at 2017-06-23 11:31:39 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"297762"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendering ratings/_rating_stars.html.erb
+  Rendered ratings/_rating_stars.html.erb (0.9ms)
+  Rendered movies/show.html.erb within layouts/application (18.5ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (4.7ms)
+Completed 200 OK in 1053ms (Views: 82.7ms)
+
+
+Started GET "/movies/297762" for 127.0.0.1 at 2017-06-23 11:37:12 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"297762"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendering ratings/_rating_stars.html.erb
+  Rendered ratings/_rating_stars.html.erb (1.0ms)
+  Rendered movies/show.html.erb within layouts/application (7.9ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (2.8ms)
+Completed 200 OK in 885ms (Views: 312.7ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2017-06-23 11:37:15 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendering movies/_movies_display.html.erb
+  Rendered movies/_movies_display.html.erb (1.4ms)
+  Rendered movies/index.html.erb within layouts/application (7.8ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 258ms (Views: 66.4ms)
+
+
+Started GET "/movies/282035" for 127.0.0.1 at 2017-06-23 11:37:17 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"282035"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendering ratings/_rating_stars.html.erb
+  Rendered ratings/_rating_stars.html.erb (0.7ms)
+  Rendered movies/show.html.erb within layouts/application (6.3ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 630ms (Views: 123.4ms)
+
+
+Started GET "/movies/282035?rateable%5Btype%5D=Movie&rateable%5Bid%5D=282035&rateable%5Brating%5D=3" for 127.0.0.1 at 2017-06-23 11:37:30 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"rateable"=>{"type"=>"Movie", "id"=>"282035", "rating"=>"3"}, "id"=>"282035"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendering ratings/_rating_stars.html.erb
+  Rendered ratings/_rating_stars.html.erb (0.9ms)
+  Rendered movies/show.html.erb within layouts/application (7.7ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 570ms (Views: 65.4ms)
+
+
+Started GET "/movies/282035?rateable%5Btype%5D=Movie&rateable%5Bid%5D=282035&rateable%5Brating%5D=3" for 127.0.0.1 at 2017-06-23 11:54:55 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"rateable"=>{"type"=>"Movie", "id"=>"282035", "rating"=>"3"}, "id"=>"282035"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendering ratings/_rating_stars.html.erb
+  Rendered ratings/_rating_stars.html.erb (1.0ms)
+  Rendered movies/show.html.erb within layouts/application (14.2ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 968ms (Views: 270.4ms)
+
+
