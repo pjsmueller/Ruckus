@@ -1,0 +1,17 @@
+<div class="actor">
+  <div class="actor-name"><%= @actor.name %></div>
+  <div class="actor-container">
+    <div class="actor-picture-container">
+      <img class="actor-picture" src="https://image.tmdb.org/t/p/w300_and_h450_bestv2/<%= @actor.profile_path %>" />
+      <%= render template: 'ratings/_rating_stars', locals: { rateable: { id: @actor.id, type: 'Actor' }} %>
+      <div class="actor-rating">Average Rating: <%= @actor.avg_rating %> </div>
+    </div>
+    <div class="actor-details-container">
+      <div class="actor-pob">Place of Birth: <%= @actor.place_of_birth %></div>
+      <div class="actor-dob">Birthday: <%= @actor.birthday %></div>
+      <div class="actor-bio-label">Biography:</div>
+      <div class="actor-bio"><%= @actor.biography %></div>
+    </div>
+  </div>
+<h3>Starred In:</h3>
+<%= render template: 'movies/_movies_display', locals: { movies: @actor.movies } %>

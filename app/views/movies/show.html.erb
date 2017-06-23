@@ -14,7 +14,7 @@
             <% if @movie.cast.length > 0 %>
               <% i = 0 %>
               <% while i < 5 %>
-              <li class="starring-list-item"><%= @movie.cast[i].name %> as <%= @movie.cast[i].character %></li>
+              <li class="starring-list-item"><a href="/actors/<%= @movie.cast[i].id %>"><%= @movie.cast[i].name %></a> as <%= @movie.cast[i].character %></li>
               <% i += 1 %>
               <% end %>
             <% else %>
