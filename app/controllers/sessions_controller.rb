@@ -3,14 +3,12 @@ class SessionsController < ApplicationController
   end
 
   def create
-    user = User.find_by_email(params[:email])
+    user = User.find_by_username(params[:username])
     if user && user.authenticate(params[:password])
       session[:user_id] = user.id
-      redirect_to '/'
-
-        redirect_to @user
+      render 'movies#index'
     else
-      flash.now[:danger] = 'Invalid username/password combination'
+      flash[:notice] = 'Invalid username/password combination'
       redirect_to '/login'
     end
   end
