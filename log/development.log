@@ -2292,6 +2292,7 @@ puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
 puma (3.9.1) lib/puma/server.rb:435:in `process_client'
 puma (3.9.1) lib/puma/server.rb:299:in `block in run'
 puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/" for 127.0.0.1 at 2017-06-22 16:45:55 -0700
   [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
 Processing by MoviesController#index as HTML
@@ -2323,6 +2324,183 @@ Completed 200 OK in 195ms (Views: 28.8ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/register" for 127.0.0.1 at 2017-06-22 16:50:05 -0700
+=======
+Started GET "/users/13" for 127.0.0.1 at 2017-06-22 16:48:00 -0700
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.1.1) lib/active_record/migration.rb:576:in `check_pending!'
+activerecord (5.1.1) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.1) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-06-22 16:48:07 -0700
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.1.1) lib/active_record/migration.rb:576:in `check_pending!'
+activerecord (5.1.1) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.1) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-06-22 16:48:11 -0700
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.1.1) lib/active_record/migration.rb:576:in `check_pending!'
+activerecord (5.1.1) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.1) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20170621223748)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "f_name" varchar, "l_name" varchar, "password" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170621223748"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateComments (20170621225502)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "body" text, "user_id" integer, "review_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170621225502"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateReviews (20170621225639)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "reviews" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "body" text, "user_id" integer, "movie_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170621225639"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateRatings (20170621230200)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "ratings" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "rateable_type" varchar, "rateable_id" integer, "score" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170621230200"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateMovies (20170621232335)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "movies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "api_id" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170621232335"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-06-22 23:48:41.632498"], ["updated_at", "2017-06-22 23:48:41.632498"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2017-06-22 16:49:05 -0700
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (1.8ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 579ms (Views: 358.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/register" for 127.0.0.1 at 2017-06-22 16:49:19 -0700
+>>>>>>> development
   
 ActionController::RoutingError (No route matches [GET] "/register"):
   
@@ -2353,6 +2531,7 @@ puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
 puma (3.9.1) lib/puma/server.rb:435:in `process_client'
 puma (3.9.1) lib/puma/server.rb:299:in `block in run'
 puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/" for 127.0.0.1 at 2017-06-22 16:50:16 -0700
 Processing by MoviesController#index as HTML
   Rendering movies/index.html.erb within layouts/application
@@ -2363,6 +2542,18 @@ Completed 200 OK in 568ms (Views: 30.9ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/home" for 127.0.0.1 at 2017-06-22 16:50:32 -0700
+=======
+Started GET "/" for 127.0.0.1 at 2017-06-22 16:49:28 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (1.1ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 238ms (Views: 53.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2017-06-22 16:49:31 -0700
+>>>>>>> development
   
 ActionController::RoutingError (No route matches [GET] "/home"):
   
@@ -2393,6 +2584,7 @@ puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
 puma (3.9.1) lib/puma/server.rb:435:in `process_client'
 puma (3.9.1) lib/puma/server.rb:299:in `block in run'
 puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/" for 127.0.0.1 at 2017-06-22 16:50:43 -0700
 Processing by MoviesController#index as HTML
   Rendering movies/index.html.erb within layouts/application
@@ -2403,6 +2595,18 @@ Completed 200 OK in 207ms (Views: 27.2ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/genres" for 127.0.0.1 at 2017-06-22 16:50:47 -0700
+=======
+Started GET "/" for 127.0.0.1 at 2017-06-22 16:49:36 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (2.0ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 224ms (Views: 50.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/genres" for 127.0.0.1 at 2017-06-22 16:49:39 -0700
+>>>>>>> development
   
 ActionController::RoutingError (No route matches [GET] "/genres"):
   
@@ -2433,6 +2637,7 @@ puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
 puma (3.9.1) lib/puma/server.rb:435:in `process_client'
 puma (3.9.1) lib/puma/server.rb:299:in `block in run'
 puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/" for 127.0.0.1 at 2017-06-22 16:50:49 -0700
 Processing by MoviesController#index as HTML
   Rendering movies/index.html.erb within layouts/application
@@ -2455,6 +2660,61 @@ Started GET "/movies/166426" for 127.0.0.1 at 2017-06-22 16:51:06 -0700
 Processing by MoviesController#show as HTML
   Parameters: {"id"=>"166426"}
 Completed 500 Internal Server Error in 157ms (ActiveRecord: 0.0ms)
+=======
+Started GET "/" for 127.0.0.1 at 2017-06-22 16:49:43 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (0.7ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 205ms (Views: 28.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/register" for 127.0.0.1 at 2017-06-22 16:49:50 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/register"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-06-22 16:50:02 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (0.8ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 220ms (Views: 39.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/335988" for 127.0.0.1 at 2017-06-22 16:51:21 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"335988"}
+Completed 500 Internal Server Error in 165ms (ActiveRecord: 0.0ms)
+>>>>>>> development
 
 
   
@@ -2462,11 +2722,16 @@ Tmdb::Error (Invalid API key: You must be granted a valid key.):
   
 app/models/movie.rb:24:in `find_by_id'
 app/controllers/movies_controller.rb:8:in `show'
+<<<<<<< HEAD
 Started GET "/movies" for 127.0.0.1 at 2017-06-22 16:51:12 -0700
+=======
+Started GET "/" for 127.0.0.1 at 2017-06-22 16:51:24 -0700
+>>>>>>> development
 Processing by MoviesController#index as HTML
   Rendering movies/index.html.erb within layouts/application
   Rendered movies/index.html.erb within layouts/application (0.9ms)
   Rendering layouts/_header.html.erb
+<<<<<<< HEAD
   Rendered layouts/_header.html.erb (1.1ms)
 Completed 200 OK in 198ms (Views: 29.9ms | ActiveRecord: 0.0ms)
 
@@ -2475,6 +2740,16 @@ Started GET "/movies/297762" for 127.0.0.1 at 2017-06-22 16:59:15 -0700
 Processing by MoviesController#show as HTML
   Parameters: {"id"=>"297762"}
 Completed 500 Internal Server Error in 335ms (ActiveRecord: 0.0ms)
+=======
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 217ms (Views: 40.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/335988" for 127.0.0.1 at 2017-06-22 16:51:26 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"335988"}
+Completed 500 Internal Server Error in 153ms (ActiveRecord: 0.0ms)
+>>>>>>> development
 
 
   
@@ -2482,6 +2757,7 @@ Tmdb::Error (Invalid API key: You must be granted a valid key.):
   
 app/models/movie.rb:24:in `find_by_id'
 app/controllers/movies_controller.rb:8:in `show'
+<<<<<<< HEAD
 Started GET "/movies" for 127.0.0.1 at 2017-06-22 16:59:22 -0700
 Processing by MoviesController#index as HTML
   Rendering movies/index.html.erb within layouts/application
@@ -2492,10 +2768,14 @@ Completed 200 OK in 223ms (Views: 38.2ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/movies" for 127.0.0.1 at 2017-06-22 16:59:23 -0700
+=======
+Started GET "/" for 127.0.0.1 at 2017-06-22 16:51:36 -0700
+>>>>>>> development
 Processing by MoviesController#index as HTML
   Rendering movies/index.html.erb within layouts/application
   Rendered movies/index.html.erb within layouts/application (0.7ms)
   Rendering layouts/_header.html.erb
+<<<<<<< HEAD
   Rendered layouts/_header.html.erb (0.8ms)
 Completed 200 OK in 215ms (Views: 34.0ms | ActiveRecord: 0.0ms)
 
@@ -2504,6 +2784,16 @@ Started GET "/movies/297762" for 127.0.0.1 at 2017-06-22 16:59:26 -0700
 Processing by MoviesController#show as HTML
   Parameters: {"id"=>"297762"}
 Completed 500 Internal Server Error in 146ms (ActiveRecord: 0.0ms)
+=======
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 203ms (Views: 30.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/166426" for 127.0.0.1 at 2017-06-22 16:51:53 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"166426"}
+Completed 500 Internal Server Error in 153ms (ActiveRecord: 0.0ms)
+>>>>>>> development
 
 
   
@@ -2511,6 +2801,7 @@ Tmdb::Error (Invalid API key: You must be granted a valid key.):
   
 app/models/movie.rb:24:in `find_by_id'
 app/controllers/movies_controller.rb:8:in `show'
+<<<<<<< HEAD
 Started GET "/movies" for 127.0.0.1 at 2017-06-22 17:05:39 -0700
 Processing by MoviesController#index as HTML
   Rendering movies/index.html.erb within layouts/application
@@ -2634,6 +2925,19 @@ Completed 200 OK in 201ms (Views: 32.8ms | ActiveRecord: 0.0ms)
 Started GET "/genres" for 127.0.0.1 at 2017-06-22 17:22:00 -0700
   
 ActionController::RoutingError (No route matches [GET] "/genres"):
+=======
+Started GET "/" for 127.0.0.1 at 2017-06-22 16:51:55 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (0.8ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 207ms (Views: 27.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/register" for 127.0.0.1 at 2017-06-22 16:52:40 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/register"):
   
 actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
@@ -2662,6 +2966,57 @@ puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
 puma (3.9.1) lib/puma/server.rb:435:in `process_client'
 puma (3.9.1) lib/puma/server.rb:299:in `block in run'
 puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-06-22 16:56:18 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (1.3ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 228ms (Views: 42.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-22 16:56:27 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (0.7ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 211ms (Views: 28.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/register" for 127.0.0.1 at 2017-06-22 16:56:30 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/register"):
+>>>>>>> development
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/movies" for 127.0.0.1 at 2017-06-22 17:22:04 -0700
 Processing by MoviesController#index as HTML
   Rendering movies/index.html.erb within layouts/application
@@ -2860,6 +3215,11 @@ Completed 200 OK in 1002ms (Views: 44.7ms)
 Started POST "/movies/166426" for 127.0.0.1 at 2017-06-22 17:44:29 -0700
   
 ActionController::RoutingError (No route matches [POST] "/movies/166426"):
+=======
+Started GET "/register" for 127.0.0.1 at 2017-06-22 16:58:00 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/register"):
+>>>>>>> development
   
 actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
@@ -2888,9 +3248,33 @@ puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
 puma (3.9.1) lib/puma/server.rb:435:in `process_client'
 puma (3.9.1) lib/puma/server.rb:299:in `block in run'
 puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/register" for 127.0.0.1 at 2017-06-22 17:48:30 -0700
   
 ActionController::RoutingError (No route matches [GET] "/register"):
+=======
+Started GET "/" for 127.0.0.1 at 2017-06-22 16:58:04 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (0.7ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 252ms (Views: 35.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-22 16:58:07 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (0.7ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 196ms (Views: 23.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user" for 127.0.0.1 at 2017-06-22 16:58:09 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/user"):
+>>>>>>> development
   
 actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
@@ -2919,6 +3303,7 @@ puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
 puma (3.9.1) lib/puma/server.rb:435:in `process_client'
 puma (3.9.1) lib/puma/server.rb:299:in `block in run'
 puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/movies/166426" for 127.0.0.1 at 2017-06-22 17:48:35 -0700
 Processing by MoviesController#show as HTML
   Parameters: {"id"=>"166426"}
@@ -2955,6 +3340,38 @@ Completed 200 OK in 1729ms (Views: 43.0ms | ActiveRecord: 0.7ms)
 Started POST "/movies/166426/reviews/new" for 127.0.0.1 at 2017-06-22 18:19:02 -0700
   
 ActionController::RoutingError (No route matches [POST] "/movies/166426/reviews/new"):
+=======
+Started GET "/" for 127.0.0.1 at 2017-06-22 16:58:38 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (0.6ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 231ms (Views: 31.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-22 16:58:39 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (0.7ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 197ms (Views: 26.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-22 16:58:40 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (0.8ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 207ms (Views: 28.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/new" for 127.0.0.1 at 2017-06-22 16:58:42 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/user/new"):
+>>>>>>> development
   
 actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
@@ -2983,6 +3400,7 @@ puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
 puma (3.9.1) lib/puma/server.rb:435:in `process_client'
 puma (3.9.1) lib/puma/server.rb:299:in `block in run'
 puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+<<<<<<< HEAD
 Started POST "/movies/166426/reviews/new" for 127.0.0.1 at 2017-06-22 18:29:12 -0700
   
 ActionController::RoutingError (No route matches [POST] "/movies/166426/reviews/new"):
@@ -2999,6 +3417,51 @@ activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagge
 activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
 activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
 railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+=======
+Started GET "/" for 127.0.0.1 at 2017-06-22 16:59:06 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (0.7ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 211ms (Views: 25.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-22 16:59:14 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (1.2ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 219ms (Views: 30.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-22 16:59:16 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (0.7ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 196ms (Views: 25.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_user_path" for 127.0.0.1 at 2017-06-22 16:59:18 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/new_user_path"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+>>>>>>> development
 sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
 actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
 actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
@@ -3014,6 +3477,7 @@ puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
 puma (3.9.1) lib/puma/server.rb:435:in `process_client'
 puma (3.9.1) lib/puma/server.rb:299:in `block in run'
 puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/movies/166426/reviews/new" for 127.0.0.1 at 2017-06-22 18:31:37 -0700
 Processing by ReviewsController#new as HTML
   Parameters: {"movie_id"=>"166426"}
@@ -3028,6 +3492,78 @@ Completed 200 OK in 584ms (Views: 36.3ms | ActiveRecord: 0.0ms)
 Started POST "/movies//reviews" for 127.0.0.1 at 2017-06-22 18:31:48 -0700
   
 ActionController::RoutingError (No route matches [POST] "/movies/reviews"):
+=======
+Started GET "/" for 127.0.0.1 at 2017-06-22 16:59:47 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (0.7ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 216ms (Views: 26.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-22 16:59:50 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (0.7ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 367ms (Views: 41.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-22 17:02:16 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (0.7ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 220ms (Views: 35.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/335988" for 127.0.0.1 at 2017-06-22 17:02:17 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"335988"}
+Completed 500 Internal Server Error in 151ms (ActiveRecord: 0.0ms)
+
+
+  
+Tmdb::Error (Invalid API key: You must be granted a valid key.):
+  
+app/models/movie.rb:24:in `find_by_id'
+app/controllers/movies_controller.rb:8:in `show'
+Started GET "/" for 127.0.0.1 at 2017-06-22 17:02:23 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (0.9ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 207ms (Views: 26.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/13" for 127.0.0.1 at 2017-06-22 17:02:42 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+Completed 404 Not Found in 38ms (ActiveRecord: 1.4ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=13):
+  
+app/controllers/users_controller.rb:21:in `show'
+Started GET "/" for 127.0.0.1 at 2017-06-22 17:02:46 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (1.0ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 221ms (Views: 40.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_user_path" for 127.0.0.1 at 2017-06-22 17:02:50 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/new_user_path"):
+>>>>>>> development
   
 actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
@@ -3056,6 +3592,7 @@ puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
 puma (3.9.1) lib/puma/server.rb:435:in `process_client'
 puma (3.9.1) lib/puma/server.rb:299:in `block in run'
 puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/movies/166426/reviews/new" for 127.0.0.1 at 2017-06-22 18:33:07 -0700
 Processing by ReviewsController#new as HTML
   Parameters: {"movie_id"=>"166426"}
@@ -3247,6 +3784,126 @@ activesupport (5.1.1) lib/active_support/callbacks.rb:97:in `run_callbacks'
 actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
 actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
 actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+=======
+Started GET "/" for 127.0.0.1 at 2017-06-22 17:03:15 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (0.8ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 228ms (Views: 35.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new(.:format)" for 127.0.0.1 at 2017-06-22 17:03:17 -0700
+Processing by UsersController#show as 
+  Parameters: {"id"=>"new("}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=new():
+  
+app/controllers/users_controller.rb:21:in `show'
+Started GET "/" for 127.0.0.1 at 2017-06-22 17:09:12 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (0.8ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 634ms (Views: 38.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-22 17:09:14 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (0.8ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 213ms (Views: 35.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-06-22 17:09:18 -0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (448.5ms)
+Completed 500 Internal Server Error in 464ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `password_hash' for #<User:0x007fa22a13fde8>
+Did you mean?  password_was
+               password_change):
+    30: 
+    31:   <p>
+    32:     <%= f.label :password %><br>
+    33:     <%= f.text_field :password_hash %>
+    34:   </p>
+    35: 
+    36: 
+  
+app/views/users/new.html.erb:33:in `block in _app_views_users_new_html_erb___1054815926982565116_70167197701840'
+app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb___1054815926982565116_70167197701840'
+Started GET "/users/new" for 127.0.0.1 at 2017-06-22 17:10:07 -0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (2.5ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 41ms (Views: 38.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-06-22 17:10:16 -0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (3.3ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 35ms (Views: 33.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-06-22 17:10:19 -0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (3.9ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 53ms (Views: 50.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-06-22 17:10:20 -0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (3.2ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 50ms (Views: 48.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-06-22 17:10:20 -0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (3.3ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 49ms (Views: 46.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2017-06-22 17:10:23 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (0.8ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 213ms (Views: 27.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2017-06-22 17:10:27 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/home"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+>>>>>>> development
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
 web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
@@ -3273,6 +3930,7 @@ puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
 puma (3.9.1) lib/puma/server.rb:435:in `process_client'
 puma (3.9.1) lib/puma/server.rb:299:in `block in run'
 puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/movies/166426" for 127.0.0.1 at 2017-06-22 18:39:06 -0700
 Processing by MoviesController#show as HTML
   Parameters: {"id"=>"166426"}
@@ -3352,6 +4010,726 @@ activesupport (5.1.1) lib/active_support/callbacks.rb:97:in `run_callbacks'
 actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
 actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
 actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+=======
+Started GET "/movies" for 127.0.0.1 at 2017-06-22 17:10:29 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (1.1ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 361ms (Views: 25.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2017-06-22 17:11:24 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (0.8ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 226ms (Views: 38.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-06-22 17:11:26 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (134.4ms)
+Completed 500 Internal Server Error in 145ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `username_field' for #<ActionView::Helpers::FormBuilder:0x007fa22b8532a0>):
+     6:     <%= form_for(:session, url: login_path) do |f| %>
+     7: 
+     8:       <%= f.label :username %>
+     9:       <%= f.username_field :username, class: 'form-control' %>
+    10: 
+    11:       <%= f.label :password %>
+    12:       <%= f.password_field :password, class: 'form-control' %>
+  
+app/views/sessions/new.html.erb:9:in `block in _app_views_sessions_new_html_erb___3891858860891154732_70167245838840'
+app/views/sessions/new.html.erb:6:in `_app_views_sessions_new_html_erb___3891858860891154732_70167245838840'
+Started GET "/login" for 127.0.0.1 at 2017-06-22 17:15:57 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.4ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 46ms (Views: 44.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-22 17:16:03 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (0.7ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 196ms (Views: 21.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-06-22 17:16:07 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (4.4ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 37ms (Views: 34.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-06-22 17:16:16 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kTWZGdHIrW9DeSw+vwzdbGkHpE9FdCq+XZtxWKYvFiY101NA+j3F8YBbvQh3oATyxQoZVjcPcAfaT6WhwfSJiw==", "session"=>{"username"=>"fadfasnjn", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `find_by_email' for #<Class:0x007fa22a862e40>
+Did you mean?  find_by_sql):
+  
+app/controllers/sessions_controller.rb:6:in `create'
+Started GET "/users/new" for 127.0.0.1 at 2017-06-22 17:16:46 -0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (5.1ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 45ms (Views: 40.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-06-22 17:16:53 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"M3oPGfCm0nBD2gkkOZVhLkVb9/ZwACYkkRzV84GpkTW4mG+g2FeosIWUperNrH2zQY6KizM9aOVGyLvEiqq88Q==", "user"=>{"username"=>"JUn", "f_name"=>"otatew", "l_name"=>"adsafda", "password"=>"[FILTERED]"}, "commit"=>"Create User"}
+Unpermitted parameters: :f_name, :l_name
+Completed 500 Internal Server Error in 99ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `password_digest=' for #<User:0x007fa22751c5e0>
+Did you mean?  password=):
+  
+app/controllers/users_controller.rb:11:in `create'
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20170621223748)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "f_name" varchar, "l_name" varchar, "password_digest" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170621223748"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateComments (20170621225502)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "body" text, "user_id" integer, "review_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170621225502"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateReviews (20170621225639)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "reviews" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "body" text, "user_id" integer, "movie_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170621225639"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateRatings (20170621230200)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "ratings" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "rateable_type" varchar, "rateable_id" integer, "score" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170621230200"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateMovies (20170621232335)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "movies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "api_id" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170621232335"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-06-23 00:31:03.267210"], ["updated_at", "2017-06-23 00:31:03.267210"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "f_name", "l_name", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["username", "alan"], ["f_name", "Ella"], ["l_name", "Brown"], ["password_digest", "$2a$10$eT1EsNBaW8oBey43BPdFdObs51079Hq/rSBr3gXZQeYSGf4rB2ox2"], ["created_at", "2017-06-23 00:31:09.447835"], ["updated_at", "2017-06-23 00:31:09.447835"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "f_name", "l_name", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["username", "jillian"], ["f_name", "Johnathan"], ["l_name", "Hodkiewicz"], ["password_digest", "$2a$10$bCMJb82pzTc8K/l2Ppq2feoS5SADd3P/yhbXh9N/lUcwdE1EpYSz."], ["created_at", "2017-06-23 00:31:09.511658"], ["updated_at", "2017-06-23 00:31:09.511658"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "f_name", "l_name", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["username", "lorenz_maggio"], ["f_name", "Harry"], ["l_name", "Hodkiewicz"], ["password_digest", "$2a$10$tMmHnMPrTWr8Besez1j.IuD9hbcAoETGpdvnEku9QznxvUEsILOqK"], ["created_at", "2017-06-23 00:31:09.577197"], ["updated_at", "2017-06-23 00:31:09.577197"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/users/new" for 127.0.0.1 at 2017-06-22 17:31:22 -0700
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (371.9ms)
+Started GET "/movies" for 127.0.0.1 at 2017-06-22 17:31:23 -0700
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 662ms (Views: 634.9ms | ActiveRecord: 1.0ms)
+
+
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (0.6ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 227ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2017-06-22 17:31:25 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (0.9ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 222ms (Views: 26.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-06-22 17:31:27 -0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (8.8ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 85ms (Views: 81.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-06-22 17:31:35 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uyyl40PAwpQ3no0PbIgNZKcELK1e0jIQZH2ny99ZYsUwzsVaazG4VPHQIcGYsRH5o9FR0B3vfNGzqcn81FpPAQ==", "user"=>{"username"=>"fsadfjkj", "f_name"=>"fdafsak", "l_name"=>"fdasfajkl", "password"=>"[FILTERED]"}, "commit"=>"Create User"}
+Unpermitted parameters: :f_name, :l_name
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["username", "fsadfjkj"], ["password_digest", "$2a$10$JBZJK/WTrem8hcJw0lhih.e50vSLn7o6nkIrOmnsrLO7rSNVFDx.2"], ["created_at", "2017-06-23 00:31:35.408809"], ["updated_at", "2017-06-23 00:31:35.408809"]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 234ms (ActiveRecord: 2.5ms)
+
+
+  
+NameError (undefined local variable or method `user' for #<UsersController:0x007fd127eee648>
+Did you mean?  @user):
+  
+app/controllers/users_controller.rb:13:in `create'
+Started POST "/users" for 127.0.0.1 at 2017-06-22 17:32:45 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uyyl40PAwpQ3no0PbIgNZKcELK1e0jIQZH2ny99ZYsUwzsVaazG4VPHQIcGYsRH5o9FR0B3vfNGzqcn81FpPAQ==", "user"=>{"username"=>"fsadfjkj", "f_name"=>"fdafsak", "l_name"=>"fdasfajkl", "password"=>"[FILTERED]"}, "commit"=>"Create User"}
+Unpermitted parameters: :f_name, :l_name
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["username", "fsadfjkj"], ["password_digest", "$2a$10$nidHKhA1ump5PDE72GzDMuWMDt.Qh3j0RQsBzsamEKOpxviPg/y4G"], ["created_at", "2017-06-23 00:32:45.496442"], ["updated_at", "2017-06-23 00:32:45.496442"]]
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 95ms (ActiveRecord: 3.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-22 17:32:45 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (0.7ms)
+  Rendering layouts/_header.html.erb
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (7.9ms)
+Completed 200 OK in 245ms (Views: 49.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies/335988" for 127.0.0.1 at 2017-06-22 17:32:48 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"335988"}
+Completed 500 Internal Server Error in 201ms (ActiveRecord: 0.0ms)
+
+
+  
+Tmdb::Error (Invalid API key: You must be granted a valid key.):
+  
+app/models/movie.rb:24:in `find_by_id'
+app/controllers/movies_controller.rb:8:in `show'
+Started GET "/" for 127.0.0.1 at 2017-06-22 17:32:54 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (0.6ms)
+  Rendering layouts/_header.html.erb
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 193ms (Views: 25.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2017-06-22 17:32:56 -0700
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/login
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-06-22 17:32:56 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.9ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 43ms (Views: 40.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-06-22 17:33:10 -0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (3.5ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 61ms (Views: 56.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-06-22 17:33:19 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SMskNmtRNU6OVVSzESLzy8m1fz4UujtrVcV0F3O0VfDDKUSPQ6BPjkgb+H3lG+9WzWACQ1eHdaqCERogeLd4NA==", "user"=>{"username"=>"tom", "f_name"=>"tom", "l_name"=>"tom", "password"=>"[FILTERED]"}, "commit"=>"Create User"}
+Unpermitted parameters: :f_name, :l_name
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["username", "tom"], ["password_digest", "$2a$10$CC4KgXRlyxKeswLHY0/t8.b3qImZ0pVrGmnMQm4EggZXn8j2fvive"], ["created_at", "2017-06-23 00:33:19.350708"], ["updated_at", "2017-06-23 00:33:19.350708"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 75ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-22 17:33:19 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (0.7ms)
+  Rendering layouts/_header.html.erb
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 206ms (Views: 27.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2017-06-22 17:33:22 -0700
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/login
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-06-22 17:33:22 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 43ms (Views: 41.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-06-22 17:33:28 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sut52N2oTDF+50ojUVZRX/VW1PkCcATSdlU325EbiEIWDbOB9l0kr73F2xWZ+ojBWVtp4HALXmvxgeMi9sAX7w==", "session"=>{"username"=>"tom", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `find_by_email' for #<Class:0x007fd127dde6e0>
+Did you mean?  find_by_sql):
+  
+app/controllers/sessions_controller.rb:6:in `create'
+Started POST "/login" for 127.0.0.1 at 2017-06-22 17:34:18 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sut52N2oTDF+50ojUVZRX/VW1PkCcATSdlU325EbiEIWDbOB9l0kr73F2xWZ+ojBWVtp4HALXmvxgeMi9sAX7w==", "session"=>{"username"=>"tom", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+Redirected to http://localhost:3000/login
+Completed 302 Found in 9ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-06-22 17:34:18 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.4ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 33ms (Views: 31.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-06-22 17:34:24 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Cz2u49E91TxBZMU0Aam8ZqeLrg4MX+aAQNXzbOc9DPNAMue3mCcmDU3B9mnUh8/8ef6gt4o16T6IZpzttsa/ag==", "session"=>{"username"=>"tom", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+Redirected to http://localhost:3000/login
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-06-22 17:34:24 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 29ms (Views: 27.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-06-22 17:36:17 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XgE5CC0AnuKhcDb6QZ9G8XdPW1GmEzK8TNgHcA10rKkVDnBcZBpt063VBaeUsTVrqTpV6CB5PQKEa2jxXI8fMA==", "session"=>{"username"=>"tom", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+Redirected to http://localhost:3000/login
+Completed 302 Found in 8ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-06-22 17:36:17 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 26ms (Views: 23.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-06-22 17:37:06 -0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (4.4ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 58ms (Views: 37.9ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-06-22 17:37:22 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZqbVFltpZsqzAc/HVs432C2xzzPIsIWc3Sc1CZwtb9jtRLWvc5gcCnVPYwmi9ytFKWSyTouNy10K81s+ly5CHA==", "user"=>{"username"=>"p", "f_name"=>"p", "l_name"=>"p", "password"=>"[FILTERED]"}, "commit"=>"Create User"}
+Unpermitted parameters: :f_name, :l_name
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.8ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["username", "p"], ["password_digest", "$2a$10$sCyCJKOC9IyHmSk7SVmLc.2trTQzftdGfY2p79xzYEncpuZgsLDlm"], ["created_at", "2017-06-23 00:37:22.705637"], ["updated_at", "2017-06-23 00:37:22.705637"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 78ms (ActiveRecord: 3.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-22 17:37:22 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (0.8ms)
+  Rendering layouts/_header.html.erb
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.9ms)
+Completed 200 OK in 269ms (Views: 30.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2017-06-22 17:37:28 -0700
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/login
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-06-22 17:37:28 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 46ms (Views: 41.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-06-22 17:37:38 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HAMLcnlWo4jyR9+Yjp4IsJDKtAAH97dZ4lXiRwfzAly45cErUqPLFjFlTq5GMtEuPMcJGXWM7eBlgTa+YCid8Q==", "session"=>{"username"=>"p", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+Redirected to http://localhost:3000/login
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-06-22 17:37:38 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.3ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 26ms (Views: 24.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-06-22 17:38:37 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.3ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 35ms (Views: 32.7ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-06-22 17:38:40 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eMysP62VNE/f2sB+B3uvBJgngx60ge6KdyLRfNuC7hUzw+Vr5I/HftN/8yPSVdyeRlKNpzLr4TS/kb79inldjA==", "session"=>{"username"=>"p", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+Redirected to http://localhost:3000/login
+Completed 302 Found in 9ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-06-22 17:38:40 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.4ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 26ms (Views: 24.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-06-22 17:38:53 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.3ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 21ms (Views: 19.8ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-06-22 17:38:56 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fSBKhmxiPxzpG2NeARIDHAhDCX46Dxih5iZB3pSlEc82LwPSJXjMLeW+UAPUPHCG1jYHx7xlFx8ulS5fxV6iVg==", "session"=>{"username"=>"p", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+Redirected to http://localhost:3000/login
+Completed 302 Found in 17ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-06-22 17:38:56 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.6ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 29ms (Views: 27.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-06-22 17:39:58 -0700
+  
+SyntaxError (/Users/jun/Desktop/Ruckus/app/controllers/sessions_controller.rb:11: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+      :notice 'Invalid username/password comb
+               ^):
+  
+app/controllers/sessions_controller.rb:11: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+Started GET "/login" for 127.0.0.1 at 2017-06-22 17:40:52 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.4ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 35ms (Views: 32.5ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-06-22 17:40:55 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Dtq08wsSkl3ohW/WNZ7g8/MLjeU395a0Qo0KyVlLh7VF1f2nQghhbOQgXIvgsJNpLX6DXLGdmQqKPmVICLA0LA==", "session"=>{"username"=>"p", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+Redirected to http://localhost:3000/login
+Completed 302 Found in 11ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-06-22 17:40:55 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 26ms (Views: 24.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-06-22 17:40:59 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JOpcRn+KZT0PGC5i3jBcLYCUBXSURZlBpuSn/f6RArtv5RUSNpCWDAO9HT8LHi+3XuELzRIvlv9uV8h8r2qxIg==", "session"=>{"username"=>"", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+Redirected to http://localhost:3000/login
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-06-22 17:40:59 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.7ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 28ms (Views: 26.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-06-22 17:41:00 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uMML5AWNRgTke+qUpnM2D63IlmnhTJ+yeX1b7evj6F/zzEKwTJe1Neje2clzXUWVc72Y0GcmkAyxzjRsuhhbxg==", "session"=>{"username"=>"", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+Redirected to http://localhost:3000/login
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-06-22 17:41:00 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.4ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 31ms (Views: 28.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-06-22 17:41:03 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qSI7bmdKfI95jO9m/X5Puccqi3QKZHImmryP5iNRUSHiLXI6LlCPvnUp3DsoUDwjGV+FzYwOfZhSD+BncqriuA==", "session"=>{"username"=>"p", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+Redirected to http://localhost:3000/login
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-06-22 17:41:04 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.1ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 38ms (Views: 35.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-06-22 17:41:58 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 26ms (Views: 24.3ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-06-22 17:42:01 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ap6xFxTJo5agEOpmGfR5R4laMVElklGU+ImGR146GYQhkfhDXdNQp6y12TvM2grdVy8/6KP4XiowOunGD8GqHQ==", "session"=>{"username"=>"p", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::MissingTemplate (Missing template sessions/movies#index, application/movies#index with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/jun/Desktop/Ruckus/app/views"
+):
+  
+app/controllers/sessions_controller.rb:12:in `create'
+Started POST "/login" for 127.0.0.1 at 2017-06-22 17:42:35 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ap6xFxTJo5agEOpmGfR5R4laMVElklGU+ImGR146GYQhkfhDXdNQp6y12TvM2grdVy8/6KP4XiowOunGD8GqHQ==", "session"=>{"username"=>"p", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::MissingTemplate (Missing template sessions/index, application/index with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/jun/Desktop/Ruckus/app/views"
+):
+  
+app/controllers/sessions_controller.rb:12:in `create'
+Started POST "/login" for 127.0.0.1 at 2017-06-22 17:43:03 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ap6xFxTJo5agEOpmGfR5R4laMVElklGU+ImGR146GYQhkfhDXdNQp6y12TvM2grdVy8/6KP4XiowOunGD8GqHQ==", "session"=>{"username"=>"p", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+Redirected to 
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionController::ActionControllerError (Cannot redirect to nil!):
+  
+app/controllers/sessions_controller.rb:12:in `create'
+Started GET "/" for 127.0.0.1 at 2017-06-22 18:42:13 -0700
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (1.8ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 1168ms (Views: 788.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-06-22 18:43:20 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (690.6ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 723ms (Views: 719.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-06-22 18:43:26 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6P8FuU+JezJJUb9VkZ+D2ARxpmwQzQe9F+Kj6RAf4usqhygwhuZlczxhSU96z3lViQgRacQuQ2aUMFD6xLlQAQ==", "session"=>{"username"=>"p", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+Redirected to http://localhost:3000/login
+Completed 302 Found in 12ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-06-22 18:43:27 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.3ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 24ms (Views: 22.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-06-22 18:47:45 -0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (3.3ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 56ms (Views: 28.2ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-06-22 18:47:59 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fJQHtMpXkFEHmaiXDUPP0MZV81RSMb6aQmiGG9hcIPBFN2hhVlN2EfmO4rctitHvXYnbbw3QYT9UDQLu4tFWkg==", "user"=>{"username"=>"o", "f_name"=>"o", "l_name"=>"o", "password"=>"[FILTERED]"}, "commit"=>"Create User"}
+Unpermitted parameters: :f_name, :l_name
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["username", "o"], ["password_digest", "$2a$10$L5eY2A6GKGlsYS1S2JUIueHDJR1p1CBdVGlFx5XrWTzrc4jzjmzKq"], ["created_at", "2017-06-23 01:47:59.085348"], ["updated_at", "2017-06-23 01:47:59.085348"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 79ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-22 18:47:59 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (0.6ms)
+  Rendering layouts/_header.html.erb
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (14.9ms)
+Completed 200 OK in 473ms (Views: 40.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2017-06-22 18:48:04 -0700
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/login
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-06-22 18:48:04 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.1ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 57ms (Views: 54.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-06-22 18:48:07 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IorZiG1IJgL+tr2XVJSO8kHpH85oXOFFwOIo9t0+D6Dg8vQBpCc4Q4uGS42/xHR/zJCoy7y/pZ5DMNvlCZi9Sg==", "session"=>{"username"=>"o", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+Redirected to http://localhost:3000/login
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-06-22 18:48:07 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 29ms (Views: 28.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-06-22 18:57:19 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.2ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 25ms (Views: 23.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2017-06-22 19:00:22 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/sessions"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
 web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
@@ -3378,6 +4756,942 @@ puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
 puma (3.9.1) lib/puma/server.rb:435:in `process_client'
 puma (3.9.1) lib/puma/server.rb:299:in `block in run'
 puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/login" for 127.0.0.1 at 2017-06-22 19:02:11 -0700
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (375.8ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 592ms (Views: 583.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-06-22 19:02:15 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YK9xQ7rkagsikob21fPjKDRxoPWYhj/AVTe5Bz4jkTCjkrz+mrWmurOKiBtye68vuD39YzbmcVr2Yz3WPvxzcA==", "session"=>{"username"=>"o", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+Redirected to http://localhost:3000/login
+Completed 302 Found in 14ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-06-22 19:02:15 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.8ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 29ms (Views: 27.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-06-22 19:02:19 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"votBf/E2i7uFwz/K+upStWUvwSqK31DCaWlXn+FfCw99tozC0WdHChTbMSddYh6y6WOcvCS/HljKPdNO4YDpTw==", "session"=>{"username"=>"o", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+Redirected to http://localhost:3000/login
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-06-22 19:02:19 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.6ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 25ms (Views: 23.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-06-22 19:02:20 -0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (7.2ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 153ms (Views: 108.7ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-06-22 19:02:26 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aT5BgaH91X/WP58Jufiht+DUAAjvwYFQDONzXPq5sXhQnS5UPfkzPygo1SmZMb+IewgoM7AgXvUahvepwDTHGg==", "user"=>{"username"=>"a", "f_name"=>"a", "l_name"=>"a", "password"=>"[FILTERED]"}, "commit"=>"Create User"}
+Unpermitted parameters: :f_name, :l_name
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["username", "a"], ["password_digest", "$2a$10$YYMOYcBPvgbJmAs2124lseyVkNtgC.w.dx9KfGTVWTOMWJRmjrIhC"], ["created_at", "2017-06-23 02:02:27.027597"], ["updated_at", "2017-06-23 02:02:27.027597"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 78ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-22 19:02:27 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (0.8ms)
+  Rendering layouts/_header.html.erb
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (5.9ms)
+Completed 200 OK in 230ms (Views: 33.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2017-06-22 19:02:29 -0700
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/login
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-06-22 19:02:29 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.4ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 70ms (Views: 68.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-06-22 19:02:33 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iyVos0kkU4XRiiGNYzfEUqmZ8DugvG9KbZRhpuF9kf4o+qZKDMBuojEvdQBQapK7hLXf9usczwIEm6PzZddGEg==", "session"=>{"username"=>"a", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+actionpack (5.1.1) lib/action_controller/metal/request_forgery_protection.rb:195:in `handle_unverified_request'
+actionpack (5.1.1) lib/action_controller/metal/request_forgery_protection.rb:227:in `handle_unverified_request'
+actionpack (5.1.1) lib/action_controller/metal/request_forgery_protection.rb:222:in `verify_authenticity_token'
+activesupport (5.1.1) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.1) lib/active_support/callbacks.rb:197:in `block (2 levels) in halting'
+actionpack (5.1.1) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.1.1) lib/active_support/callbacks.rb:198:in `block in halting'
+activesupport (5.1.1) lib/active_support/callbacks.rb:507:in `block in invoke_before'
+activesupport (5.1.1) lib/active_support/callbacks.rb:507:in `each'
+activesupport (5.1.1) lib/active_support/callbacks.rb:507:in `invoke_before'
+activesupport (5.1.1) lib/active_support/callbacks.rb:130:in `run_callbacks'
+actionpack (5.1.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.1) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.1) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.1) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.1) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.1) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.1) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.1) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.1) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.1) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.1) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.1) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.1) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.1) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+actionpack (5.1.1) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.1) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.1) lib/action_dispatch/routing/route_set.rb:832:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.1) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.1) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-06-22 19:03:05 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (0.6ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 203ms (Views: 22.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-06-22 19:03:08 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.5ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 66ms (Views: 64.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-06-22 19:04:00 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"B4WTY00q3NJ9m8V0+AbdkTA2Z52rD6QKfcyVwp56cm6kWl2aCM7h9Z0+kfnLW4t4HRpIUOCvBEIUw1eXGtClgg==", "session"=>{"username"=>"a", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+actionpack (5.1.1) lib/action_controller/metal/request_forgery_protection.rb:195:in `handle_unverified_request'
+actionpack (5.1.1) lib/action_controller/metal/request_forgery_protection.rb:227:in `handle_unverified_request'
+actionpack (5.1.1) lib/action_controller/metal/request_forgery_protection.rb:222:in `verify_authenticity_token'
+activesupport (5.1.1) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.1) lib/active_support/callbacks.rb:197:in `block (2 levels) in halting'
+actionpack (5.1.1) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.1.1) lib/active_support/callbacks.rb:198:in `block in halting'
+activesupport (5.1.1) lib/active_support/callbacks.rb:507:in `block in invoke_before'
+activesupport (5.1.1) lib/active_support/callbacks.rb:507:in `each'
+activesupport (5.1.1) lib/active_support/callbacks.rb:507:in `invoke_before'
+activesupport (5.1.1) lib/active_support/callbacks.rb:130:in `run_callbacks'
+actionpack (5.1.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.1) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.1) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.1) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.1) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.1) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.1) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.1) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.1) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.1) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.1) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.1) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.1) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.1) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+actionpack (5.1.1) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.1) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.1) lib/action_dispatch/routing/route_set.rb:832:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.1) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.1) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/login" for 127.0.0.1 at 2017-06-22 19:04:11 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.4ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 33ms (Views: 31.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-06-22 19:04:15 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YpN8eYwYydfJsTaC9tV2tdCtxXQbHenbYSuSAfLXN0GhrrHErEkFZlipOG9RXTqyXOGY4rV9p0HCfxbQ8gjVAQ==", "session"=>{"username"=>"a", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+Redirected to http://localhost:3000/login
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-06-22 19:04:15 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (6.2ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 199ms (Views: 190.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-06-22 19:04:20 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.7ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 78ms (Views: 77.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-06-22 19:04:25 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ERzFhlnZlm/hM+ykHtAlI0U82LXBYO4nIKJZ+Sa+K8LSIQg7eYha3nAr4km5WGkkyXCFI28AoL2D9t0oJmHJgg==", "session"=>{"username"=>"a", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+Redirected to http://localhost:3000/login
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-06-22 19:04:25 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.8ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 32ms (Views: 30.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-06-22 19:05:19 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0N9XgbNGeiruKSIs/bYQPGQ0z/9ifQVvbbhcP2APGFET4po8kxe2m38xLMFaPlw76HiSacwdS/XO7NjuYND6EQ==", "session"=>{"username"=>"a", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+Redirected to http://localhost:3000/login
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-06-22 19:05:20 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.9ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 35ms (Views: 32.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-06-22 19:05:51 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tfjB6KZ/sWwGQVVGkfOYYzrr2z/iPUdZQIOiRq1iU8h2xQxVhi593ZdZW6s2e9RktqeGqUxdCcPj1yaXrb2xiA==", "session"=>{"username"=>"a", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 1.3ms)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/sessions_controller.rb:7:in `create'
+Started POST "/login" for 127.0.0.1 at 2017-06-22 19:06:20 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tfjB6KZ/sWwGQVVGkfOYYzrr2z/iPUdZQIOiRq1iU8h2xQxVhi593ZdZW6s2e9RktqeGqUxdCcPj1yaXrb2xiA==", "session"=>{"username"=>"a", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 1.7ms)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/sessions_controller.rb:7:in `create'
+Started GET "/users/new" for 127.0.0.1 at 2017-06-22 19:06:43 -0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (4.7ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 57ms (Views: 31.9ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-06-22 19:06:51 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VkFl77EcA7C5Mf/XR1KQcsRlaqywu83eLjEzX0g1CHlv4go6LRjl8Ecmtfdnm45NX7lCl+9aEns4VLeqcrh+Gw==", "user"=>{"username"=>"l", "f_name"=>"l", "l_name"=>"l", "password"=>"[FILTERED]"}, "commit"=>"Create User"}
+Unpermitted parameters: :f_name, :l_name
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["username", "l"], ["password_digest", "$2a$10$OEAqseobbaiVrKh9jMcRBey8kgoK1uzbMGFXgWhrY5HoVbwFR1fB6"], ["created_at", "2017-06-23 02:06:52.020899"], ["updated_at", "2017-06-23 02:06:52.020899"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 75ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-22 19:06:52 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (0.8ms)
+  Rendering layouts/_header.html.erb
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.5ms)
+Completed 200 OK in 231ms (Views: 32.6ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-06-22 19:07:22 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zoANGn/+va2IHpGrrzkVoTfKv33IesdihY6kw+vnBjENvcCnX69xHBkGn0YIsVmmu4bi62Yaifgm2iAS6zjkcQ==", "user"=>{"username"=>"l", "f_name"=>"l", "l_name"=>"l", "password"=>"[FILTERED]"}, "commit"=>"Create User"}
+Unpermitted parameters: :f_name, :l_name
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["username", "l"], ["password_digest", "$2a$10$KCBhhQWrbjpFrBbERdFvjeKZd.L6wOpAiwT3ab46b1Fu5lAs/hs4."], ["created_at", "2017-06-23 02:07:22.645374"], ["updated_at", "2017-06-23 02:07:22.645374"]]
+  [1m[35m (9.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 96ms (ActiveRecord: 9.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-22 19:07:22 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (0.7ms)
+  Rendering layouts/_header.html.erb
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 263ms (Views: 27.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies/166426" for 127.0.0.1 at 2017-06-22 19:07:42 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"166426"}
+Completed 500 Internal Server Error in 156ms (ActiveRecord: 0.0ms)
+
+
+  
+Tmdb::Error (Invalid API key: You must be granted a valid key.):
+  
+app/models/movie.rb:24:in `find_by_id'
+app/controllers/movies_controller.rb:8:in `show'
+Started GET "/" for 127.0.0.1 at 2017-06-22 19:07:44 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (1.0ms)
+  Rendering layouts/_header.html.erb
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.7ms)
+Completed 200 OK in 219ms (Views: 39.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2017-06-22 19:07:46 -0700
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/login
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-06-22 19:07:46 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 58ms (Views: 56.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-06-22 19:07:53 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Oeb7rj6Lxj4Ba20Ze0SSyRNuEsgq8q7aVvx2NMr6XU77ntYn9+TYf3RbmwOQFGhEnhelzf4R6gHVLoUnHlzvpA==", "session"=>{"username"=>"l", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+Redirected to http://localhost:3000/login
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-06-22 19:07:53 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (4.2ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 33ms (Views: 31.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-06-22 19:07:57 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MD2f4N8LxdvntlK+caSiQ7O5qJWWtfKiU3qzE9ebDnHzAFJd/1oJanauXFPWLO5EP/X1AzjVvDjwLjfC10TsMQ==", "session"=>{"username"=>"l", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+Redirected to http://localhost:3000/login
+Completed 302 Found in 1ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-06-22 19:07:57 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 29ms (Views: 26.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-06-22 19:08:08 -0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (2.8ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 81ms (Views: 79.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-06-22 19:08:13 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lddoQbdiBNa4jpffStG5m+85xAmnG3AyRC5xTDAYAEasdAeUK2bilkaZ3f9qGKekdOXsMvj6r5dSS/W5CpV2JA==", "user"=>{"username"=>"0", "f_name"=>"0", "l_name"=>"0", "password"=>"[FILTERED]"}, "commit"=>"Create User"}
+Unpermitted parameters: :f_name, :l_name
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["username", "0"], ["password_digest", "$2a$10$1mMkdo27sWUQR.52E6z66OPQAmZ4ZLmznluIwsC2DEsL/acrxtFO2"], ["created_at", "2017-06-23 02:08:13.845469"], ["updated_at", "2017-06-23 02:08:13.845469"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 73ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-22 19:08:13 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (0.7ms)
+  Rendering layouts/_header.html.erb
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 195ms (Views: 23.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2017-06-22 19:08:16 -0700
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/login
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-06-22 19:08:16 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.8ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 67ms (Views: 64.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-06-22 19:08:41 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uFFTWwIWT71q0/IaEk3yXO4tVlH05S4oIYD25LRU61d6KX7Sy3lR/B/jBAD5HQjRY1ThVCAGavOiUgX3YPJZvQ==", "session"=>{"username"=>"0", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+Redirected to http://localhost:3000/login
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-06-22 19:08:41 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 38ms (Views: 35.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-06-22 19:17:37 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 26ms (Views: 24.5ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-06-22 19:17:40 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"u1hpVAXLivAmMoIP8VU3V0Amh0bUf20/neDawL42App4ZaTpJZpGQbcqjOJW3XtQzGra0HofI6U+tF4Rvung2g==", "session"=>{"username"=>"0", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+Redirected to http://localhost:3000/login
+Completed 302 Found in 13ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-06-22 19:17:40 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 28ms (Views: 26.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-06-22 19:17:59 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.6ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 43ms (Views: 41.8ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-06-22 19:18:01 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FV0d+79MgjKbrmxAjfbWkjuEveWKxyIAfF74FK9NtA7WYNBGnx1Ogwq2Yq0qfpqVt8jgcySnbJrfCnzFr5JWTg==", "session"=>{"username"=>"0", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 1.2ms)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/sessions_controller.rb:7:in `create'
+Started POST "/login" for 127.0.0.1 at 2017-06-22 19:18:45 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FV0d+79MgjKbrmxAjfbWkjuEveWKxyIAfF74FK9NtA7WYNBGnx1Ogwq2Yq0qfpqVt8jgcySnbJrfCnzFr5JWTg==", "session"=>{"username"=>"0", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.6ms)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/sessions_controller.rb:7:in `create'
+Started GET "/" for 127.0.0.1 at 2017-06-22 19:30:55 -0700
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (1.3ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 427ms (Views: 213.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-06-22 19:30:58 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/login"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (8.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20170621223748)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "f_name" varchar, "l_name" varchar, "password_hash" varchar, "password_salt" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170621223748"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateComments (20170621225502)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "body" text, "user_id" integer, "review_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170621225502"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateReviews (20170621225639)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "reviews" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "body" text, "user_id" integer, "movie_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170621225639"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateRatings (20170621230200)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "ratings" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "rateable_type" varchar, "rateable_id" integer, "score" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170621230200"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateMovies (20170621232335)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "movies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "api_id" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170621232335"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-06-23 02:33:08.393400"], ["updated_at", "2017-06-23 02:33:08.393400"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (9.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20170621223748)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "f_name" varchar, "l_name" varchar, "password_hash" varchar, "password_salt" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170621223748"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateComments (20170621225502)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "body" text, "user_id" integer, "review_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170621225502"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateReviews (20170621225639)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "reviews" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "body" text, "user_id" integer, "movie_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170621225639"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateRatings (20170621230200)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "ratings" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "rateable_type" varchar, "rateable_id" integer, "score" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170621230200"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateMovies (20170621232335)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "movies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "api_id" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170621232335"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-06-23 02:34:26.409651"], ["updated_at", "2017-06-23 02:34:26.409651"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "andy"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("f_name", "l_name", "password_hash", "password_salt", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["f_name", "Maci"], ["l_name", "Bauch"], ["password_hash", "$2a$10$FqMx/GOT8xdON.UnTsjjM.dcWO.po/4ehRmrDgzIrR6W6ypmwbJFC"], ["password_salt", "$2a$10$FqMx/GOT8xdON.UnTsjjM."], ["created_at", "2017-06-23 02:34:55.495142"], ["updated_at", "2017-06-23 02:34:55.495142"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "derrick_rosenbaum"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("f_name", "l_name", "password_hash", "password_salt", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["f_name", "Emmanuel"], ["l_name", "Kuhn"], ["password_hash", "$2a$10$HK67Wa9/.0ID10timiPYme3ffPcT1y480/bWlIH10JgE2GX2PYqIW"], ["password_salt", "$2a$10$HK67Wa9/.0ID10timiPYme"], ["created_at", "2017-06-23 02:34:55.574711"], ["updated_at", "2017-06-23 02:34:55.574711"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "boyd"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("f_name", "l_name", "password_hash", "password_salt", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["f_name", "Brendan"], ["l_name", "Friesen"], ["password_hash", "$2a$10$DDRyToLBnO.NC6Wc5DD.Pe4LcQ2eoEgeUOzgRwgJ2QahCh.s0MzfO"], ["password_salt", "$2a$10$DDRyToLBnO.NC6Wc5DD.Pe"], ["created_at", "2017-06-23 02:34:55.648757"], ["updated_at", "2017-06-23 02:34:55.648757"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/" for 127.0.0.1 at 2017-06-22 19:35:29 -0700
+Started GET "/" for 127.0.0.1 at 2017-06-22 19:35:29 -0700
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MoviesController#index as HTML
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (1.3ms)
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (0.3ms)
+  Rendering layouts/_header.html.erb
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 469ms (Views: 277.2ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 476ms (Views: 110.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-06-22 19:35:32 -0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (536.5ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 613ms (Views: 573.2ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-06-22 19:35:41 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GiGTCLuiWdPcqTnfIS/Fa/Qf1/7x32nHPzKrcs9qbPMjgvzdJ6a/kyK+c/8B5ttUb8P/xa4+tmIpVy+H9ecakQ==", "user"=>{"username"=>"i", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+Unpermitted parameter: :password_confirmation
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "i"], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "users" ("password_hash", "password_salt", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["password_hash", "$2a$10$ZKha4Nv8IkMWLZCZFtCGtOQ16pt8/xXJAhaLapwaJXMS21EsODaMK"], ["password_salt", "$2a$10$ZKha4Nv8IkMWLZCZFtCGtO"], ["created_at", "2017-06-23 02:35:42.029420"], ["updated_at", "2017-06-23 02:35:42.029420"]]
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 94ms (ActiveRecord: 3.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-22 19:35:42 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (1.0ms)
+  Rendering layouts/_header.html.erb
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (5.9ms)
+Completed 200 OK in 276ms (Views: 94.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2017-06-22 19:35:48 -0700
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-22 19:35:48 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (0.9ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 212ms (Views: 31.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-06-22 19:35:52 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (302.3ms)
+Completed 500 Internal Server Error in 307ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `sessions_path' for #<#<Class:0x007f99a6544358>:0x007f999f0b4cb8>
+Did you mean?  session):
+    1: <h1>Log in</h1>
+    2: 
+    3: <%= form_tag sessions_path do %>
+    4:   <p>
+    5:     <%= label_tag :username %><br />
+    6:     <%= text_field_tag :username, params[:username] %>
+  
+app/views/sessions/new.html.erb:3:in `_app_views_sessions_new_html_erb___1731266798214556659_70148948633200'
+Started GET "/" for 127.0.0.1 at 2017-06-22 19:36:52 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (0.8ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 214ms (Views: 37.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-06-22 19:36:54 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (353.9ms)
+Completed 500 Internal Server Error in 361ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `sessions_path' for #<#<Class:0x007f99a6544358>:0x007f99a7295ef8>
+Did you mean?  session):
+    1: <h1>Log in</h1>
+    2: 
+    3: <%= form_for sessions_path do %>
+    4:   <p>
+    5:     <%= label_tag :username %><br />
+    6:     <%= text_field_tag :username, params[:username] %>
+  
+app/views/sessions/new.html.erb:3:in `_app_views_sessions_new_html_erb___1731266798214556659_70148955616340'
+Started GET "/" for 127.0.0.1 at 2017-06-22 19:37:41 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (1.0ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 243ms (Views: 42.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-06-22 19:37:44 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (326.5ms)
+Completed 500 Internal Server Error in 331ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `session_path' for #<#<Class:0x007f99a6544358>:0x007f999ec83608>
+Did you mean?  session):
+    1: <h1>Log in</h1>
+    2: 
+    3: <%= form_tag session_path do %>
+    4:   <p>
+    5:     <%= label_tag :username %><br />
+    6:     <%= text_field_tag :username, params[:username] %>
+  
+app/views/sessions/new.html.erb:3:in `_app_views_sessions_new_html_erb___1731266798214556659_70148947869700'
+Started GET "/" for 127.0.0.1 at 2017-06-22 19:39:04 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (0.9ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 211ms (Views: 23.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-22 19:39:06 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (0.7ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 195ms (Views: 23.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-06-22 19:39:09 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (0.9ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 54ms (Views: 52.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-06-22 19:39:16 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.2ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 42ms (Views: 39.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-06-22 19:39:21 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/login"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+>>>>>>> development
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+<<<<<<< HEAD
 Started POST "/movies/166426/reviews" for 127.0.0.1 at 2017-06-22 18:39:25 -0700
 Processing by ReviewsController#create as HTML
   Parameters: {"utf8"=>"✓", "authenticity_token"=>"RsHL1JnKdIh/tdrgeLtJhKiDn7wV5aISo0hHjApPvso2OfnLCW9XeFaKzN14EkHr0gn+S0pb//jwjPM525GvCQ==", "review"=>{"user_id"=>"1", "movie_id"=>"166426", "title"=>"test", "body"=>"NKflskdflksdf a"}, "commit"=>"Save Review", "movie_id"=>"166426"}
@@ -3498,6 +5812,13 @@ activesupport (5.1.1) lib/active_support/callbacks.rb:97:in `run_callbacks'
 actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
 actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
 actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+=======
+Started POST "/login" for 127.0.0.1 at 2017-06-22 19:40:34 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/login"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+>>>>>>> development
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
 web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
@@ -3524,6 +5845,7 @@ puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
 puma (3.9.1) lib/puma/server.rb:435:in `process_client'
 puma (3.9.1) lib/puma/server.rb:299:in `block in run'
 puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/movies/166426/reviews/new" for 127.0.0.1 at 2017-06-22 18:46:21 -0700
 Processing by ReviewsController#new as HTML
   Parameters: {"movie_id"=>"166426"}
@@ -3618,6 +5940,95 @@ activesupport (5.1.1) lib/active_support/callbacks.rb:97:in `run_callbacks'
 actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
 actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
 actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+=======
+Started GET "/login" for 127.0.0.1 at 2017-06-22 19:40:45 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 69ms (Views: 67.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-06-22 19:40:47 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.1ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 56ms (Views: 54.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-06-22 19:40:48 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.1ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 128ms (Views: 126.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-06-22 19:40:50 -0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (6.2ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 94ms (Views: 92.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-06-22 19:41:03 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FcAK9Q3Th8kHCKerUzMHukbmDdKRbTJdkNUugyr+O00sY2Ugkddhifkf7Ytz+hmF3Tol6c6M7fiGsKp2EHNNLw==", "user"=>{"username"=>"l", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+Unpermitted parameter: :password_confirmation
+  [1m[35m (0.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "l"], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "users" ("password_hash", "password_salt", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["password_hash", "$2a$10$8E.03aIZQ/W3KeiaDx/OzOzfDQEQ4Grpj.FoY1iPxDST9yNOyqRxK"], ["password_salt", "$2a$10$8E.03aIZQ/W3KeiaDx/OzO"], ["created_at", "2017-06-23 02:41:03.940530"], ["updated_at", "2017-06-23 02:41:03.940530"]]
+  [1m[35m (8.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 99ms (ActiveRecord: 9.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-22 19:41:04 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (0.9ms)
+  Rendering layouts/_header.html.erb
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 206ms (Views: 23.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2017-06-22 19:41:08 -0700
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-22 19:41:08 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (0.8ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 195ms (Views: 26.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-06-22 19:41:13 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.2ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 88ms (Views: 86.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-06-22 19:41:16 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/login"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+>>>>>>> development
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
 web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
@@ -3644,6 +6055,7 @@ puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
 puma (3.9.1) lib/puma/server.rb:435:in `process_client'
 puma (3.9.1) lib/puma/server.rb:299:in `block in run'
 puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/movies/166426/reviews/new" for 127.0.0.1 at 2017-06-22 18:47:11 -0700
 Processing by ReviewsController#new as HTML
   Parameters: {"movie_id"=>"166426"}
@@ -4646,5 +7058,740 @@ Processing by ReviewsController#index as HTML
   Rendering layouts/_header.html.erb
   Rendered layouts/_header.html.erb (0.6ms)
 Completed 200 OK in 30ms (Views: 27.4ms | ActiveRecord: 0.3ms)
+=======
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (9.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20170621223748)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "f_name" varchar, "l_name" varchar, "password_hash" varchar, "password_salt" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170621223748"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateComments (20170621225502)
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "body" text, "user_id" integer, "review_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170621225502"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateReviews (20170621225639)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "reviews" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "body" text, "user_id" integer, "movie_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170621225639"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateRatings (20170621230200)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "ratings" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "rateable_type" varchar, "rateable_id" integer, "score" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170621230200"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateMovies (20170621232335)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "movies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "api_id" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170621232335"]]
+  [1m[35m (3.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-06-23 02:43:32.283274"], ["updated_at", "2017-06-23 02:43:32.283274"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "hanna.wisozk"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("f_name", "l_name", "password_hash", "password_salt", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["f_name", "Oral"], ["l_name", "Haley"], ["password_hash", "$2a$10$3AvsITRG068h99YcE3nbS.OvcSjaqqY.JET4sa8uZSzLdQW50.NxG"], ["password_salt", "$2a$10$3AvsITRG068h99YcE3nbS."], ["created_at", "2017-06-23 02:43:38.973843"], ["updated_at", "2017-06-23 02:43:38.973843"]]
+  [1m[35m (8.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "diana"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("f_name", "l_name", "password_hash", "password_salt", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["f_name", "Tabitha"], ["l_name", "Abernathy"], ["password_hash", "$2a$10$aJwQKglr/YbaF6Sm/n/jdepWTw9dvJVIhx5llWgpGtS9daRBx4xEW"], ["password_salt", "$2a$10$aJwQKglr/YbaF6Sm/n/jde"], ["created_at", "2017-06-23 02:43:39.056780"], ["updated_at", "2017-06-23 02:43:39.056780"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "dusty_runte"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("f_name", "l_name", "password_hash", "password_salt", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["f_name", "Ezequiel"], ["l_name", "Sporer"], ["password_hash", "$2a$10$gLXIceo6YHEAM2I207EYVO6.aU1d17O5G23N10W7RWZp.TofaXRBa"], ["password_salt", "$2a$10$gLXIceo6YHEAM2I207EYVO"], ["created_at", "2017-06-23 02:43:39.135334"], ["updated_at", "2017-06-23 02:43:39.135334"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/" for 127.0.0.1 at 2017-06-22 19:43:47 -0700
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (1.4ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 424ms (Views: 199.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-06-22 19:43:52 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (4.1ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 64ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-06-22 19:43:56 -0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (500.1ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 614ms (Views: 539.8ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-06-22 19:44:00 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AatnVi2mUTQjYuEqJN/32ZDr7ICQYOS9w0GsDNgfNM04CAiDsaK3dN11qwoEFunmCzfEu8+BOxjVJCj54pJCrw==", "user"=>{"username"=>"l", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+Unpermitted parameter: :password_confirmation
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "l"], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "users" ("password_hash", "password_salt", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["password_hash", "$2a$10$Q1eI8pLawyGBi7EmBoXd.OCcfDfIb/ULcds9Sw47RkfM42tBTgd8W"], ["password_salt", "$2a$10$Q1eI8pLawyGBi7EmBoXd.O"], ["created_at", "2017-06-23 02:44:00.591933"], ["updated_at", "2017-06-23 02:44:00.591933"]]
+  [1m[35m (19.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 137ms (ActiveRecord: 20.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-22 19:44:00 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (0.6ms)
+  Rendering layouts/_header.html.erb
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (4.0ms)
+Completed 200 OK in 235ms (Views: 25.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2017-06-22 19:44:03 -0700
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-22 19:44:03 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (0.6ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 226ms (Views: 21.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-06-22 19:44:05 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (0.9ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 66ms (Views: 64.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-06-22 19:44:08 -0700
+Processing by SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SQgo3L/5P8bO5TX3mOUoaLGFIs2ezLllw9cNU8h7WSfq1+Yl+h0C4S5AYXqruH6BnKkNANVsGS2q2M8GTNGOyw==", "username"=>"l", "password"=>"[FILTERED]", "commit"=>"Submit"}
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.1ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 32ms (Views: 30.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-06-22 19:44:53 -0700
+Processing by SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xkFx6yIYX4Ai+vxLfISrlQy5oz70gqGDprq9UEkZUlwFfLxWAkmTMbPi8qbbDOeSgPX+qFri7xkF7jmBScawHA==", "username"=>"l", "password"=>"[FILTERED]", "commit"=>"Submit"}
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/pjsmuelle/Ruckus/app/views/sessions/new.html.erb:9: syntax error, unexpected tSTRING_BEG, expecting ')'
+...buffer.append=( flash[:notice]" );@output_buffer.safe_append...
+...                               ^
+/Users/pjsmuelle/Ruckus/app/views/sessions/new.html.erb:9: unterminated string meets end of file):
+  
+app/views/sessions/new.html.erb:9: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/sessions/new.html.erb:9: unterminated string meets end of file
+Started GET "/login" for 127.0.0.1 at 2017-06-22 19:45:42 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 16ms
+
+
+  
+SyntaxError (/Users/pjsmuelle/Ruckus/app/views/sessions/new.html.erb:9: syntax error, unexpected tSTRING_BEG, expecting ')'
+...buffer.append=( flash[:notice]" );@output_buffer.safe_append...
+...                               ^
+/Users/pjsmuelle/Ruckus/app/views/sessions/new.html.erb:9: unterminated string meets end of file):
+  
+app/views/sessions/new.html.erb:9: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/sessions/new.html.erb:9: unterminated string meets end of file
+Started GET "/" for 127.0.0.1 at 2017-06-22 19:45:50 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (1.0ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 236ms (Views: 38.1ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-06-22 19:45:53 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 7ms
+
+
+  
+SyntaxError (/Users/pjsmuelle/Ruckus/app/views/sessions/new.html.erb:9: syntax error, unexpected tSTRING_BEG, expecting ')'
+...buffer.append=( flash[:notice]" );@output_buffer.safe_append...
+...                               ^
+/Users/pjsmuelle/Ruckus/app/views/sessions/new.html.erb:9: unterminated string meets end of file):
+  
+app/views/sessions/new.html.erb:9: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/sessions/new.html.erb:9: unterminated string meets end of file
+Started GET "/" for 127.0.0.1 at 2017-06-22 19:46:12 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (0.7ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 212ms (Views: 27.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-06-22 19:46:18 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.2ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 89ms (Views: 87.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-06-22 19:46:21 -0700
+Processing by SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UiuqhiINv4ij/6zHlQxOICOtkGS0RzUdngWJgHGhGm7x9GR/Z+mCr0Na+EqmURjJDoG/qf/nlVX3CkvV9QvNgg==", "username"=>"l", "password"=>"[FILTERED]", "commit"=>"Submit"}
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.4ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 36ms (Views: 34.8ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-06-22 19:46:39 -0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (26.5ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 148ms (Views: 114.2ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-06-22 19:46:43 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0WWqUDlyFG39Fa8vgsuoza7L3/1qMBPMC6O9Au5WKuXoxsWFpXbyLQMC5Q+iArbyNRf3xjXRzGkdxjn31Ntchw==", "user"=>{"username"=>"m", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+Unpermitted parameter: :password_confirmation
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "m"], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "users" ("password_hash", "password_salt", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["password_hash", "$2a$10$KQrEyUbxihnWYnBpIVkzA.DrAAq25hvugh1SdNhR0Ox22qYBn6vlS"], ["password_salt", "$2a$10$KQrEyUbxihnWYnBpIVkzA."], ["created_at", "2017-06-23 02:46:43.831157"], ["updated_at", "2017-06-23 02:46:43.831157"]]
+  [1m[35m (13.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 98ms (ActiveRecord: 14.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-22 19:46:43 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (0.9ms)
+  Rendering layouts/_header.html.erb
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 215ms (Views: 28.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2017-06-22 19:47:27 -0700
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-22 19:47:27 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (0.6ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 364ms (Views: 20.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-06-22 19:47:29 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (0.9ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 57ms (Views: 55.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-06-22 19:47:40 -0700
+Processing by SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gbs9iXvnIgn0irYwYP3KlawjyUEzFIaPO8wHK/KBKtYiZPNwPgMfLhQv4r1ToJx8gQ/mjHi0JsdSw8V+div9Og==", "username"=>"m", "password"=>"[FILTERED]", "commit"=>"Submit"}
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.2ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 37ms (Views: 34.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-06-22 19:48:13 -0700
+  
+SyntaxError (/Users/pjsmuelle/Ruckus/app/controllers/sessions_controller.rb:11: syntax error, unexpected =>, expecting keyword_end
+      :notice => "Invalid username or password"
+                ^):
+  
+app/controllers/sessions_controller.rb:11: syntax error, unexpected =>, expecting keyword_end
+Started GET "/login" for 127.0.0.1 at 2017-06-22 19:48:17 -0700
+  
+SyntaxError (/Users/pjsmuelle/Ruckus/app/controllers/sessions_controller.rb:11: syntax error, unexpected =>, expecting keyword_end
+      :notice => "Invalid username or password"
+                ^):
+  
+app/controllers/sessions_controller.rb:11: syntax error, unexpected =>, expecting keyword_end
+Started GET "/" for 127.0.0.1 at 2017-06-22 19:48:18 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (0.6ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 201ms (Views: 22.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-06-22 19:48:20 -0700
+  
+SyntaxError (/Users/pjsmuelle/Ruckus/app/controllers/sessions_controller.rb:11: syntax error, unexpected =>, expecting keyword_end
+      :notice => "Invalid username or password"
+                ^):
+  
+app/controllers/sessions_controller.rb:11: syntax error, unexpected =>, expecting keyword_end
+Started GET "/" for 127.0.0.1 at 2017-06-22 19:49:14 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (0.6ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 238ms (Views: 20.1ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-06-22 19:49:16 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.4ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 83ms (Views: 81.6ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-06-22 19:49:19 -0700
+Processing by SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hytzYC2Ak8NQHjZHmoOZ1vzIM/HeLOjNIM/YxspU/j0k9L2ZaGSu5LC7Ysqp3s8/0eQcPJWMSIVJwBqTTv4p0Q==", "username"=>"m", "password"=>"[FILTERED]", "commit"=>"Submit"}
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 51ms (Views: 36.4ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-06-22 19:49:40 -0700
+Processing by SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3GBW4y9TzJpSqPcZHNSKpa5GPmqk2yuMeKz7I3+52nsfXZteDwIAK8Ow+fS7XMaiIgpj/Aq7ZRbb+H/yf2Y4Ow==", "username"=>"m", "password"=>"[FILTERED]", "commit"=>"Submit"}
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 46ms (Views: 44.5ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-06-22 19:50:05 -0700
+Processing by SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NSApbAeGzxDqqXcM065UmO5yNt/5I4MUFCq8pWkFYVT2HeTRJ9cDoXuxeeF0JhifYj5rSVdDzY63fjh0adqDFA==", "username"=>"m", "password"=>"[FILTERED]", "commit"=>"Submit"}
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.2ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 40ms (Views: 37.9ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-06-22 19:52:27 -0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (4.7ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 128ms (Views: 68.7ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-06-22 19:52:32 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dmz3zH5NuwAi17+hPjikCHS9Ap6HHzXbwqkKu0cNrrtPz5gZ4kldQNzA9YEe8bo372Eqpdj+6n7UzI5OfYDY2Q==", "user"=>{"username"=>"q", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+Unpermitted parameter: :password_confirmation
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "q"], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_hash", "password_salt", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["username", "q"], ["password_hash", "$2a$10$oee9mP4ol/v0wOSeifg2Ouhr5ganmCnh9mdf4c9/Q3dyafnPPNG.i"], ["password_salt", "$2a$10$oee9mP4ol/v0wOSeifg2Ou"], ["created_at", "2017-06-23 02:52:32.861290"], ["updated_at", "2017-06-23 02:52:32.861290"]]
+  [1m[35m (3.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 92ms (ActiveRecord: 4.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-22 19:52:32 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (0.7ms)
+  Rendering layouts/_header.html.erb
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.9ms)
+Completed 200 OK in 210ms (Views: 27.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2017-06-22 19:52:55 -0700
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-22 19:52:55 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (0.7ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 218ms (Views: 40.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-06-22 19:52:57 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.1ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 57ms (Views: 55.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-06-22 19:53:02 -0700
+Processing by SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0qajboQdLa1RxXadhdE6rMxEU1cOEfJ4sJwE7/nkFyVxeW2XwfkQirFgIhC2jGxF4Wh8mkWxUjDZk8a6fU7AyQ==", "username"=>"q", "password"=>"[FILTERED]", "commit"=>"Submit"}
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 39ms (Views: 37.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-06-22 19:54:38 -0700
+Processing by SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+zYWVsNHyeR+GYblxwLo24EKul6W0XAkouKsQDURlpc4C9vr4xYFVe8BiAhgiqTcDUbnyDixPr4BtiiRNc501w==", "username"=>"q", "password"=>"[FILTERED]", "commit"=>"Submit"}
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.3ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (1.7ms)
+Completed 200 OK in 109ms (Views: 108.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-06-22 19:54:42 -0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (5.1ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 127ms (Views: 72.7ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-06-22 19:54:46 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bUTqwCVmau8VmDtQzhwH8AP7kV0DsAjHUVjcZLBH2HRU54UVuWKMr+uPcXDu1RnPmCe5ZlxR12JHPViRisquFg==", "user"=>{"username"=>"1", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+Unpermitted parameter: :password_confirmation
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "1"], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_hash", "password_salt", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["username", "1"], ["password_hash", "$2a$10$Rxxwz1ZhKuH7AjzsXFcpxOc3Us3Kv4JI9CRcBxFHm2e0M9vGBhM/u"], ["password_salt", "$2a$10$Rxxwz1ZhKuH7AjzsXFcpxO"], ["created_at", "2017-06-23 02:54:46.407826"], ["updated_at", "2017-06-23 02:54:46.407826"]]
+  [1m[35m (4.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 88ms (ActiveRecord: 5.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-22 19:54:46 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (0.7ms)
+  Rendering layouts/_header.html.erb
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.7ms)
+Completed 200 OK in 267ms (Views: 24.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2017-06-22 19:54:49 -0700
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-22 19:54:49 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (0.7ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 185ms (Views: 20.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-06-22 19:54:51 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 61ms (Views: 59.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-06-22 19:54:51 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.6ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 98ms (Views: 95.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-06-22 19:54:54 -0700
+Processing by SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ES4O3xzYCKx5eDOsBNhK8AfbafvI7blg85MbaAo8MEuy8cAmWTw1i5ndZyE3hRwZKvdGNoNNGSianNk9jpbnpw==", "username"=>"1", "password"=>"[FILTERED]", "commit"=>"Submit"}
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.2ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 59ms (Views: 57.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-22 19:55:55 -0700
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (1.2ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 645ms (Views: 219.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-06-22 19:55:57 -0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (621.4ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 715ms (Views: 682.0ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-06-22 19:56:03 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QDLBqlfGGwSaoofHPuV/meCp/OcYt7NDA+jgvv+SlG95ka5/y8L9RGS1zeceLGGme3XU3EdWbOYVjWRLxR/iDQ==", "user"=>{"username"=>"4", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+Unpermitted parameter: :password_confirmation
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "4"], ["LIMIT", 1]]
+  [1m[35mSQL (7.0ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_hash", "password_salt", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["username", "4"], ["password_hash", "$2a$10$dSsSaB/4nxoi8KdYUkfqZuCPdBx2TBOWplfREOha2Y2tXoFCtzY8q"], ["password_salt", "$2a$10$dSsSaB/4nxoi8KdYUkfqZu"], ["created_at", "2017-06-23 02:56:03.110857"], ["updated_at", "2017-06-23 02:56:03.110857"]]
+  [1m[35m (9.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 136ms (ActiveRecord: 16.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-22 19:56:03 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (0.6ms)
+  Rendering layouts/_header.html.erb
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (7.0ms)
+Completed 200 OK in 208ms (Views: 29.2ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2017-06-22 19:56:05 -0700
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-22 19:56:05 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (0.7ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 202ms (Views: 22.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-06-22 19:56:07 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.3ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (12.4ms)
+Completed 200 OK in 80ms (Views: 77.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-06-22 19:56:11 -0700
+Processing by SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uWw9QQ+3Kqu9WzD0wp8raoM+Sk1MZlHyqQP2Qj6gjTgas/O4SlMXjF3+ZHnxwn2DrhJlgAfG8brADDQXugpa1A==", "username"=>"4", "password"=>"[FILTERED]", "commit"=>"Submit"}
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.2ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 40ms (Views: 37.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-06-22 19:56:56 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (0.8ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 25ms (Views: 23.5ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-06-22 19:56:59 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.8ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (3.3ms)
+Completed 200 OK in 68ms (Views: 66.6ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-06-22 19:57:02 -0700
+Processing by SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"n4/NKKqO9OtVE4NiZVryqfqn3Qn2pZTXj1Sder9g4fE8UAPR72rJzLW21+9WB6RA14vyxL0FNJ/mW18vO8o2HQ==", "username"=>"4", "password"=>"[FILTERED]", "commit"=>"Submit"}
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.2ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 41ms (Views: 39.9ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-06-22 19:58:45 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.3ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 32ms (Views: 30.6ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-06-22 19:58:49 -0700
+Processing by SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BN1spJikMCGrgP4cxXEMka9x9fjC7Quvi6tPgbqtkOvH4KEZuPX8kDqY8PFi+UCWIz2obmyNRTUo/8tQunJyqw==", "username"=>"4", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 33ms (Views: 31.6ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-06-22 19:59:23 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.4ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 34ms (Views: 31.8ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-06-22 19:59:27 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mD3lBPKdz4aRfourEs1APxi1Nf4vdEPNtc2y+sriPWJbACi50swDNwBmhUa1RQw4lPloaIEUDVcWmTYryj3fIg==", "username"=>"4", "password"=>"[FILTERED]", "commit"=>"Log in"}
+Completed 500 Internal Server Error in 20ms
+
+
+  
+NoMethodError (undefined method `attr_accessible' for User (call 'User.connection' to establish a connection):Class
+Did you mean?  attr_accessor):
+  
+app/models/user.rb:3:in `<class:User>'
+app/models/user.rb:1:in `<top (required)>'
+app/controllers/sessions_controller.rb:6:in `create'
+Started GET "/" for 127.0.0.1 at 2017-06-22 20:03:10 -0700
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (1.2ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 445ms (Views: 194.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-06-22 20:03:13 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.5ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 101ms (Views: 98.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-06-22 20:03:18 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QGUJJNzQC4s/0RfCGS8Ok+Jm6VslDbD5yrSv6+utrjrjusfdmTQ2rN90Q08qclh6z0rGlm6tELGju22+bwd51g==", "username"=>"4", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "4"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 101ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-22 20:03:19 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (0.7ms)
+  Rendering layouts/_header.html.erb
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.7ms)
+Completed 200 OK in 228ms (Views: 28.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2017-06-22 20:03:24 -0700
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-22 20:03:24 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (0.7ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 207ms (Views: 26.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-06-22 20:03:33 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.1ms)
+  Rendering layouts/_header.html.erb
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 92ms (Views: 90.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-06-22 20:03:36 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jq31jfXgRYJWsZvEsHbbGBUbhwTEz8nLJC1zdZJAQ4gtcjt0sAR4pbYUz0mDK43xODeoyY9vaYNNIrEgFuqUZA==", "username"=>"4", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "4"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 74ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-22 20:03:36 -0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (0.7ms)
+  Rendering layouts/_header.html.erb
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 208ms (Views: 26.0ms | ActiveRecord: 0.1ms)
+>>>>>>> development
 
 
