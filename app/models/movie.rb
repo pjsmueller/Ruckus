@@ -4,11 +4,11 @@ class Movie < ApplicationRecord
   has_many :ratings, as: :rateable, dependent: :destroy
   has_many :reviews, dependent: :destroy
 
-  after_initialize :get_movie_details
-
+  # after_initialize :get_movie_details
 
   def initialize(movie_id)
-    self.api_id ||= movie_id
+    super
+    @api_id ||= movie_id
   end
 
   def self.get_genre(genre_id)
