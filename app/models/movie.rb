@@ -18,6 +18,10 @@ class Movie < ApplicationRecord
     }
   end
 
+  def self.search(search_string)
+    Tmdb::Search.movie(search_string).results
+  end
+
   def self.genres
     Tmdb::Genre.movie_list
   end

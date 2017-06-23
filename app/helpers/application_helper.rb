@@ -7,6 +7,6 @@ module ApplicationHelper
          average_rating = average_rating / ratings_array.length
       else
         0
-      end
+    end
   end
 end
