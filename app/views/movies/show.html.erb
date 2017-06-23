@@ -4,7 +4,8 @@
       <div class="movie-poster-container">
         <img class="movie-details-poster" src="https://image.tmdb.org/t/p/w300_and_h450_bestv2/<%= @movie.poster_path %>" />
         <%= render template: 'ratings/_rating_stars', locals: { rateable: { id: @movie.id, type: 'Movie' }} %>
-          <div class="movie-rating">Average Rating: <%= @movie.avg_rating %> </div>
+          <% movie_ratings = Movie.find_by(api_id: @movie.id) %>
+          <div class="movie-rating">Average Rating: <%= movie_ratings != nil ? average_ratings( movie_ratings.ratings) : "N/A" %> </div>
       </div>
       <div class="movie-details-container">
         <div class='movie-director'>Director: <%= @movie.directors[0] ? @movie.directors[0].name : 'N/A' %></div>
@@ -32,8 +33,15 @@
       </div>
     </div>
     <div class="movie-reviews-container">
-      <% review = 'test' %>
-      <%= render template: 'reviews/_review', locals: { review: review } %>
+      <a href="/movies/<%= @movie.id %>/reviews/new">Create New Review</a>
+      <% movies = Movie.find_by(api_id: @movie.id) %>
+      <% if movies != nil %>
+        <% movies.reviews.each do |review| %>
+          <%= render template: 'reviews/_review', locals: { review: review } %>
+        <% end %>
+      <% else %>
+        <p>No Reviews</p>
+      <% end %>
 
     </div>
 </div>

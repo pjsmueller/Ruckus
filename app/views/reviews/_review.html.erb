@@ -1,17 +1,17 @@
-<% 100.times do %>
 <div class="review-container">
   <div class="review-header">
-    <div class="review-title">Test Title</div>
+    <div class="review-title">Title: <%= review.title %></div>
   </div>
   <div class="review-body">
-  <% 10.times do %>
-    Do you like fish sticks?
-  <% end %>
+  Name: <%= review.user.f_name %>
+  <%= link_to "delete", "/movies/#{params[:id]}/reviews/#{review.id}", method: :delete %>
+  <%= link_to "show", "/movies/#{params[:id]}/reviews/#{review.id}" %>
+  <%= review.body %>
   </div>
   <div class="review-footer">
       <div class="review-footer-left">
         <% rateable = { id: 'test', type: 'test' } %>
-        <span class="review-average-rating"> Average Rating: <%= 5 %> </span>
+        <span class="review-average-rating"> Average Rating: <%= average_ratings(review.ratings) %> </span>
         <%= render template:"ratings/_rating_stars", locals: { rateable:  { id: 1, type: 'Rating' } } %>
       </div>
       <div class="review-footer-right">
@@ -19,4 +19,6 @@
       </div>
   </div>
 </div>
-<% end %>
+
+
+
