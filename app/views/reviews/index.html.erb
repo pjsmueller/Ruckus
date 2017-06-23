@@ -2,6 +2,27 @@
 <h3>Reviews</h3>
 <% @reviews.each do |review| %>
 
-<p> <%= review.title %> <%= link_to "edit", "/movies/#{@movie.api_id}/reviews/#{review.id}/edit" %> <%= link_to "show", "/movies/#{@movie.api_id}/reviews/#{review.id}" %> <%= link_to "delete", "/movies/#{@movie.api_id}/reviews/#{review.id}", method: :delete %>
+<p>
+<div class="review-container">
+  <div class="review-header">
+    <div class="review-title">Title: <%= review.title %></div>
+  </div>
+  <div class="review-body">
+  Name: <%= review.user.f_name %>
+  <%= link_to "delete", "/movies/#{params[:movie_id]}/reviews/#{review.id}", method: :delete %>
+  <%= link_to "show", "/movies/#{params[:movie_id]}/reviews/#{review.id}" %>
+  <%= review.body %>
+  </div>
+  <div class="review-footer">
+      <div class="review-footer-left">
+        <% rateable = { id: 'test', type: 'test' } %>
+        <span class="review-average-rating"> Average Rating: <%= average_ratings(review.ratings) %> </span>
+        <%= render template:"ratings/_rating_stars", locals: { rateable:  { id: 1, type: 'Rating' } } %>
+      </div>
+      <div class="review-footer-right">
+        Test Name - 2017-06-23
+      </div>
+  </div>
+</div>
 </p>
 <% end %>
