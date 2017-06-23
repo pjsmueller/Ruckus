@@ -1,6 +1,4 @@
 .env
 Gemfile.lock
-tmp/
-tmp/~
-log/
-log/~
+tmp/*
+log/*
