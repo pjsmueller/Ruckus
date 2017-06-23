@@ -1,11 +1,10 @@
 require 'faker'
 3.times do
-  User.create(username: Faker::Internet.user_name, f_name: Faker::Name.first_name, l_name: Faker::Name.last_name, password: "test")
+  User.create(username: Faker::Internet.user_name, f_name: Faker::Name.first_name, l_name: Faker::Name.last_name, password: "pass")
 end
-count = 1
-10.times do
-  Movie.create(api_id: "#{count}")
-  count += 1
+movies = Movie.now_playing
+movies.each do |movie|
+  Movie.create(api_id: movie.id )
 end
 6.times do
   Review.create(title: Faker::Hipster.word, body: Faker::Hacker.say_something_smart, user_id: User.all.sample.id, movie_id: Movie.all.sample.id)
