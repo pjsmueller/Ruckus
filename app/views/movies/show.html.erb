@@ -6,7 +6,7 @@
         <img class="movie-details-poster" src="https://image.tmdb.org/t/p/w300_and_h450_bestv2/<%= @movie.poster_path %>" />
       </div>
       <div class="movie-details-container">
-
+      <h4>Movie rating Avg: <%= avrage_ratings(Movie.find_by(api_id: @movie.id).ratings) %> </h4>
         <div class="movie-starring-label">Starring:<div class="rating-container"></div>
         <div class="movie-starring">
           <ul class="movie-starring-list">
@@ -21,7 +21,6 @@
         <div class="movie-overview">
           <%= @movie.overview %>
         </div>
-        <%= render 'reviews/new_review' %>
       </div>
     </div>
   </div>

@@ -1,5 +1,5 @@
 <%= form_for :review, url: "/movies/#{@movie.id}/reviews" do |f| %>
-
+  <%= f.hidden_field :user_id, value: 1 %>
   <%= f.hidden_field :movie_id, value: @movie.id %>
   Title : <%= f.text_field :title %><br />
   Body : <%= f.text_area :body %><br />
