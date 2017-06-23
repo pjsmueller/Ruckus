@@ -1,0 +1,9 @@
+<div class="review-container">
+  <div class="review-header">
+    <%= render template:"ratings/_rating_stars", locals: { rateable:  { id: rating.id, type: 'Rating' } } %>
+  </div>
+  <div class="review-title"><%= review.title %></div>
+  <div class="review-body"><%= review.body %></div>
+  <div class="review-footer">
+  </div>
+</div>
