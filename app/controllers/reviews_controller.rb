@@ -1,46 +1,58 @@
 class ReviewsController < ApplicationController
 
 def index
+  @movie = Movie.find_by(params[:movie_id])
   @reviews = Review.all
 end
 
 def new
-  @movie = Movie.find(params[:api_id])
+  @movie = Movie.find_by(api_id: params[:movie_id])
+  if !@movie
+   @movie = Movie.create({api_id: params[:movie_id]})
+  end
+
   @review = Review.new
 end
 
 def create
-  @review = Review.new(review_params)
+  @movie = Movie.find(params[:movie_id])
+  @review = Review.new(reviews_params)
   if @review.save
-    redirect_to @review
+    @movie = Movie.get_by_id(@movie.api_id.to_s)
+    redirect_to "/movies/#{@movie.id}"
   else
     render 'new'
   end
+
 end
 
 def show
+  @movie = Movie.get_by_id(params[:movie_id])
   @review = Review.find(params[:id])
 end
 
 def edit
+  @movie = Movie.find_by(api_id: params[:movie_id])
   @review = Review.find(params[:id])
 end
 
 def update
   @review = Review.find(params[:id])
-
-  if @review.update(user_params)
-    redirect_to @review
+  @movie = Movie.find_by(api_id: params[:movie_id])
+  if @review.update(reviews_params)
+    @movie = Movie.get_by_id(@movie.api_id.to_s)
+    redirect_to "/movies/#{@movie.id}"
   else
     render 'edit'
   end
 end
 
 def destroy
+  @movie = Movie.find_by(api_id: params[:movie_id])
   @review = Review.find(params[:id])
   @review.destroy
 
-  redirect_to reviews_path
+  redirect_to "/movies/#{@movie.api_id}"
 end
 
 private

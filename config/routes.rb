@@ -1,9 +1,5 @@
 Rails.application.routes.draw do
 
-  get 'sessions/login'
-
-  get 'sessions/logout'
-
 #users
   resources :users
 
@@ -19,9 +15,11 @@ Rails.application.routes.draw do
   end
 
 #sessions
-  get 'login', to: 'sessions#new'
-  get 'logout', to: "sessions#destroy"
-  post 'login',   to: 'sessions#create'
+
+get "logout" => "sessions#destroy", :as => "logout"
+get "login" => "sessions#new", :as => "login"
+post "login" => "sessions#create"
+
 
 root "movies#index"
 end
