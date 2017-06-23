@@ -1,28 +1,39 @@
 <div class="movie">
   <div class="movie-title"><%= @movie.title %></div>
   <div class="movie-container">
-    <div class="movie-container" %>
       <div class="movie-poster-container">
         <img class="movie-details-poster" src="https://image.tmdb.org/t/p/w300_and_h450_bestv2/<%= @movie.poster_path %>" />
+        <%= render template: 'ratings/_rating_stars', locals: { rateable: { id: @movie.id, type: 'Movie' }} %>
+          <div class="movie-rating">Average Rating: <%= @movie.avg_rating %> </div>
       </div>
       <div class="movie-details-container">
-      <h4>Movie rating Avg: <%= avrage_ratings(Movie.find_by(api_id: @movie.id).ratings) %> </h4>
-      ratings_views
-        <div class="movie-starring-label">Starring:<div class="rating-container"></div>
+        <div class='movie-director'>Director: <%= @movie.directors[0] ? @movie.directors[0].name : 'N/A' %></div>
+        <div class="movie-starring-label">Starring:</div>
         <div class="movie-starring">
           <ul class="movie-starring-list">
-            <% i = 0 %>
-            <% while i < 5 %>
-            <li class="starring-list-item"><%= @movie.cast[i].name %> as <%= @movie.cast[i].character %></li>
-            <% i += 1 %>
+            <% if @movie.cast.length > 0 %>
+              <% i = 0 %>
+              <% while i < 5 %>
+              <li class="starring-list-item"><%= @movie.cast[i].name %> as <%= @movie.cast[i].character %></li>
+              <% i += 1 %>
+              <% end %>
+            <% else %>
+              <li> N/A </li>
             <% end %>
           </ul>
         </div>
+        <div class="movie-release_date">Release Date: <%= @movie.release_date %> </div>
+        <div class="movie-budget">Budget: <%=  number_to_currency(@movie.budget, precision: 0) %></div>
+        <div class="movie-gross">Gross Box Office: <%= @movie.revenue == 0 ? 'Not Available' : number_to_currency(@movie.revenue, precision: 0) %></div>
         <div class="movie-overview-label">Overview:</div>
         <div class="movie-overview">
           <%= @movie.overview %>
         </div>
       </div>
     </div>
-  </div>
+    <div class="movie-reviews-container">
+      <% review = 'test' %>
+      <%= render template: 'reviews/_review', locals: { review: review } %>
+
+    </div>
 </div>

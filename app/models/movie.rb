@@ -11,20 +11,27 @@ class Movie < ApplicationRecord
     @api_id ||= movie_id
   end
 
+  def self.get_genre(genre_id)
+    self.genres.find { |genre|
+      p genre['id']
+      genre['id'] == genre_id
+    }
+  end
+
   def self.genres
-    response = Tmdb::Genre.movie_list
-    response.genres
+    Tmdb::Genre.movie_list
   end
 
   def self.get_by_genre(genre_id)
-    Tmdb::Genre.movies(genre_id)
+    response = Tmdb::Genre.movies(genre_id)
+    response['results']
   end
 
   def self.get_by_id(movie_id)
-    movie_details = Tmdb::Movie.detail(movie_id)
-    movie_details["directors"] = Tmdb::Movie.director(movie_id)
-    movie_details["cast"] = Tmdb::Movie.cast(movie_id)
-    movie_details
+      movie_details = Tmdb::Movie.detail(movie_id)
+      movie_details["directors"] = Tmdb::Movie.director(movie_id)
+      movie_details["cast"] = Tmdb::Movie.cast(movie_id)
+      movie_details
   end
   def self.now_playing
     movies = Tmdb::Movie.now_playing

@@ -1,0 +1,7 @@
+<div class="genres-container">
+  <div class="genres-title">Genres</div>
+  <ul class="genre-list">
+    <% @genres.each do |genre| %>
+      <li class="genre-list-item"><a href="/genres/<%= genre.id %>"><%= genre.name %></a></li>
+    <% end %>
+</div>
