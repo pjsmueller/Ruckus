@@ -10,10 +10,15 @@ class RatingsController < ApplicationController
 
   def create
     @rating = Rating.new(rating_params)
+    @rating.user_id = current_user.id
     if @rating.save
-      redirect_to @rating
+      if @rating.rateable_type == 'movie'
+       redirect_to "movies/#{@rating.rateable_id}"
+      else
+       redirect_to "reviews/#{@rating.rateable_id}"
+      end
     else
-      render 'new'
+      render status: 404
     end
   end
 
@@ -44,7 +49,7 @@ class RatingsController < ApplicationController
 
   private
   def rating_params
-    params.require(:rating).permit(:user_id, :rateable_type, :rateable_id, :score)
+    params.require(:rating).permit(:rateable_type, :rateable_id, :score)
   end
 
 end

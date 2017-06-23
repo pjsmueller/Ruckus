@@ -6,7 +6,6 @@ class Movie < ApplicationRecord
 
   after_initialize :get_movie_details
 
-
   def initialize(movie_id)
     self.api_id ||= movie_id
   end
