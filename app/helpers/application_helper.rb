@@ -3,6 +3,11 @@ module ApplicationHelper
     avrage_rating = ratings_array.reduce(0) do |sum, rating|
       sum + rating.score
     end
-    avrage_rating = avrage_rating / ratings_array.length
+    if ratings_array.length > 0
+       avrage_rating = avrage_rating / ratings_array.length
+    else
+      0
+    end
+
   end
 end

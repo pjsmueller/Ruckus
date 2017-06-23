@@ -1,0 +1,7 @@
+<h1><%= Movie.get_by_id(@movie.api_id).title %></h1>
+<h3>Reviews</h3>
+<% @reviews.each do |review| %>
+
+<p> <%= review.title %> <%= link_to "edit", "/movies/#{@movie.api_id}/reviews/#{review.id}/edit" %> <%= link_to "show", "/movies/#{@movie.api_id}/reviews/#{review.id}" %> <%= link_to "delete", "/movies/#{@movie.api_id}/reviews/#{review.id}", method: :delete %>
+</p>
+<% end %>
