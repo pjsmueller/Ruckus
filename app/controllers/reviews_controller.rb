@@ -1,8 +1,8 @@
 class ReviewsController < ApplicationController
 
 def index
-  @movie = Movie.find_by(params[:movie_id])
-  @reviews = Review.all
+  @movie = Movie.find_by(api_id: params[:movie_id])
+  @reviews = @movie.reviews
 end
 
 def new
@@ -27,8 +27,8 @@ def create
 end
 
 def show
-  @movie = Movie.get_by_id(params[:movie_id])
-  @review = Review.find(params[:id])
+  @movie = Movie.find_by(api_id: params[:movie_id])
+  @review = @movie.reviews.find(params[:id])
 end
 
 def edit
