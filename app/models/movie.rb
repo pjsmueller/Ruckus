@@ -19,7 +19,7 @@ class Movie < ApplicationRecord
   end
 
   def self.search(search_string)
-    Tmdb::Search.moviel(search_string).results
+    Tmdb::Search.movie(search_string).results
   end
 
   def self.genres
