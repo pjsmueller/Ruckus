@@ -1,0 +1,18 @@
+<div class="search-bar">
+<%= form_tag(actors_path, :method => "get", class: "search-form") do %>
+    <%= text_field_tag :search, params[:search], placeholder: "Search Actors" %>
+    <%= submit_tag "Search", class:'search-button', :name => nil %>
+<% end %>
+</div>
+<div class="actors-container">
+  <ul class="actors-list">
+    <% @actors.each do |actor| %>
+      <% next if !actor.profile_path %>
+      <li class="actors-list-item">
+        <a href="/actors/<%= actor.id %>" title="<%= actor.title %>">
+          <img class="actor-poster" title="<%= actor.name %>" src="https://image.tmdb.org/t/p/w300_and_h450_bestv2/<%= actor.profile_path %>" />
+        </a>
+      </li>
+    <% end %>
+  </ul>
+</div>

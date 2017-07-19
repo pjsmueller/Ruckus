@@ -1,0 +1,19 @@
+<div class="review-container">
+  <div class="review-header">
+    <div class="review-title">Title: <%= review.title %></div>
+  </div>
+  <div class="review-body">
+    <%= review.body %>
+  </div>
+  <div class="review-footer">
+      <div class="review-footer-left">
+        <% rateable = { id: 'test', type: 'test' } %>
+        <span class="review-average-rating"> Average Rating: <%= average_ratings(review.ratings) %> </span>
+        <%= render template:"ratings/_rating_stars", locals: { rateable:  { id: 1, type: 'Rating' } } %>
+      </div>
+      <div class="review-footer-right">
+        <div><%= review.user.f_name %></div>
+        <a href="/movies/<%= @movie.id %>/reviews/<%= review.id %>">View Comments</a>
+      </div>
+  </div>
+</div>

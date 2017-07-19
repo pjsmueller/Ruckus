@@ -1,0 +1,18 @@
+<h1>The <%= @rating.title %> Ratings.</h1>
+
+<h3>Reviewer Name: <%= @review.user.f_name %> </h3>
+<p> <%= @review.body %> </p>
+
+<h3>Review rating Avg: <%= avrage_ratings(@review.ratings) %> </h3>
+<h3>Comments</h3>
+<ul>
+  <% @review.comments.each do |comment| %>
+    <li>
+
+    Name: <%= comment.user.f_name %>
+    <br>
+      <%= comment.body %>
+    </li>
+    <br>
+  <% end %>
+</ul>

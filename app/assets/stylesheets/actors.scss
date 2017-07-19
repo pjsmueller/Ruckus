@@ -1,0 +1,57 @@
+.actor{
+  background-position: center;
+  background-size: cover;
+}
+.actor-bio{
+  font-size:14px;
+  max-height: 275px;
+  overflow: auto;
+}
+.actor-bio-label{
+  font-size:18px;
+}
+.actors-container{
+  width:800px;
+}
+.actor-container{
+  display:flex;
+  justify-content: space-between;
+  margin-bottom:5px;
+}
+.actor-details-container{
+  display:flex;
+  flex-direction: column;
+  margin:0px 10px;
+}
+.actor-details-container > div{
+  margin-bottom:5px;
+}
+.actors-list{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: flex-start;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px
+}
+.actors-list li{
+  display:inline-block;
+  margin: 0px 2px;
+}
+
+.actor-name{
+  font-size:32px;
+}
+.actor-picture{
+  width:210px;
+}
+.actor-picture-container{
+  display: flex;
+  flex-direction: column;
+}
+.actor-poster{
+  width:195px;
+}
+.actor-rating{
+  text-align: center;
+}

@@ -1,0 +1,9 @@
+<h1>edit Review</h1>
+<%= form_for :review, url: "/movies/#{@movie.api_id}/reviews/#{@review.id}" do |f| %>
+   <input name="_method" type="hidden" value="put" />
+
+  Title : <%= f.text_field :title, value: @review.title %><br />
+  Body : <%= f.text_area :body, value: @review.body %><br />
+  <%= f.submit %>
+<% end %>
+

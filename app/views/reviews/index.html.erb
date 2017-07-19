@@ -1,0 +1,31 @@
+<div class='search-bar'>
+<%= form_tag(movies_path, :method => "get", class: "search-form") do %>
+    <%= text_field_tag :search, params[:search], placeholder: "Search Movies" %>
+    <%= submit_tag "Search", class: 'search-button', :name => nil %>
+<% end %>
+</div>
+<h1><%= Movie.get_by_id(params[:movie_id]).title %></h1>
+<h3>Reviews</h3>
+<% @reviews.each do |review| %>
+
+<p>
+<div class="review-container">
+  <div class="review-header">
+    <div class="review-title">Title: <%= review.title %></div>
+  </div>
+  <div class="review-body">
+  <%= review.body %>
+  </div>
+  <div class="review-footer">
+      <div class="review-footer-left">
+        <% rateable = { id: 'test', type: 'test' } %>
+        <span class="review-average-rating"> Average Rating: <%= average_ratings(review.ratings) %> </span>
+        <%= render template:"ratings/_rating_stars", locals: { rateable:  { id: 1, type: 'Rating' } } %>
+      </div>
+      <div class="review-footer-right">
+        <%= review.user.f_name %>
+      </div>
+  </div>
+</div>
+</p>
+<% end %>
