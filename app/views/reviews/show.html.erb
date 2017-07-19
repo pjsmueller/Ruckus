@@ -1,21 +1,16 @@
-<h1>The <%= @review.title %> Review.</h1>
-<h2> <%= Movie.get_by_id(@movie.api_id).title %> </h2>
-  <%= link_to "edit", "/movies/#{@movie.api_id}/reviews/#{@review.id}/edit" %>
-  <%= link_to "delete", "/movies/#{@movie.api_id}/reviews/#{@review.id}", method: :delete %>
+<a href="/movies/<%= @movie.api_id %>">Back</a>
+<div class="review-container">
+<h2>Review for <%= Movie.get_by_id(@movie.api_id).title %></h2>
 <h3>Movie rating Avg: <%= average_ratings(@movie.ratings) %> </h3>
 <h3>Reviewer Name: <%= @review.user.f_name %> </h3>
-<h3>synopsis</h3>
+<h3>Review:</h3>
 <p> <%= @review.body %> </p>
-
-<h3>Review rating Avg: <%= average_ratings(@review.ratings) %> </h3>
 <h3>Comments</h3>
-<ul>
+<ul class="review-comments">
   <% @review.comments.each do |comment| %>
-    <li>
-    Name: <%= comment.user.f_name %>
-    <br>
-      <%= comment.body %>
+    <li class="review-comment">
+      <%= comment.body %> - <%= comment.user.f_name %>
     </li>
-    <br>
   <% end %>
 </ul>
+</div>
