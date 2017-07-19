@@ -1,3 +1,9 @@
+<div class='search-bar'>
+<%= form_tag(movies_path, :method => "get", class: "search-form") do %>
+    <%= text_field_tag :search, params[:search], placeholder: "Search Movies" %>
+    <%= submit_tag "Search", class: 'search-button', :name => nil %>
+<% end %>
+</div>
 <div class="movie">
   <div class="movie-title"><%= @movie.title %></div>
   <div class="movie-container">
@@ -37,7 +43,7 @@
       <% movies = Movie.find_by(api_id: @movie.id) %>
       <% if movies != nil %>
         <% movies.reviews.each do |review| %>
-          <%= render template: 'reviews/_review', locals: { review: review } %>
+            <%= render template: 'reviews/_review', locals: { review: review } %>
         <% end %>
       <% else %>
         <p>No Reviews</p>
