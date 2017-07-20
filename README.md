@@ -4,7 +4,7 @@ Ruckus Movie Database (RMDB) was a project created in an attempt to replicate th
 
 ## 🍿 API Integration 
 ----------------------
-RMDB uses ([The Real Movie Database](https://www.themoviedb.org/?language=en))'s API to pull movie posters, cast, directors, box office gross revenue, overview, and other details. This API is at the core of our application, allowing us to pull large amounts of information without having to store this information within RMDB's databases. The API also allows us to pull actor and actress details, including overviews and portrait photos. None of the individual movies are initialized in our database until a user creates a review for given movie. Even then, we initialize a primary key for a movie that corresponds with the movie's unique API key. If you are interested in replicating this project, I would highly recommend using this wonderful API.
+RMDB uses [The Real Movie Database](https://www.themoviedb.org/?language=en)'s API to pull movie posters, cast, directors, box office gross revenue, overview, and other details. This API is at the core of our application, allowing us to pull large amounts of information without having to store this information within RMDB's databases. The API also allows us to pull actor and actress details, including overviews and portrait photos. None of the individual movies are initialized in our database until a user creates a review for given movie. Even then, we initialize a primary key for a movie that corresponds with the movie's unique API key. If you are interested in replicating this project, I would highly recommend using this wonderful API.
 
 ## 🍿 User Story 
 -----------------------
