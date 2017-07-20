@@ -1,10 +1,5 @@
-<div class="search-bar">
-<%= form_tag(actors_path, :method => "get", class: "search-form") do %>
-    <%= text_field_tag :search, params[:search], placeholder: "Search Actors" %>
-    <%= submit_tag "Search", class:'search-button', :name => nil %>
-<% end %>
-</div>
 <div class="actors-container">
+  <div class="container-title">Popular Actors</div>
   <ul class="actors-list">
     <% @actors.each do |actor| %>
       <% next if !actor.profile_path %>

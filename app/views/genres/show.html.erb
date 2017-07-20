@@ -1,10 +1,4 @@
-<div class='search-bar'>
-<%= form_tag(movies_path, :method => "get", class: "search-form") do %>
-    <%= text_field_tag :search, params[:search], placeholder: "Search Movies" %>
-    <%= submit_tag "Search", class: 'search-button', :name => nil %>
-<% end %>
-</div>
 <div class="genre-container">
-  <h1><%= @genre.name %></h1>
+  <div class="container-title">Popular <%= @genre.name %> Movies</div>
   <%= render template: 'movies/_movies_display', locals: { movies: @movies } %>
 </div>
