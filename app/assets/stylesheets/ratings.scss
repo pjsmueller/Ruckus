@@ -37,7 +37,8 @@ label.star:before {
   font-family: FontAwesome;
 }
 .movie-poster-container div.stars{
-  width: 200px;
+  justify-content: center;
+  width: 100%;
 }
 .star-button{
   font-size:13px;
