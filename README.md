@@ -1,18 +1,37 @@
 # Ruckus Movie Database 🎬
-## Introduction
+
+### Introduction
+----------------
 Ruckus Movie Database (RMDB) was a project created in an attempt to replicate the presentation and functionality of Rottentomatoes.com.
 
-## 🍿 API Integration 🍿
-sasa
-## 🍿 User Story 🍿
-
+### 🍿 User Story 🍿
+-----------------------
 awawdawdawd
 
+##### 🍿 Movie Browsing 🍿
+-----------------------
 
-## Team
-⭐️ Peter M. ([pentaquant](https://github.com/pentaquant))
+##### 🍿 Movie Details 🍿
+-----------------------
 
+##### 🍿 Movie Reviews 🍿
+-----------------------
+
+##### 🍿 Actor Browsing 🍿
+-----------------------
+
+##### 🍿 In Theaters 🍿
+-----------------------
+
+### 🍿 API Integration 🍿
+----------------------
+
+
+### Team
+------------------
 ⭐️ Dom C. ([thisisDom](https://github.com/thisisDomssdasdaw
+
+⭐️ Peter M. ([pentaquant](https://github.com/pentaquant))
 
 ⭐️ Nick K. ([intell-gent](https://github.com/intell-gent))
 
