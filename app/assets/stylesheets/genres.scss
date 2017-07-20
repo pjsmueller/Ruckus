@@ -1,0 +1,39 @@
+.genres-container{
+}
+.genre-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+
+  li{
+    align-items: center;
+    background-color: #000000;
+    color: #ffe852;
+    display:flex;
+    font-size: 20px;
+    height: 191px;
+    justify-content: center;
+    margin: 2px;
+    width: 191px;
+
+    a{
+      align-items: center;
+      color: inherit;
+      display:flex;
+      justify-content: center;
+      height: 100%;
+      text-decoration: none;
+      width: 100%;
+    }
+    a:visited{
+      color: inherit
+    }
+  }
+  li:hover{
+    background-color: #ffe852;
+    color: #000000;
+  }
+}

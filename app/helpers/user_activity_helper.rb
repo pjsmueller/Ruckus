@@ -10,4 +10,8 @@ module UserActivityHelper
   def logged_in?
     session[:id] ? true : false
   end
+
+  def site_location
+    session[:site_location]
+  end
 end

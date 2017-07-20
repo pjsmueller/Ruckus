@@ -1,4 +1,7 @@
 class ActorsController < ApplicationController
+  skip_before_action :set_location
+  before_action :set_actor_location
+
 
   def index
     @actors = Actor.most_popular
@@ -16,4 +19,12 @@ class ActorsController < ApplicationController
       redirect_to '/actors'
     end
   end
+
+  private
+
+  def set_actor_location
+    session[:site_location] = 'actors'
+  end
+
+
 end

@@ -8,6 +8,21 @@
         <li class="navbar-list-item"><a href="/actors">Actors</a></li>
       </ul>
     </div>
+    <div id="navbar-center-container">
+      <div class='search-bar'>
+        <% if site_location == "actors" %>
+          <%= form_tag(actors_path, :method => "get", class: "search-form") do %>
+              <%= text_field_tag :search, params[:search], placeholder: "Search Actors" %>
+              <%= submit_tag "Search", class: 'search-button', :name => nil %>
+          <% end %>
+        <% else %>
+          <%= form_tag(movies_path, :method => "get", class: "search-form") do %>
+              <%= text_field_tag :search, params[:search], placeholder: "Search Movies" %>
+              <%= submit_tag "Search", class: 'search-button', :name => nil %>
+          <% end %>
+        <% end %>
+      </div>
+    </div>
     <div id="navbar-right-container">
       <ul class="navbar-link-list">
         <% if logged_in? %>

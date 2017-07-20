@@ -33,6 +33,9 @@
 .movie-details-poster{
   height:350px;
 }
+.movies-new-review{
+  font-size: 18px;
+}
 .movie-overview{
   font-size: 14px;
   max-height: 140px;
@@ -42,7 +45,7 @@
   font-size:18px;
 }
 .movie-poster{
-  width:195px;
+  width:190px;
 }
 .movie-poster-container{
   display: flex;
@@ -52,8 +55,15 @@
   text-align: center;
 }
 .movie-reviews-container{
+  padding: 10px 0px;
+}
+.movie-reviews-container p{
+  font-size: 20px;
+}
+.movie-reviews-wrapper{
   border-style: solid;
-  border-width: 3px 0px 0px 0px
+  border-width: 3px 0px 0px 0px;
+  padding: 10px;
 }
 .movie-starring-label{
   font-size:18px;
@@ -61,11 +71,11 @@
 .movie-starring-list{
   font-size: 16px;
   list-style-type: none;
-  margin:0px;
-  padding:0px 20px;
+  margin: 0px;
+  padding: 0px 20px;
 }
 .movie-title{
-  font-size:32px;
+  font-size: 32px;
 }
 .starring-list-item{
 
