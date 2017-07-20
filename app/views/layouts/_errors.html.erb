@@ -1,0 +1,9 @@
+<% if @errors && @errors.any? %>
+  <div class="errors-container">
+    <ul class="errors-list">
+      <% @errors.each do |message| %>
+        <li class="errors-list-item"><%= message %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
