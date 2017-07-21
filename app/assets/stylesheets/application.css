@@ -66,6 +66,7 @@
  }
  main{
    margin: auto;
+   min-width: 800px;
  }
  /*input{
    padding: 8px;
