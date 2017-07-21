@@ -9,12 +9,14 @@ class CommentsController < ApplicationController
   end
 
   def create
-    @comment = Comment.new(comment_params)
-    @review = Review.find_by(params[:id])
+    @movie = Movie.get_by_id(params[:movie_id])
+    @review = Review.find_by(id: params[:review_id])
+    @comment = Comment.new(body: comment_params[:body], user: current_user, review: @review)
     if @comment.save
-      redirect_to @review
+      redirect_to "/movies/#{@movie.id}/reviews/#{@review.id}"
     else
-      render 'new'
+      @errors = @comment.errors.full_messages
+      render template: 'reviews/show'
     end
   end
 
@@ -44,8 +46,8 @@ class CommentsController < ApplicationController
   end
 
   private
-  def rating_params
-    params.require(:comment).permit(:body, :user_id, :review_id, :rating)
+  def comment_params
+    params.require(:comment).permit(:body)
   end
 
 

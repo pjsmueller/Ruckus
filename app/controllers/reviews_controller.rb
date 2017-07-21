@@ -8,6 +8,11 @@ end
 def new
   @movie = Movie.find_or_create_by(api_id: params[:movie_id].to_i)
   @review = Review.new
+  if current_user
+    render 'new'
+  else
+    redirect_back fallback_location: @movie
+  end
 end
 
 def create
@@ -23,8 +28,8 @@ def create
 end
 
 def show
-  @movie = Movie.find_by(api_id: params[:movie_id].to_i)
-  @review = @movie.reviews.find(params[:id])
+  @movie = Movie.get_by_id(params[:movie_id])
+  @review = Movie.find_by(api_id: params[:movie_id]).reviews.find(params[:id])
 end
 
 def edit
