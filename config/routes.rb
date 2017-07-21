@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
 #users
-  resources :users
+  resources :users, only: [:new, :create, :show]
 
 #genres
   resources :genres, only: [:index, :show]

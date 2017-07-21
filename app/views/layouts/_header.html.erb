@@ -26,7 +26,7 @@
     <div id="navbar-right-container">
       <ul class="navbar-link-list">
         <% if logged_in? %>
-          <li class="navbar-list-item"><%= current_user.username %></li>
+          <li class="navbar-list-item"><span id="header-username"><%= current_user.username %></span></li>
           <li class="navbar-list-item"><a href="/logout">Logout</a></li>
         <% else %>
           <li class="navbar-list-item"><a href="/login">Login</a></li>
