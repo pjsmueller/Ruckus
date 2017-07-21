@@ -1,21 +1,9 @@
 <div class="review-container">
   <div class="review-header">
-    <div class="review-title">Title: <%= review.title %></div>
+    <div class="review-title"><%= review.title %></div>
   </div>
-  <div class="review-body">
-  Name: <%= review.user.f_name %>
-  <%= link_to "delete", "/movies/#{params[:id]}/reviews/#{review.id}", method: :delete %>
-  <%= link_to "show", "/movies/#{params[:id]}/reviews/#{review.id}" %>
-  <%= review.body %>
-  </div>
+  <div class="review-body"><%= review.body %></div>
   <div class="review-footer">
-      <div class="review-footer-left">
-        <% rateable = { id: 'test', type: 'test' } %>
-        <span class="review-average-rating"> Average Rating: <%= average_ratings(review.ratings) %> </span>
-        <%= render template:"ratings/_rating_stars", locals: { rateable:  { id: 1, type: 'Rating' } } %>
-      </div>
-      <div class="review-footer-right">
-        Test Name - 2017-06-23
-      </div>
+    <%= review.user.name %> - <%= review.created_at.strftime("%m-%d-%Y %I:%M %p") %>
   </div>
 </div>

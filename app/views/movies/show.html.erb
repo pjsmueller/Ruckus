@@ -35,10 +35,13 @@
     <div class="movie-reviews-wrapper">
       <a class="movies-new-review" href="/movies/<%= @movie.id %>/reviews/new">Create New Review</a>
       <div class="movie-reviews-container">
-        <% reviews = Movie.find_by(api_id: @movie.id).reviews %>
-        <% if reviews && reviews.length > 0 %>
-          <% reviews.each do |review| %>
-            <%= render template: 'reviews/_review', locals: { review: review } %>
+        <% if Movie.find_by(api_id: @movie.id) %>
+          <% if Movie.find_by(api_id: @movie.id).reviews && Movie.find_by(api_id: @movie.id).reviews.length > 0 %>
+            <% Movie.find_by(api_id: @movie.id).reviews.each do |review| %>
+              <%= render template: 'reviews/_review', locals: { review: review } %>
+            <% end %>
+          <% else %>
+            <p>No Reviews</p>
           <% end %>
         <% else %>
           <p>No Reviews</p>

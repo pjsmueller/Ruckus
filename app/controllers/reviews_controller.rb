@@ -14,7 +14,7 @@ def create
   @movie = Movie.find_by(api_id: params[:movie_id].to_i)
   @review = Review.new(movie_id: @movie.id, user_id: session[:id], title: reviews_params[:title], body: reviews_params[:body])
   if @review.save
-    redirect_to "/movies/#{movie.api_id}"
+    redirect_to "/movies/#{@movie.api_id}"
   else
     @errors = @review.errors.full_messages
     render 'new'
