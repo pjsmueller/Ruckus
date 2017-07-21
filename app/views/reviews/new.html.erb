@@ -1,2 +1,5 @@
 <div class="container-title">New Review for <%= Movie.get_by_id(@movie.api_id).title %> </div>
-<%= render "new_review" %>
+<%= form_for @review, url: "/movies/#{@movie.api_id}/reviews/" do |f| %>
+  <%= render "review_form" %>
+<% end %>
+<%= render template: 'layouts/_errors.html.erb' %>

@@ -1,16 +1,6 @@
 // Place all the styles related to the Reviews controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-#new-review-body{
-  font-size: 14px;
-  height: 200px;
-  resize: none;
-  width: 600px
-}
-#new-review-title{
-  font-size: 14px;
-  width: 300px;
-}
 .review-body{
   font-size: 14px;
   margin: 5px;
@@ -20,6 +10,24 @@
   border-style: solid;
   border-width: 0px 0px 2px 0px;
   padding:5px;
+  width:100%;
+}
+#review-container-title{
+  font-size: 24px;
+}
+.review-footer{
+  display: flex;
+  justify-content: space-between;
+}
+#review-form-body{
+  font-size: 14px;
+  height: 200px;
+  resize: none;
+  width: 600px
+}
+#review-form-title{
+  font-size: 14px;
+  width: 300px;
 }
 .review-header{
 

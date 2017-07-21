@@ -1,13 +1,13 @@
-<h1>Log in</h1>
-
-<%= form_tag 'login' do %>
-  <p>
-    <%= label_tag :username %><br />
-    <%= text_field_tag :username, params[:username] %>
-  </p>
-  <p>
-    <%= label_tag :password %><br />
-    <%= password_field_tag :password %>
-  </p>
-  <p class="button"><%= submit_tag "Log in" %></p>
+<h1>Login</h1>
+<%= form_for :login, html: { class: "login-form" } do |f| %>
+<label class="label-text" for="user-form-username">
+  <div class="user-label">Username:</div>
+  <%= f.text_field :username, id: "user-form-username" %>
+</label>
+<label class="label-text" for="user-form-password">
+  <div class="user-label">Password:</div>
+  <%= f.password_field :password, id: "user-form-password" %>
+</label>
+<%= f.submit "Sign Up",  class: "form-button"%>
 <% end %>
+<%= render template: "layouts/_errors" %>

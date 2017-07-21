@@ -1,0 +1,9 @@
+<label class="label-text" for="review-form-title">
+  <div class="review-label">Title:</div>
+  <%= text_field :review, :title, id: "review-form-title" %>
+</label>
+<label class="label-text" for="review-form-body">
+  <div class="review-label">Body:</div>
+  <%= text_area :review, :body, id: "review-form-body" %>
+</label>
+<%= submit_tag :Submit,  class: "form-button"%>

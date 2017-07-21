@@ -1,27 +1,17 @@
 <h1>Sign Up</h1>
-
-<%= form_for @user do |f| %>
-  <% if @user.errors.any? %>
-    <div class="error_messages">
-      <h2>Form is invalid</h2>
-      <ul>
-        <% for message in @user.errors.full_messages %>
-          <li><%= message %></li>
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
-  <p>
-    <%= f.label :username %><br />
-    <%= f.text_field :username %>
-  </p>
-  <p>
-    <%= f.label :password %><br />
-    <%= f.password_field :password %>
-  </p>
-  <p>
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation %>
-  </p>
-  <p class="button"><%= f.submit %></p>
+<%= form_for @user, html: { class: "user-form" } do |f| %>
+<label class="label-text" for="user-form-name">
+  <div class="user-label">Name:</div>
+  <%= f.text_field :name, id: "user-form-name" %>
+</label>
+<label class="label-text" for="user-form-username">
+  <div class="user-label">Username:</div>
+  <%= f.text_field :username, id: "user-form-username" %>
+</label>
+<label class="label-text" for="user-form-password">
+  <div class="user-label">Password:</div>
+  <%= f.password_field :password, id: "user-form-password" %>
+</label>
+<%= f.submit "Sign Up",  class: "form-button"%>
 <% end %>
+<%= render template: "layouts/_errors" %>
