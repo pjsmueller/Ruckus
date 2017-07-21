@@ -33,7 +33,9 @@
       </div>
     </div>
     <div class="movie-reviews-wrapper">
-      <a class="movies-new-review" href="/movies/<%= @movie.id %>/reviews/new">Create New Review</a>
+      <% if current_user %>
+        <a class="movies-new-review" href="/movies/<%= @movie.id %>/reviews/new">Create New Review</a>
+      <% end %>
       <div class="movie-reviews-container">
         <% if Movie.find_by(api_id: @movie.id) %>
           <% if Movie.find_by(api_id: @movie.id).reviews && Movie.find_by(api_id: @movie.id).reviews.length > 0 %>
