@@ -13,6 +13,8 @@ RMDB uses [The Real Movie Database](https://www.themoviedb.org/?language=en)'s A
 #### 📽 Movie Browsing
 -----------------------
 A user is first greeted with movies that are currently in theaters and is ranked by top grossing. In designing the layout of the website, we aimed to replicate the functionality of Netflix; scrolling movie posters that link to a movie description page.
+
+
 ![Movie Browsing](https://media.giphy.com/media/VdcwKFEm63z1K/giphy.gif)
 
 
